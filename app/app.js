@@ -80,19 +80,29 @@
   }
 
   /* ---------- session ---------- */
-  // Active-recall modes: MC works for every word; type for simple lexemes; article for nouns.
-  function activeModes(w) {
-    var modes = ["mcDe", "mcMean"];
-    if (isSimple(w)) modes.push("type");
-    if (canArticle(w)) modes.push("article");
-    return modes;
+  // Which words a chosen exercise mode can use.
+  function validForMode(w, mode) {
+    if (mode === "type") return isSimple(w);
+    if (mode === "article") return canArticle(w);
+    return !!meaning(w); // review (flashcard) and mc work for any word with a meaning
   }
-  function pickActive(w) { var m = activeModes(w); return m[Math.floor(Math.random() * m.length)]; }
-
+  // Turn a chosen menu mode into the concrete card type for a word.
+  function cardMode(w, mode) {
+    if (mode === "mc") return Math.random() < 0.5 ? "mcDe" : "mcMean";
+    if (mode === "type") return "type";
+    if (mode === "article") return "article";
+    return "flash"; // review
+  }
+  function modeDue(mode) {
+    var now = Date.now();
+    return levelWords().filter(function (w) { return validForMode(w, mode); })
+      .filter(function (w) { var p = prog(w.id); return p && p.due <= now; }).length;
+  }
   function buildSession(opts) {
     opts = opts || {};
     var now = Date.now();
-    var pool = levelWords();
+    var mode = opts.mode || "review";
+    var pool = levelWords().filter(function (w) { return validForMode(w, mode); });
     if (opts.meeting) pool = pool.filter(function (w) { return w._meeting === opts.meeting; });
     var size = opts.size || SESSION_SIZE;
     var list;
@@ -106,14 +116,7 @@
         list = pool.filter(function (w) { return prog(w.id); }).sort(function (a, b) { return prog(a.id).due - prog(b.id).due; }).slice(0, size);
       }
     }
-    // New word: introduce as a flashcard, then test it actively later in the same session.
-    // Already-seen word: go straight to an active exercise.
-    var intro = [], test = [];
-    list.forEach(function (w) {
-      if (prog(w.id)) { intro.push({ word: w, mode: pickActive(w) }); }
-      else { intro.push({ word: w, mode: "flash" }); test.push({ word: w, mode: pickActive(w) }); }
-    });
-    var queue = shuffle(intro).concat(shuffle(test));
+    var queue = shuffle(list).map(function (w) { return { word: w, mode: cardMode(w, mode) }; });
     if (!queue.length) return null;
     return { queue: queue, i: 0, right: 0, wrong: 0, title: opts.title || "Training" };
   }
@@ -189,13 +192,17 @@
       tile(due, "fällig heute") + tile(known + "/" + total, "gelernt") + tile((stats.streak || 0) + " 🔥", "Serie (Tage)") +
       '</div>';
 
-    html += '<div class="card" style="margin-top:14px">' +
-      '<button class="btn btn-primary btn-lg" id="startBtn">▶  Heute üben' + (due ? '  <span class="badge due">' + due + ' fällig</span>' : (neu ? '  <span class="badge">' + Math.min(SESSION_SIZE, neu) + ' neu</span>' : '')) + '</button>' +
+    html += '<div class="section-title">Üben</div>' +
+      '<div class="menu">' +
+        modeBtn("review", "🃏", "Karteikarten") +
+        modeBtn("mc", "✅", "Multiple Choice") +
+        modeBtn("type", "⌨️", "Eintippen") +
+        modeBtn("article", "der", "Artikel") +
+      '</div>' +
       '<div class="btn-row" style="margin-top:10px">' +
         '<button class="btn btn-ghost" id="diffBtn" style="flex:1">⚑ Schwierige (' + unsure + ')</button>' +
         '<button class="btn btn-ghost" id="browseBtn" style="flex:1">📖 Alle Wörter</button>' +
-      '</div>' +
-    '</div>';
+      '</div>';
 
     html += '<div class="section-title">Fortschritt</div>' +
       '<div class="card">' +
@@ -219,7 +226,9 @@
     html += '<p class="center muted" style="margin-top:20px;font-size:12px">' + DECK.words.length + ' Karten · Fortschritt im Browser gespeichert</p>';
 
     app.innerHTML = html;
-    $("#startBtn").onclick = function () { startSession({}); };
+    Array.prototype.forEach.call(app.querySelectorAll("[data-mode]"), function (b) {
+      b.onclick = function () { startSession({ mode: b.getAttribute("data-mode") }); };
+    });
     $("#diffBtn").onclick = function () { startSession({ difficult: true, title: "Schwierige Wörter" }); };
     $("#browseBtn").onclick = function () { S.view = "browse"; render(); };
     Array.prototype.forEach.call(app.querySelectorAll(".mrow"), function (r) {
@@ -227,6 +236,11 @@
     });
   }
   function tile(v, l) { return '<div class="tile"><b>' + v + "</b><span>" + l + "</span></div>"; }
+  function modeBtn(mode, icon, label) {
+    var d = modeDue(mode);
+    return '<button class="menubtn" data-mode="' + mode + '"><span class="mi">' + icon + '</span>' +
+      '<span class="ml">' + label + '</span>' + (d ? '<span class="badge due">' + d + ' fällig</span>' : '') + '</button>';
+  }
   function fmtDate(iso) { var p = String(iso).split("-"); return p.length === 3 ? p[2] + "." + p[1] + "." : iso; }
 
   function startSession(opts) {
@@ -470,8 +484,8 @@
       title: "Cara pakai Deutschstudio",
       items: [
         ["🎯 Inti", "Kamu dilatih <b>mengingat sendiri</b> arti kata (bukan sekadar baca ulang). Kata yang belum lancar otomatis muncul lebih sering, yang sudah hafal makin jarang."],
-        ["▶️ Heute üben", "Tombol utama — mulai sesi harian: campuran kata baru + kata yang perlu diulang."],
-        ["🃏 Bentuk latihan", "Tiap kata muncul sebagai <b>kartu</b> (pikir dulu → <b>Aufdecken</b> = buka → nilai diri), atau sebagai <b>pilihan ganda</b>, <b>ketik</b> (Eintippen), atau <b>artikel</b> (der/die/das)."],
+        ["🧭 Pilih menu latihan", "Ada 4 menu: <b>Karteikarten</b> (kartu), <b>Multiple Choice</b> (pilihan ganda), <b>Eintippen</b> (ketik), dan <b>Artikel</b> (der/die/das). Pilih yang mau kamu latih; tiap menu ambil kata baru + kata yang perlu diulang."],
+        ["🃏 Karteikarten", "Lihat kata Jerman → <b>Aufdecken</b> (buka) → nilai diri: <b>Gewusst</b> (tahu) / <b>Unsicher</b> (ragu) / <b>Nicht gewusst</b> (lupa)."],
         ["✅ Nilai jujur", "<b>Gewusst</b> = tahu → makin jarang muncul. <b>Unsicher</b> = ragu. <b>Nicht gewusst</b> = lupa → sering muncul lagi."],
         ["⚑ Markieren", "Tandai kata yang belum yakin → masuk tumpukan <b>Schwierige</b> untuk dilatih khusus."],
         ["⚙️ Kanan atas", "<b>ID/EN</b> = ganti bahasa arti. <b>Alle / B2.1 / B2.2</b> = pilih level. <b>?</b> = buka panduan ini lagi."]
@@ -482,8 +496,8 @@
       title: "How Deutschstudio works",
       items: [
         ["🎯 The idea", "You practise <b>recalling</b> the meaning yourself (not just re-reading). Words you don't know yet come back more often; words you know appear less."],
-        ["▶️ Heute üben", "The main button — start the daily session: a mix of new words and words due for review."],
-        ["🃏 Exercise types", "Each word appears as a <b>flashcard</b> (think → <b>Aufdecken</b> = reveal → rate yourself), or as <b>multiple choice</b>, <b>typing</b> (Eintippen), or <b>article</b> (der/die/das)."],
+        ["🧭 Pick a mode", "Four menus: <b>Karteikarten</b> (flashcards), <b>Multiple Choice</b>, <b>Eintippen</b> (typing), and <b>Artikel</b> (der/die/das). Pick what you want to drill; each pulls new words + words due for review."],
+        ["🃏 Karteikarten", "See the German word → <b>Aufdecken</b> (reveal) → rate yourself: <b>Gewusst</b> (knew it) / <b>Unsicher</b> (unsure) / <b>Nicht gewusst</b> (forgot)."],
         ["✅ Rate honestly", "<b>Gewusst</b> = knew it → shown less often. <b>Unsicher</b> = unsure. <b>Nicht gewusst</b> = forgot → shown again soon."],
         ["⚑ Markieren", "Flag a word you're unsure about → it joins the <b>Schwierige</b> (difficult) pile for focused practice."],
         ["⚙️ Top right", "<b>ID/EN</b> = switch meaning language. <b>Alle / B2.1 / B2.2</b> = pick a level. <b>?</b> = open this guide again."]

@@ -75,6 +75,14 @@ body {
 .btn-ghost { background: transparent; border: 1px solid var(--border); }
 .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
 
+/* Training mode menu */
+.menu { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.menubtn { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; border: 1px solid var(--border); background: var(--surface-2); border-radius: 12px; padding: 15px; cursor: pointer; color: var(--text); text-align: left; }
+.menubtn:hover { border-color: var(--primary); }
+.menubtn .mi { font-size: 22px; line-height: 1.1; }
+.menubtn .ml { font-weight: 700; font-size: 15px; }
+.menubtn .badge { margin-top: 2px; }
+
 /* Progress bar */
 .bar { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; display: flex; }
 .bar > i { display: block; height: 100%; }
