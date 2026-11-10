@@ -11,217 +11,565 @@
   "words": [
     {
       "id": "b2.1-2026-09-01-zusammenstossen",
-      "de": "zusammenstoßen mit", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "bertabrakan dengan", "en": "to collide / bump into" },
-      "beispiele": [
-        { "de": "Wir sind zusammengestoßen, weil wir auf die Handys geguckt haben.", "id": "Kami bertabrakan karena melihat ke ponsel.", "en": "We bumped into each other because we were looking at our phones." }
+      "de": "zusammenstoßen mit",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Alltag"]
+      "bedeutung": {
+        "id": "bertabrakan dengan",
+        "en": "to collide / bump into"
+      },
+      "beispiele": [
+        {
+          "de": "Wir sind zusammengestoßen, weil wir auf die Handys geguckt haben.",
+          "id": "Kami bertabrakan karena melihat ke ponsel.",
+          "en": "We bumped into each other because we were looking at our phones."
+        }
+      ],
+      "tags": [
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-runterfallen-hinfallen",
-      "de": "runterfallen / hinfallen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "runterfallen = (benda) jatuh · hinfallen = (orang) terjatuh", "en": "to fall down (things / people)" },
-      "beispiele": [
-        { "de": "Ich habe den Stein nicht gesehen und bin hingefallen.", "id": "Saya tak melihat batunya dan terjatuh.", "en": "I didn't see the stone and fell." }
+      "de": "runterfallen / hinfallen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc"
       ],
-      "tags": ["Alltag"]
+      "bedeutung": {
+        "id": "runterfallen = (benda) jatuh · hinfallen = (orang) terjatuh",
+        "en": "to fall down (things / people)"
+      },
+      "beispiele": [
+        {
+          "de": "Ich habe den Stein nicht gesehen und bin hingefallen.",
+          "id": "Saya tak melihat batunya dan terjatuh.",
+          "en": "I didn't see the stone and fell."
+        }
+      ],
+      "tags": [
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-losfahren-losgehen",
-      "de": "losfahren / losgehen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "losfahren = berangkat (dgn kendaraan) · losgehen = berangkat (jalan kaki); juga: dimulai", "en": "to set off (by vehicle / on foot); to start" },
-      "beispiele": [
-        { "de": "Ich fahre jetzt los, in 10 Minuten bin ich bei dir.", "id": "Saya berangkat sekarang, 10 menit lagi sampai.", "en": "I'm setting off now, I'll be there in 10 minutes." }
+      "de": "losfahren / losgehen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc"
       ],
-      "tags": ["Mobilität"]
+      "bedeutung": {
+        "id": "losfahren = berangkat (dgn kendaraan) · losgehen = berangkat (jalan kaki); juga: dimulai",
+        "en": "to set off (by vehicle / on foot); to start"
+      },
+      "beispiele": [
+        {
+          "de": "Ich fahre jetzt los, in 10 Minuten bin ich bei dir.",
+          "id": "Saya berangkat sekarang, 10 menit lagi sampai.",
+          "en": "I'm setting off now, I'll be there in 10 minutes."
+        }
+      ],
+      "tags": [
+        "Mobilität"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-los-sein",
-      "de": "los sein", "typ": "Redewendung",
-      "bedeutung": { "id": "ada yang terjadi / ada keramaian; 'Was ist los?' = ada apa?", "en": "to be going on; 'Was ist los?' = what's up?" },
-      "beispiele": [
-        { "de": "In der Stadt ist heute nichts los.", "id": "Di kota hari ini sepi (tak ada apa-apa).", "en": "There's nothing going on in town today." },
-        { "de": "Wann geht's los?", "id": "Kapan mulainya?", "en": "When does it start?" }
+      "de": "los sein",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Alltag", "Umgangssprache"]
+      "bedeutung": {
+        "id": "ada yang terjadi / ada keramaian; 'Was ist los?' = ada apa?",
+        "en": "to be going on; 'Was ist los?' = what's up?"
+      },
+      "beispiele": [
+        {
+          "de": "In der Stadt ist heute nichts los.",
+          "id": "Di kota hari ini sepi (tak ada apa-apa).",
+          "en": "There's nothing going on in town today."
+        },
+        {
+          "de": "Wann geht's los?",
+          "id": "Kapan mulainya?",
+          "en": "When does it start?"
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Umgangssprache"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-kollegen-typen",
-      "de": "Kollege / Kommilitone / Schulkamerad", "typ": "Wortfeld",
-      "bedeutung": { "id": "'teman' menurut konteks: Kollege = rekan kerja · Kommilitone = teman kuliah · Schulkamerad = teman sekolah", "en": "colleague / fellow student / schoolmate" },
-      "tags": ["Soziales", "Beruf"]
+      "de": "Kollege / Kommilitone / Schulkamerad",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "'teman' menurut konteks: Kollege = rekan kerja · Kommilitone = teman kuliah · Schulkamerad = teman sekolah",
+        "en": "colleague / fellow student / schoolmate"
+      },
+      "tags": [
+        "Soziales",
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-vorgesetzte",
-      "de": "Vorgesetzte", "artikel": "die/der", "typ": "Nomen",
-      "bedeutung": { "id": "atasan (Chef/Chefin)", "en": "superior / boss" },
-      "beispiele": [
-        { "de": "Meine Vorgesetzte hat mir positives Feedback gegeben.", "id": "Atasan saya memberi masukan positif.", "en": "My superior gave me positive feedback." }
+      "de": "Vorgesetzte",
+      "artikel": "die/der",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "atasan (Chef/Chefin)",
+        "en": "superior / boss"
+      },
+      "beispiele": [
+        {
+          "de": "Meine Vorgesetzte hat mir positives Feedback gegeben.",
+          "id": "Atasan saya memberi masukan positif.",
+          "en": "My superior gave me positive feedback."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-versprechen",
-      "de": "versprechen", "typ": "Verb",
-      "bedeutung": { "id": "berjanji", "en": "to promise" },
-      "beispiele": [
-        { "de": "Ich verspreche dir, dass ich mehr lernen werde.", "id": "Saya berjanji akan belajar lebih giat.", "en": "I promise you I'll study more." }
+      "de": "versprechen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Kommunikation"]
+      "bedeutung": {
+        "id": "berjanji",
+        "en": "to promise"
+      },
+      "beispiele": [
+        {
+          "de": "Ich verspreche dir, dass ich mehr lernen werde.",
+          "id": "Saya berjanji akan belajar lebih giat.",
+          "en": "I promise you I'll study more."
+        }
+      ],
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-abmachung",
-      "de": "Abmachung", "artikel": "die", "plural": "Abmachungen", "typ": "Nomen",
-      "bedeutung": { "id": "kesepakatan", "en": "agreement / deal" },
-      "beispiele": [
-        { "de": "Wir hatten eine klare Abmachung: du kochst und ich putze.", "id": "Kami punya kesepakatan jelas: kamu masak, saya bersih-bersih.", "en": "We had a clear deal: you cook and I clean." }
+      "de": "Abmachung",
+      "artikel": "die",
+      "plural": "Abmachungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Kommunikation"]
+      "bedeutung": {
+        "id": "kesepakatan",
+        "en": "agreement / deal"
+      },
+      "beispiele": [
+        {
+          "de": "Wir hatten eine klare Abmachung: du kochst und ich putze.",
+          "id": "Kami punya kesepakatan jelas: kamu masak, saya bersih-bersih.",
+          "en": "We had a clear deal: you cook and I clean."
+        }
+      ],
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-sich-arrangieren",
-      "de": "sich arrangieren", "typ": "Verb",
-      "bedeutung": { "id": "menyesuaikan diri / berkompromi dengan keadaan", "en": "to come to terms / adjust" },
-      "synonyme": ["sich anpassen"],
-      "beispiele": [
-        { "de": "Auch wenn die Situation neu war, habe ich mich in Deutschland arrangiert.", "id": "Meski situasinya baru, saya menyesuaikan diri di Jerman.", "en": "Even though the situation was new, I adjusted in Germany." }
+      "de": "sich arrangieren",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "menyesuaikan diri / berkompromi dengan keadaan",
+        "en": "to come to terms / adjust"
+      },
+      "synonyme": [
+        "sich anpassen"
+      ],
+      "beispiele": [
+        {
+          "de": "Auch wenn die Situation neu war, habe ich mich in Deutschland arrangiert.",
+          "id": "Meski situasinya baru, saya menyesuaikan diri di Jerman.",
+          "en": "Even though the situation was new, I adjusted in Germany."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-erfahrung-erlebnis",
-      "de": "Erfahrung / Erlebnis", "typ": "Wortfeld",
-      "bedeutung": { "id": "Erfahrung = pengalaman (faktual, mis. kerja) · Erlebnis = pengalaman (emosional/berkesan)", "en": "experience (factual) / experience (emotional event)" },
-      "kollokationen": ["berufliche Erfahrung sammeln", "etwas erleben"],
-      "beispiele": [
-        { "de": "In London habe ich berufliche Erfahrung gesammelt.", "id": "Di London saya mengumpulkan pengalaman kerja.", "en": "In London I gained professional experience." },
-        { "de": "Das war ein schönes Erlebnis für mich.", "id": "Itu pengalaman yang indah bagi saya.", "en": "That was a lovely experience for me." }
+      "de": "Erfahrung / Erlebnis",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "Erfahrung = pengalaman (faktual, mis. kerja) · Erlebnis = pengalaman (emosional/berkesan)",
+        "en": "experience (factual) / experience (emotional event)"
+      },
+      "kollokationen": [
+        "berufliche Erfahrung sammeln",
+        "etwas erleben"
       ],
-      "tags": ["Wortschatzunterschiede", "Beruf"]
+      "beispiele": [
+        {
+          "de": "In London habe ich berufliche Erfahrung gesammelt.",
+          "id": "Di London saya mengumpulkan pengalaman kerja.",
+          "en": "In London I gained professional experience."
+        },
+        {
+          "de": "Das war ein schönes Erlebnis für mich.",
+          "id": "Itu pengalaman yang indah bagi saya.",
+          "en": "That was a lovely experience for me."
+        }
+      ],
+      "tags": [
+        "Wortschatzunterschiede",
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-benehmen-verhalten",
-      "de": "Benehmen / Verhalten", "typ": "Wortfeld",
-      "bedeutung": { "id": "Benehmen = sopan santun (menurut norma) · Verhalten = perilaku (individual)", "en": "manners (by norms) / behaviour (individual)" },
-      "kollokationen": ["sich benehmen", "sich verhalten", "jemandem etwas beibringen (mengajarkan)"],
-      "beispiele": [
-        { "de": "Eltern bringen dem Kind gutes Benehmen bei.", "id": "Orang tua mengajarkan sopan santun kepada anak.", "en": "Parents teach the child good manners." }
+      "de": "Benehmen / Verhalten",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "Benehmen = sopan santun (menurut norma) · Verhalten = perilaku (individual)",
+        "en": "manners (by norms) / behaviour (individual)"
+      },
+      "kollokationen": [
+        "sich benehmen",
+        "sich verhalten",
+        "jemandem etwas beibringen (mengajarkan)"
       ],
-      "tags": ["Soziales", "Eigenschaften"]
+      "beispiele": [
+        {
+          "de": "Eltern bringen dem Kind gutes Benehmen bei.",
+          "id": "Orang tua mengajarkan sopan santun kepada anak.",
+          "en": "Parents teach the child good manners."
+        }
+      ],
+      "tags": [
+        "Soziales",
+        "Eigenschaften"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-genervt",
-      "de": "genervt", "typ": "Adjektiv",
-      "bedeutung": { "id": "kesal / terganggu", "en": "annoyed / irritated" },
-      "beispiele": [
-        { "de": "Nach dem Anruf von meinem Chef war ich genervt.", "id": "Setelah telepon dari bos, saya kesal.", "en": "After my boss's call I was annoyed." }
+      "de": "genervt",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "kesal / terganggu",
+        "en": "annoyed / irritated"
+      },
+      "beispiele": [
+        {
+          "de": "Nach dem Anruf von meinem Chef war ich genervt.",
+          "id": "Setelah telepon dari bos, saya kesal.",
+          "en": "After my boss's call I was annoyed."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-lob-kritik",
-      "de": "Lob / Kritik", "typ": "Wortfeld",
-      "bedeutung": { "id": "das Lob = pujian (loben = memuji) · die Kritik = kritik (kritisieren = mengkritik)", "en": "praise (to praise) / criticism (to criticise)" },
+      "de": "Lob / Kritik",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "das Lob = pujian (loben = memuji) · die Kritik = kritik (kritisieren = mengkritik)",
+        "en": "praise (to praise) / criticism (to criticise)"
+      },
       "beispiele": [
-        { "de": "Für ihre Präsentation hat sie großes Lob bekommen.", "id": "Atas presentasinya, dia mendapat banyak pujian.", "en": "She received a lot of praise for her presentation." },
-        { "de": "Viele Bürger kritisieren die Entscheidung der Regierung.", "id": "Banyak warga mengkritik keputusan pemerintah.", "en": "Many citizens criticise the government's decision." }
+        {
+          "de": "Für ihre Präsentation hat sie großes Lob bekommen.",
+          "id": "Atas presentasinya, dia mendapat banyak pujian.",
+          "en": "She received a lot of praise for her presentation."
+        },
+        {
+          "de": "Viele Bürger kritisieren die Entscheidung der Regierung.",
+          "id": "Banyak warga mengkritik keputusan pemerintah.",
+          "en": "Many citizens criticise the government's decision."
+        }
       ],
-      "tags": ["Kommunikation"]
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-vertraut-fremd",
-      "de": "vertraut / fremd", "typ": "Adjektiv",
-      "bedeutung": { "id": "vertraut = akrab/sudah dikenal · fremd = asing", "en": "familiar / foreign-strange" },
-      "beispiele": [
-        { "de": "Nach zehn Jahren ist mir jede Straße vertraut.", "id": "Setelah sepuluh tahun, tiap jalan terasa akrab.", "en": "After ten years every street is familiar to me." }
+      "de": "vertraut / fremd",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Gefühle", "Eigenschaften"]
+      "bedeutung": {
+        "id": "vertraut = akrab/sudah dikenal · fremd = asing",
+        "en": "familiar / foreign-strange"
+      },
+      "beispiele": [
+        {
+          "de": "Nach zehn Jahren ist mir jede Straße vertraut.",
+          "id": "Setelah sepuluh tahun, tiap jalan terasa akrab.",
+          "en": "After ten years every street is familiar to me."
+        }
+      ],
+      "tags": [
+        "Gefühle",
+        "Eigenschaften"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-erkennen",
-      "de": "erkennen", "typ": "Verb",
-      "bedeutung": { "id": "mengenali", "en": "to recognize" },
-      "beispiele": [
-        { "de": "Ich habe dich nicht erkannt, weil du kurze Haare hast.", "id": "Saya tak mengenalimu karena rambutmu pendek.", "en": "I didn't recognize you because you have short hair." }
+      "de": "erkennen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Alltag"]
+      "bedeutung": {
+        "id": "mengenali",
+        "en": "to recognize"
+      },
+      "beispiele": [
+        {
+          "de": "Ich habe dich nicht erkannt, weil du kurze Haare hast.",
+          "id": "Saya tak mengenalimu karena rambutmu pendek.",
+          "en": "I didn't recognize you because you have short hair."
+        }
+      ],
+      "tags": [
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-laecheln",
-      "de": "lächeln / jemanden anlächeln", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "tersenyum / tersenyum kepada seseorang", "en": "to smile / smile at someone" },
-      "beispiele": [
-        { "de": "Der Chef hat seine Mitarbeiter freundlich angelächelt.", "id": "Bos tersenyum ramah kepada karyawannya.", "en": "The boss smiled warmly at his employees." }
+      "de": "lächeln / jemanden anlächeln",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "tersenyum / tersenyum kepada seseorang",
+        "en": "to smile / smile at someone"
+      },
+      "beispiele": [
+        {
+          "de": "Der Chef hat seine Mitarbeiter freundlich angelächelt.",
+          "id": "Bos tersenyum ramah kepada karyawannya.",
+          "en": "The boss smiled warmly at his employees."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-registrieren-anmelden-melden",
-      "de": "sich registrieren / anmelden / melden", "typ": "Wortfeld", "trennbar": true,
-      "bedeutung": { "id": "registrieren = daftar pertama kali (data diri) · anmelden = masuk/login (user+password) · sich melden (bei) = menghubungi/mengabari", "en": "to register / to log in / to get in touch" },
+      "de": "sich registrieren / anmelden / melden",
+      "typ": "Wortfeld",
+      "trennbar": true,
+      "modi": [],
+      "bedeutung": {
+        "id": "registrieren = daftar pertama kali (data diri) · anmelden = masuk/login (user+password) · sich melden (bei) = menghubungi/mengabari",
+        "en": "to register / to log in / to get in touch"
+      },
       "beispiele": [
-        { "de": "Du meldest dich nicht. Ist alles gut bei dir?", "id": "Kamu tak mengabari. Kamu baik-baik saja?", "en": "You're not getting in touch. Is everything okay?" }
+        {
+          "de": "Du meldest dich nicht. Ist alles gut bei dir?",
+          "id": "Kamu tak mengabari. Kamu baik-baik saja?",
+          "en": "You're not getting in touch. Is everything okay?"
+        }
       ],
-      "tags": ["Kommunikation", "Digital"]
+      "tags": [
+        "Kommunikation",
+        "Digital"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-mitteilen",
-      "de": "mitteilen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "memberi tahu / menginformasikan", "en": "to inform / notify" },
-      "synonyme": ["informieren über"],
-      "beispiele": [
-        { "de": "Meine Kollegin hat mir mitgeteilt, dass sie morgen frei hat.", "id": "Rekan saya memberi tahu bahwa besok dia libur.", "en": "My colleague told me she's off tomorrow." }
+      "de": "mitteilen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Kommunikation"]
+      "bedeutung": {
+        "id": "memberi tahu / menginformasikan",
+        "en": "to inform / notify"
+      },
+      "synonyme": [
+        "informieren über"
+      ],
+      "beispiele": [
+        {
+          "de": "Meine Kollegin hat mir mitgeteilt, dass sie morgen frei hat.",
+          "id": "Rekan saya memberi tahu bahwa besok dia libur.",
+          "en": "My colleague told me she's off tomorrow."
+        }
+      ],
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-nachricht",
-      "de": "Nachricht", "artikel": "die", "plural": "Nachrichten", "typ": "Nomen",
-      "bedeutung": { "id": "pesan; (jamak) die Nachrichten = berita", "en": "message; (pl.) the news" },
-      "synonyme": ["die Mitteilung"],
-      "tags": ["Kommunikation"]
+      "de": "Nachricht",
+      "artikel": "die",
+      "plural": "Nachrichten",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "pesan; (jamak) die Nachrichten = berita",
+        "en": "message; (pl.) the news"
+      },
+      "synonyme": [
+        "die Mitteilung"
+      ],
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-vermissen",
-      "de": "vermissen", "typ": "Verb",
-      "bedeutung": { "id": "merindukan (= fehlen)", "en": "to miss" },
-      "beispiele": [
-        { "de": "Ich vermisse meine Familie. = Meine Familie fehlt mir.", "id": "Saya merindukan keluarga saya.", "en": "I miss my family." }
+      "de": "vermissen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "merindukan (= fehlen)",
+        "en": "to miss"
+      },
+      "beispiele": [
+        {
+          "de": "Ich vermisse meine Familie. = Meine Familie fehlt mir.",
+          "id": "Saya merindukan keluarga saya.",
+          "en": "I miss my family."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-verpassen-erreichen",
-      "de": "verpassen / erreichen", "typ": "Verb",
-      "bedeutung": { "id": "verpassen = ketinggalan (bus/kereta) · erreichen = keburu/sampai mengejar", "en": "to miss / to catch (a bus/train)" },
-      "beispiele": [
-        { "de": "Ich habe den Bus verpasst.", "id": "Saya ketinggalan bus.", "en": "I missed the bus." },
-        { "de": "Ich habe den Bus in der letzten Minute erreicht.", "id": "Saya keburu bus di menit terakhir.", "en": "I caught the bus at the last minute." }
+      "de": "verpassen / erreichen",
+      "typ": "Verb",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Mobilität"]
+      "bedeutung": {
+        "id": "verpassen = ketinggalan (bus/kereta) · erreichen = keburu/sampai mengejar",
+        "en": "to miss / to catch (a bus/train)"
+      },
+      "beispiele": [
+        {
+          "de": "Ich habe den Bus verpasst.",
+          "id": "Saya ketinggalan bus.",
+          "en": "I missed the bus."
+        },
+        {
+          "de": "Ich habe den Bus in der letzten Minute erreicht.",
+          "id": "Saya keburu bus di menit terakhir.",
+          "en": "I caught the bus at the last minute."
+        }
+      ],
+      "tags": [
+        "Mobilität"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-stress-abbauen",
-      "de": "Stress abbauen", "typ": "Wendung", "trennbar": true,
-      "bedeutung": { "id": "mengurangi/meredakan stres", "en": "to reduce stress" },
-      "synonyme": ["Stress reduzieren"],
-      "tags": ["Gesundheit"]
+      "de": "Stress abbauen",
+      "typ": "Wendung",
+      "trennbar": true,
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "mengurangi/meredakan stres",
+        "en": "to reduce stress"
+      },
+      "synonyme": [
+        "Stress reduzieren"
+      ],
+      "tags": [
+        "Gesundheit"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-sich-unterhalten",
-      "de": "sich unterhalten", "typ": "Verb",
-      "bedeutung": { "id": "sich unterhalten mit/über = mengobrol · jemanden unterhalten = menghibur", "en": "to chat (with/about) / to entertain someone" },
-      "beispiele": [
-        { "de": "Wir haben uns über das Problem unterhalten.", "id": "Kami mengobrol tentang masalah itu.", "en": "We talked about the problem." },
-        { "de": "Der Film hat mich gut unterhalten.", "id": "Filmnya menghibur saya.", "en": "The film entertained me well." }
+      "de": "sich unterhalten",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Kommunikation"]
+      "bedeutung": {
+        "id": "sich unterhalten mit/über = mengobrol · jemanden unterhalten = menghibur",
+        "en": "to chat (with/about) / to entertain someone"
+      },
+      "beispiele": [
+        {
+          "de": "Wir haben uns über das Problem unterhalten.",
+          "id": "Kami mengobrol tentang masalah itu.",
+          "en": "We talked about the problem."
+        },
+        {
+          "de": "Der Film hat mich gut unterhalten.",
+          "id": "Filmnya menghibur saya.",
+          "en": "The film entertained me well."
+        }
+      ],
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-persoenlichkeit-paare",
-      "de": "Persönlichkeit: Gegensatzpaare", "typ": "Wortfeld",
-      "bedeutung": { "id": "pasangan sifat yang berlawanan", "en": "personality opposite pairs" },
+      "de": "Persönlichkeit: Gegensatzpaare",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "pasangan sifat yang berlawanan",
+        "en": "personality opposite pairs"
+      },
       "kollokationen": [
         "selbstbewusst ↔ schüchtern (percaya diri ↔ pemalu)",
         "stur ↔ kompromissbereit (keras kepala ↔ mau berkompromi)",
@@ -230,89 +578,239 @@
         "ausgeschlafen ↔ übermüdet (cukup tidur ↔ kelelahan)",
         "vergesslich ↔ zuverlässig (pelupa ↔ bisa diandalkan)"
       ],
-      "tags": ["Eigenschaften", "Adjektive"]
+      "tags": [
+        "Eigenschaften",
+        "Adjektive"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-wert",
-      "de": "Wert", "artikel": "der", "plural": "Werte", "typ": "Nomen",
-      "bedeutung": { "id": "nilai", "en": "value" },
-      "kollokationen": ["Werte vermitteln (= weitergeben, mewariskan nilai)"],
-      "beispiele": [
-        { "de": "Man soll neuen Generationen gute Werte vermitteln.", "id": "Kita harus mewariskan nilai-nilai baik ke generasi baru.", "en": "One should pass good values on to new generations." }
+      "de": "Wert",
+      "artikel": "der",
+      "plural": "Werte",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Werte", "Gesellschaft"]
+      "bedeutung": {
+        "id": "nilai",
+        "en": "value"
+      },
+      "kollokationen": [
+        "Werte vermitteln (= weitergeben, mewariskan nilai)"
+      ],
+      "beispiele": [
+        {
+          "de": "Man soll neuen Generationen gute Werte vermitteln.",
+          "id": "Kita harus mewariskan nilai-nilai baik ke generasi baru.",
+          "en": "One should pass good values on to new generations."
+        }
+      ],
+      "tags": [
+        "Werte",
+        "Gesellschaft"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-gesellschaft",
-      "de": "Gesellschaft", "artikel": "die", "plural": "Gesellschaften", "typ": "Nomen",
-      "bedeutung": { "id": "masyarakat", "en": "society" },
-      "tags": ["Gesellschaft"]
+      "de": "Gesellschaft",
+      "artikel": "die",
+      "plural": "Gesellschaften",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "masyarakat",
+        "en": "society"
+      },
+      "tags": [
+        "Gesellschaft"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-wahlen",
-      "de": "Wahlen / wählen", "typ": "Wortfeld",
-      "bedeutung": { "id": "die Wahlen = pemilu · wählen = memilih", "en": "elections / to vote" },
-      "kollokationen": ["einen Präsidenten wählen", "die Stimme abgeben = abstimmen (memberikan suara)", "den Stimmzettel einwerfen (memasukkan surat suara)"],
-      "tags": ["Politik", "Gesellschaft"]
+      "de": "Wahlen / wählen",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "die Wahlen = pemilu · wählen = memilih",
+        "en": "elections / to vote"
+      },
+      "kollokationen": [
+        "einen Präsidenten wählen",
+        "die Stimme abgeben = abstimmen (memberikan suara)",
+        "den Stimmzettel einwerfen (memasukkan surat suara)"
+      ],
+      "tags": [
+        "Politik",
+        "Gesellschaft"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-grundgesetz",
-      "de": "Grundgesetz", "artikel": "das", "typ": "Nomen",
-      "bedeutung": { "id": "undang-undang dasar / konstitusi (Jerman)", "en": "Basic Law / constitution" },
-      "synonyme": ["die Verfassung"],
-      "tags": ["Politik", "Recht"]
+      "de": "Grundgesetz",
+      "artikel": "das",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "undang-undang dasar / konstitusi (Jerman)",
+        "en": "Basic Law / constitution"
+      },
+      "synonyme": [
+        "die Verfassung"
+      ],
+      "tags": [
+        "Politik",
+        "Recht"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-gerechtigkeit",
-      "de": "Gerechtigkeit", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "keadilan", "en": "justice / fairness" },
-      "synonyme": ["die Fairness"],
-      "kollokationen": ["gerecht = fair", "ungerecht = unfair"],
-      "tags": ["Werte", "Recht"]
+      "de": "Gerechtigkeit",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "keadilan",
+        "en": "justice / fairness"
+      },
+      "synonyme": [
+        "die Fairness"
+      ],
+      "kollokationen": [
+        "gerecht = fair",
+        "ungerecht = unfair"
+      ],
+      "tags": [
+        "Werte",
+        "Recht"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-justiz",
-      "de": "Gericht / Richter / Anwalt", "typ": "Wortfeld",
-      "bedeutung": { "id": "istilah peradilan", "en": "justice-system terms" },
+      "de": "Gericht / Richter / Anwalt",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "istilah peradilan",
+        "en": "justice-system terms"
+      },
       "kollokationen": [
         "das Gericht (pengadilan)",
         "der Richter (hakim – schuldig/unschuldig: bersalah/tidak)",
         "der Rechtsanwalt = der Verteidiger (pengacara/pembela)",
         "der Staatsanwalt (jaksa)"
       ],
-      "tags": ["Recht"]
+      "tags": [
+        "Recht"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-gleichberechtigung",
-      "de": "Gleichberechtigung", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "kesetaraan hak", "en": "equal rights / equality" },
-      "tags": ["Werte", "Gesellschaft"]
+      "de": "Gleichberechtigung",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "kesetaraan hak",
+        "en": "equal rights / equality"
+      },
+      "tags": [
+        "Werte",
+        "Gesellschaft"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-bestechung",
-      "de": "Bestechung", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "penyuapan", "en": "bribery" },
-      "kollokationen": ["bestechen (menyuap)"],
-      "tags": ["Recht", "Kriminalität"]
+      "de": "Bestechung",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "penyuapan",
+        "en": "bribery"
+      },
+      "kollokationen": [
+        "bestechen (menyuap)"
+      ],
+      "tags": [
+        "Recht",
+        "Kriminalität"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-meinungsfreiheit",
-      "de": "Meinungsfreiheit", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "kebebasan berpendapat (dijamin Art. 5 Grundgesetz)", "en": "freedom of opinion / speech" },
-      "kollokationen": ["seine Meinung frei äußern (menyampaikan pendapat secara bebas)"],
-      "tags": ["Werte", "Politik"]
+      "de": "Meinungsfreiheit",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "kebebasan berpendapat (dijamin Art. 5 Grundgesetz)",
+        "en": "freedom of opinion / speech"
+      },
+      "kollokationen": [
+        "seine Meinung frei äußern (menyampaikan pendapat secara bebas)"
+      ],
+      "tags": [
+        "Werte",
+        "Politik"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-demokratie",
-      "de": "Demokratie", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "demokrasi", "en": "democracy" },
-      "kollokationen": ["demokratisch ↔ undemokratisch"],
-      "tags": ["Politik"]
+      "de": "Demokratie",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "demokrasi",
+        "en": "democracy"
+      },
+      "kollokationen": [
+        "demokratisch ↔ undemokratisch"
+      ],
+      "tags": [
+        "Politik"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-werte-adjektive",
-      "de": "Werte & ihre Adjektive", "typ": "Wortfeld",
-      "bedeutung": { "id": "nilai-nilai penting beserta kata sifatnya", "en": "key values with their adjectives" },
+      "de": "Werte & ihre Adjektive",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "nilai-nilai penting beserta kata sifatnya",
+        "en": "key values with their adjectives"
+      },
       "kollokationen": [
         "der Respekt → respektvoll ↔ respektlos (hormat)",
         "die Rücksicht → rücksichtsvoll ↔ rücksichtslos (perhatian/peka)",
@@ -322,14 +820,33 @@
         "die Sicherheit → sicher ↔ unsicher/bedroht (aman)",
         "die Bildung → gebildet ↔ ungebildet (pendidikan/terdidik)"
       ],
-      "tags": ["Werte", "Adjektive"]
+      "tags": [
+        "Werte",
+        "Adjektive"
+      ]
     },
     {
       "id": "b2.1-2026-09-01-erziehung",
-      "de": "Erziehung", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "pengasuhan / pendidikan budi pekerti", "en": "upbringing" },
-      "kollokationen": ["Kinder erziehen (mendidik/mengasuh anak)", "gut erzogen ↔ nicht gut erzogen"],
-      "tags": ["Soziales", "Familie"]
+      "de": "Erziehung",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "pengasuhan / pendidikan budi pekerti",
+        "en": "upbringing"
+      },
+      "kollokationen": [
+        "Kinder erziehen (mendidik/mengasuh anak)",
+        "gut erzogen ↔ nicht gut erzogen"
+      ],
+      "tags": [
+        "Soziales",
+        "Familie"
+      ]
     }
   ]
 }

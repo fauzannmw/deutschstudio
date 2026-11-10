@@ -12,126 +12,327 @@
   "words": [
     {
       "id": "b2.2-2026-10-28-gemeinsam-zusammen",
-      "de": "gemeinsam / zusammen", "typ": "Wortfeld",
-      "bedeutung": { "id": "gemeinsam = bersama (bisa dideklinasikan: eine gemeinsame Küche) · zusammen = bersama-sama (tak berubah)", "en": "joint/shared (declinable) / together (invariable)" },
+      "de": "gemeinsam / zusammen",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "gemeinsam = bersama (bisa dideklinasikan: eine gemeinsame Küche) · zusammen = bersama-sama (tak berubah)",
+        "en": "joint/shared (declinable) / together (invariable)"
+      },
       "beispiele": [
-        { "de": "Wir haben eine gemeinsame Küche.", "id": "Kami punya dapur bersama.", "en": "We have a shared kitchen." }
+        {
+          "de": "Wir haben eine gemeinsame Küche.",
+          "id": "Kami punya dapur bersama.",
+          "en": "We have a shared kitchen."
+        }
       ],
-      "tags": ["Grammatik", "Wortschatzunterschiede"]
+      "tags": [
+        "Grammatik",
+        "Wortschatzunterschiede"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-streiten-vertragen",
-      "de": "sich streiten ↔ sich vertragen", "typ": "Verb",
-      "bedeutung": { "id": "sich streiten = bertengkar · sich vertragen = rukun/baikan (= sich versöhnen)", "en": "to argue ↔ to make up / get along" },
-      "beispiele": [
-        { "de": "Wir haben uns gestritten, aber heute vertragen wir uns wieder.", "id": "Kami bertengkar, tapi hari ini kami baikan lagi.", "en": "We argued, but today we've made up again." }
+      "de": "sich streiten ↔ sich vertragen",
+      "typ": "Verb",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Beziehung", "Soziales"]
+      "bedeutung": {
+        "id": "sich streiten = bertengkar · sich vertragen = rukun/baikan (= sich versöhnen)",
+        "en": "to argue ↔ to make up / get along"
+      },
+      "beispiele": [
+        {
+          "de": "Wir haben uns gestritten, aber heute vertragen wir uns wieder.",
+          "id": "Kami bertengkar, tapi hari ini kami baikan lagi.",
+          "en": "We argued, but today we've made up again."
+        }
+      ],
+      "tags": [
+        "Beziehung",
+        "Soziales"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-geborgen",
-      "de": "sich geborgen fühlen", "typ": "Wendung",
-      "bedeutung": { "id": "merasa aman dan terlindungi", "en": "to feel safe and secure" },
-      "beispiele": [
-        { "de": "Ich fühle mich bei meiner Familie sicher und geborgen.", "id": "Bersama keluarga saya merasa aman dan terlindungi.", "en": "I feel safe and secure with my family." }
+      "de": "sich geborgen fühlen",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "merasa aman dan terlindungi",
+        "en": "to feel safe and secure"
+      },
+      "beispiele": [
+        {
+          "de": "Ich fühle mich bei meiner Familie sicher und geborgen.",
+          "id": "Bersama keluarga saya merasa aman dan terlindungi.",
+          "en": "I feel safe and secure with my family."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-unterschiedlich-verschieden-anders",
-      "de": "unterschiedlich / verschieden / anders", "typ": "Wortfeld",
-      "bedeutung": { "id": "unterschiedlich = berbeda-beda (fokus: perbedaan) · verschieden = bermacam-macam (fokus: beberapa varian) · anders (als) = lain/berbeda (fokus: kontras)", "en": "differing / various / different-from (contrast)" },
+      "de": "unterschiedlich / verschieden / anders",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "unterschiedlich = berbeda-beda (fokus: perbedaan) · verschieden = bermacam-macam (fokus: beberapa varian) · anders (als) = lain/berbeda (fokus: kontras)",
+        "en": "differing / various / different-from (contrast)"
+      },
       "beispiele": [
-        { "de": "Wir haben unterschiedliche Meinungen.", "id": "Pendapat kami berbeda-beda.", "en": "We have differing opinions." },
-        { "de": "Er denkt ganz anders als ich.", "id": "Dia berpikir sangat berbeda dari saya.", "en": "He thinks quite differently from me." }
+        {
+          "de": "Wir haben unterschiedliche Meinungen.",
+          "id": "Pendapat kami berbeda-beda.",
+          "en": "We have differing opinions."
+        },
+        {
+          "de": "Er denkt ganz anders als ich.",
+          "id": "Dia berpikir sangat berbeda dari saya.",
+          "en": "He thinks quite differently from me."
+        }
       ],
-      "tags": ["Wortschatzunterschiede", "Adjektive", "C1"]
+      "tags": [
+        "Wortschatzunterschiede",
+        "Adjektive",
+        "C1"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-perspektive-wechseln",
-      "de": "die Perspektive wechseln", "typ": "Redewendung",
-      "bedeutung": { "id": "melihat dari sudut pandang lain", "en": "to change perspective" },
-      "synonyme": ["etwas mit anderen Augen sehen", "eine andere Perspektive einnehmen", "etwas anders betrachten"],
-      "beispiele": [
-        { "de": "Nach dem Gespräch sehe ich das Problem mit anderen Augen.", "id": "Setelah bicara, saya melihat masalah itu dengan cara pandang berbeda.", "en": "After the talk I see the problem with different eyes." }
+      "de": "die Perspektive wechseln",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Kommunikation", "C1"]
+      "bedeutung": {
+        "id": "melihat dari sudut pandang lain",
+        "en": "to change perspective"
+      },
+      "synonyme": [
+        "etwas mit anderen Augen sehen",
+        "eine andere Perspektive einnehmen",
+        "etwas anders betrachten"
+      ],
+      "beispiele": [
+        {
+          "de": "Nach dem Gespräch sehe ich das Problem mit anderen Augen.",
+          "id": "Setelah bicara, saya melihat masalah itu dengan cara pandang berbeda.",
+          "en": "After the talk I see the problem with different eyes."
+        }
+      ],
+      "tags": [
+        "Kommunikation",
+        "C1"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-signalisieren-andeuten",
-      "de": "ein Zeichen geben / signalisieren / andeuten", "typ": "Wortfeld", "trennbar": true,
-      "bedeutung": { "id": "memberi isyarat / mengisyaratkan / menyiratkan (secara halus)", "en": "to give a sign / signal / hint at" },
+      "de": "ein Zeichen geben / signalisieren / andeuten",
+      "typ": "Wortfeld",
+      "trennbar": true,
+      "modi": [],
+      "bedeutung": {
+        "id": "memberi isyarat / mengisyaratkan / menyiratkan (secara halus)",
+        "en": "to give a sign / signal / hint at"
+      },
       "beispiele": [
-        { "de": "Der Chef hat angedeutet, dass es Veränderungen gibt.", "id": "Bos menyiratkan bahwa akan ada perubahan.", "en": "The boss hinted that there would be changes." }
+        {
+          "de": "Der Chef hat angedeutet, dass es Veränderungen gibt.",
+          "id": "Bos menyiratkan bahwa akan ada perubahan.",
+          "en": "The boss hinted that there would be changes."
+        }
       ],
-      "tags": ["Kommunikation"]
+      "tags": [
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-auf-und-ab",
-      "de": "es geht auf und ab", "typ": "Redewendung",
-      "bedeutung": { "id": "ada pasang surut; kadang baik, kadang sulit", "en": "there are ups and downs" },
-      "beispiele": [
-        { "de": "In einer Beziehung geht es oft auf und ab.", "id": "Dalam hubungan sering ada pasang surut.", "en": "In a relationship there are often ups and downs." }
+      "de": "es geht auf und ab",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Beziehung", "Alltag"]
+      "bedeutung": {
+        "id": "ada pasang surut; kadang baik, kadang sulit",
+        "en": "there are ups and downs"
+      },
+      "beispiele": [
+        {
+          "de": "In einer Beziehung geht es oft auf und ab.",
+          "id": "Dalam hubungan sering ada pasang surut.",
+          "en": "In a relationship there are often ups and downs."
+        }
+      ],
+      "tags": [
+        "Beziehung",
+        "Alltag"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-leistung",
-      "de": "Leistung", "artikel": "die", "plural": "Leistungen", "typ": "Nomen",
-      "bedeutung": { "id": "3 arti: (1) prestasi/kinerja (sekolah/kerja/olahraga) (2) (jamak) layanan/tunjangan (asuransi, hotel) (3) daya/tenaga mesin", "en": "achievement/performance / services-coverage / (technical) power" },
-      "beispiele": [
-        { "de": "Deine Leistung in der Prüfung war sehr gut.", "id": "Prestasimu di ujian sangat bagus.", "en": "Your performance in the exam was very good." },
-        { "de": "Welche Leistungen bietet Ihre Krankenkasse?", "id": "Layanan apa saja yang ditawarkan asuransi kesehatan Anda?", "en": "What services does your health insurance offer?" }
+      "de": "Leistung",
+      "artikel": "die",
+      "plural": "Leistungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Wortschatzunterschiede"]
+      "bedeutung": {
+        "id": "3 arti: (1) prestasi/kinerja (sekolah/kerja/olahraga) (2) (jamak) layanan/tunjangan (asuransi, hotel) (3) daya/tenaga mesin",
+        "en": "achievement/performance / services-coverage / (technical) power"
+      },
+      "beispiele": [
+        {
+          "de": "Deine Leistung in der Prüfung war sehr gut.",
+          "id": "Prestasimu di ujian sangat bagus.",
+          "en": "Your performance in the exam was very good."
+        },
+        {
+          "de": "Welche Leistungen bietet Ihre Krankenkasse?",
+          "id": "Layanan apa saja yang ditawarkan asuransi kesehatan Anda?",
+          "en": "What services does your health insurance offer?"
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Wortschatzunterschiede"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-daumen-druecken",
-      "de": "jemandem die Daumen drücken", "typ": "Redewendung",
-      "bedeutung": { "id": "mendoakan/berharap semoga berhasil (mirip 'crossing fingers')", "en": "to keep one's fingers crossed for someone" },
-      "beispiele": [
-        { "de": "Ich drücke dir fest die Daumen, du schaffst die Prüfung!", "id": "Aku doakan semoga kamu lulus ujiannya!", "en": "I'll keep my fingers crossed, you'll pass the exam!" }
+      "de": "jemandem die Daumen drücken",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Alltag", "Redewendung"]
+      "bedeutung": {
+        "id": "mendoakan/berharap semoga berhasil (mirip 'crossing fingers')",
+        "en": "to keep one's fingers crossed for someone"
+      },
+      "beispiele": [
+        {
+          "de": "Ich drücke dir fest die Daumen, du schaffst die Prüfung!",
+          "id": "Aku doakan semoga kamu lulus ujiannya!",
+          "en": "I'll keep my fingers crossed, you'll pass the exam!"
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Redewendung"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-nachtragend",
-      "de": "nachtragend", "typ": "Adjektiv",
-      "bedeutung": { "id": "pendendam / sulit melupakan kesalahan orang", "en": "resentful / holding grudges" },
-      "tags": ["Eigenschaften", "Gefühle"]
+      "de": "nachtragend",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "pendendam / sulit melupakan kesalahan orang",
+        "en": "resentful / holding grudges"
+      },
+      "tags": [
+        "Eigenschaften",
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-ablehnen-annehmen",
-      "de": "ablehnen ↔ annehmen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "ablehnen = menolak (bilang TIDAK) · annehmen = menerima/menyetujui (bilang YA)", "en": "to reject ↔ to accept" },
-      "beispiele": [
-        { "de": "Ich habe das Jobangebot abgelehnt, weil das Gehalt zu niedrig war.", "id": "Saya menolak tawaran kerja itu karena gajinya terlalu rendah.", "en": "I rejected the job offer because the salary was too low." },
-        { "de": "Vielen Dank, ich nehme Ihr Angebot gern an.", "id": "Terima kasih, saya dengan senang menerima tawaran Anda.", "en": "Thank you, I'm happy to accept your offer." }
+      "de": "ablehnen ↔ annehmen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc"
       ],
-      "tags": ["Beruf", "Kommunikation"]
+      "bedeutung": {
+        "id": "ablehnen = menolak (bilang TIDAK) · annehmen = menerima/menyetujui (bilang YA)",
+        "en": "to reject ↔ to accept"
+      },
+      "beispiele": [
+        {
+          "de": "Ich habe das Jobangebot abgelehnt, weil das Gehalt zu niedrig war.",
+          "id": "Saya menolak tawaran kerja itu karena gajinya terlalu rendah.",
+          "en": "I rejected the job offer because the salary was too low."
+        },
+        {
+          "de": "Vielen Dank, ich nehme Ihr Angebot gern an.",
+          "id": "Terima kasih, saya dengan senang menerima tawaran Anda.",
+          "en": "Thank you, I'm happy to accept your offer."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-erlauben-genehmigen",
-      "de": "erlauben / genehmigen", "typ": "Wortfeld",
-      "bedeutung": { "id": "erlauben = mengizinkan (umum) → die Erlaubnis (mis. Arbeitserlaubnis) · genehmigen = menyetujui secara resmi → die Genehmigung (mis. Urlaubs-/Baugenehmigung)", "en": "to allow (permission) / to approve officially (permit)" },
+      "de": "erlauben / genehmigen",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "erlauben = mengizinkan (umum) → die Erlaubnis (mis. Arbeitserlaubnis) · genehmigen = menyetujui secara resmi → die Genehmigung (mis. Urlaubs-/Baugenehmigung)",
+        "en": "to allow (permission) / to approve officially (permit)"
+      },
       "beispiele": [
-        { "de": "Mein Urlaubsantrag wurde genehmigt.", "id": "Permohonan cuti saya disetujui.", "en": "My leave request was approved." }
+        {
+          "de": "Mein Urlaubsantrag wurde genehmigt.",
+          "id": "Permohonan cuti saya disetujui.",
+          "en": "My leave request was approved."
+        }
       ],
-      "tags": ["Verwaltung", "Beruf", "Wortschatzunterschiede"]
+      "tags": [
+        "Verwaltung",
+        "Beruf",
+        "Wortschatzunterschiede"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-auffuehrung",
-      "de": "Aufführung", "artikel": "die", "plural": "Aufführungen", "typ": "Nomen",
-      "bedeutung": { "id": "pertunjukan (teater/opera/konser/tari)", "en": "performance / show" },
-      "beispiele": [
-        { "de": "Die Aufführung beginnt um 19:30 Uhr.", "id": "Pertunjukannya mulai pukul 19.30.", "en": "The performance starts at 7:30 pm." }
+      "de": "Aufführung",
+      "artikel": "die",
+      "plural": "Aufführungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Kultur"]
+      "bedeutung": {
+        "id": "pertunjukan (teater/opera/konser/tari)",
+        "en": "performance / show"
+      },
+      "beispiele": [
+        {
+          "de": "Die Aufführung beginnt um 19:30 Uhr.",
+          "id": "Pertunjukannya mulai pukul 19.30.",
+          "en": "The performance starts at 7:30 pm."
+        }
+      ],
+      "tags": [
+        "Kultur"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-diversity-begriffe",
-      "de": "Diversity Management: Begriffe", "typ": "Wortfeld",
-      "bedeutung": { "id": "istilah kunci keberagaman di dunia kerja", "en": "key diversity terms" },
+      "de": "Diversity Management: Begriffe",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "istilah kunci keberagaman di dunia kerja",
+        "en": "key diversity terms"
+      },
       "kollokationen": [
         "die Vielfalt / vielfältig (keberagaman / beragam)",
         "die Chancengleichheit (kesetaraan peluang)",
@@ -141,14 +342,27 @@
         "die Wertschätzung (apresiasi / penghargaan)"
       ],
       "beispiele": [
-        { "de": "Unser Unternehmen legt großen Wert auf Diversity Management.", "id": "Perusahaan kami sangat mementingkan manajemen keberagaman.", "en": "Our company places great value on diversity management." }
+        {
+          "de": "Unser Unternehmen legt großen Wert auf Diversity Management.",
+          "id": "Perusahaan kami sangat mementingkan manajemen keberagaman.",
+          "en": "Our company places great value on diversity management."
+        }
       ],
-      "tags": ["Beruf", "Gesellschaft", "Diversity"]
+      "tags": [
+        "Beruf",
+        "Gesellschaft",
+        "Diversity"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-diversity-dimensionen",
-      "de": "Diversity: Dimensionen", "typ": "Wortfeld",
-      "bedeutung": { "id": "dimensi perbedaan antar-orang", "en": "dimensions of diversity" },
+      "de": "Diversity: Dimensionen",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "dimensi perbedaan antar-orang",
+        "en": "dimensions of diversity"
+      },
       "kollokationen": [
         "das Alter (usia)",
         "die ethnische Herkunft / die Nationalität (asal etnis / kewarganegaraan)",
@@ -158,12 +372,20 @@
         "die sexuelle Orientierung (orientasi seksual)",
         "die soziale Herkunft (latar belakang sosial)"
       ],
-      "tags": ["Gesellschaft", "Diversity"]
+      "tags": [
+        "Gesellschaft",
+        "Diversity"
+      ]
     },
     {
       "id": "b2.2-2026-10-28-diversity-massnahmen",
-      "de": "Diversity: Maßnahmen & Begriffe", "typ": "Wortfeld",
-      "bedeutung": { "id": "langkah & kata terkait keberagaman di perusahaan", "en": "diversity measures & terms" },
+      "de": "Diversity: Maßnahmen & Begriffe",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "langkah & kata terkait keberagaman di perusahaan",
+        "en": "diversity measures & terms"
+      },
       "kollokationen": [
         "barrierefreie Arbeitsplätze (tempat kerja ramah disabilitas)",
         "Angehörige pflegen (merawat anggota keluarga)",
@@ -171,7 +393,10 @@
         "gemischte Teams (tim campuran)",
         "fair behandeln (memperlakukan dengan adil)"
       ],
-      "tags": ["Beruf", "Diversity"]
+      "tags": [
+        "Beruf",
+        "Diversity"
+      ]
     }
   ]
 }

@@ -37,6 +37,8 @@ const files = readContent(CONTENT);
 const words = [];
 const meetings = [];
 const seen = new Set();
+const errors = [];
+const ALLOWED_MODI = ["mc", "tippen", "artikel"];
 
 for (const { rel, data } of files) {
   const meta = {
@@ -54,12 +56,29 @@ for (const { rel, data } of files) {
       continue;
     }
     seen.add(w.id);
+    if (!Array.isArray(w.modi)) {
+      errors.push(rel + " / " + w.id + ': `modi` fehlt oder ist kein Array');
+    } else {
+      for (const m of w.modi) {
+        if (ALLOWED_MODI.indexOf(m) < 0) errors.push(rel + " / " + w.id + ': ungueltiger modi-Wert "' + m + '" (erlaubt: mc, tippen, artikel)');
+      }
+      if (w.modi.indexOf("artikel") >= 0 && !/^(der|die|das)$/.test(w.artikel || "")) {
+        errors.push(rel + " / " + w.id + ': modi "artikel", aber Feld artikel ist nicht der/die/das');
+      }
+    }
     words.push(Object.assign({}, w, {
       _klasse: meta.klasse, _level: meta.level, _meeting: meta.meeting, _topic: meta.topic,
     }));
     added++;
   }
   meetings.push(Object.assign({}, meta, { count: added, source: rel }));
+}
+
+if (errors.length) {
+  console.error("\nBUILD FEHLGESCHLAGEN — " + errors.length + " Schema-Fehler (modi):");
+  errors.forEach(function (e) { console.error("  ! " + e); });
+  console.error("\nJede Karte braucht ein gueltiges `modi`-Array (mc | tippen | artikel; [] = nur Karteikarten).");
+  process.exit(1);
 }
 
 meetings.sort((a, b) => (a.klasse + a.meeting).localeCompare(b.klasse + b.meeting));

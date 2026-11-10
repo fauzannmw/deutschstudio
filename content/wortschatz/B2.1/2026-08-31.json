@@ -11,279 +11,744 @@
   "words": [
     {
       "id": "b2.1-2026-08-31-begegnung",
-      "de": "Begegnung", "artikel": "die", "plural": "Begegnungen", "typ": "Nomen",
-      "bedeutung": { "id": "perjumpaan (sering tak sengaja)", "en": "encounter" },
-      "synonyme": ["das Treffen"],
-      "kollokationen": ["jemandem begegnen (+ Dat.) = zufällig treffen"],
-      "beispiele": [
-        { "de": "Ich bin meinem alten Lehrer begegnet.", "id": "Saya tak sengaja bertemu guru lama saya.", "en": "I ran into my old teacher." }
+      "de": "Begegnung",
+      "artikel": "die",
+      "plural": "Begegnungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "perjumpaan (sering tak sengaja)",
+        "en": "encounter"
+      },
+      "synonyme": [
+        "das Treffen"
+      ],
+      "kollokationen": [
+        "jemandem begegnen (+ Dat.) = zufällig treffen"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich bin meinem alten Lehrer begegnet.",
+          "id": "Saya tak sengaja bertemu guru lama saya.",
+          "en": "I ran into my old teacher."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-treffen",
-      "de": "sich treffen mit", "typ": "Verb",
-      "bedeutung": { "id": "bertemu/janjian dengan (disengaja)", "en": "to meet (up) with" },
-      "kollokationen": ["Freunde treffen (+ Akk.)"],
-      "beispiele": [
-        { "de": "Ich treffe mich heute Abend mit meinen Freunden.", "id": "Malam ini saya bertemu teman-teman saya.", "en": "I'm meeting my friends tonight." }
+      "de": "sich treffen mit",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "bertemu/janjian dengan (disengaja)",
+        "en": "to meet (up) with"
+      },
+      "kollokationen": [
+        "Freunde treffen (+ Akk.)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich treffe mich heute Abend mit meinen Freunden.",
+          "id": "Malam ini saya bertemu teman-teman saya.",
+          "en": "I'm meeting my friends tonight."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-seit-vor",
-      "de": "seit vs. vor", "typ": "Wendung",
-      "bedeutung": { "id": "seit = sejak (durasi) · vor = (sekian waktu) yang lalu (titik waktu)", "en": "seit = since/for (duration) · vor = ago (point in time)" },
-      "beispiele": [
-        { "de": "Ich wohne seit 3 Jahren in Deutschland.", "id": "Saya tinggal di Jerman sejak 3 tahun.", "en": "I've lived in Germany for 3 years." },
-        { "de": "Ich bin vor einem Jahr nach Deutschland gekommen.", "id": "Saya datang ke Jerman satu tahun yang lalu.", "en": "I came to Germany a year ago." }
+      "de": "seit vs. vor",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Zeit", "Grammatik"]
+      "bedeutung": {
+        "id": "seit = sejak (durasi) · vor = (sekian waktu) yang lalu (titik waktu)",
+        "en": "seit = since/for (duration) · vor = ago (point in time)"
+      },
+      "beispiele": [
+        {
+          "de": "Ich wohne seit 3 Jahren in Deutschland.",
+          "id": "Saya tinggal di Jerman sejak 3 tahun.",
+          "en": "I've lived in Germany for 3 years."
+        },
+        {
+          "de": "Ich bin vor einem Jahr nach Deutschland gekommen.",
+          "id": "Saya datang ke Jerman satu tahun yang lalu.",
+          "en": "I came to Germany a year ago."
+        }
+      ],
+      "tags": [
+        "Zeit",
+        "Grammatik"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-ankommen",
-      "de": "ankommen in", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "tiba di; (kiasan) merasa betah/sudah settle", "en": "to arrive in; (fig.) to feel settled" },
-      "beispiele": [
-        { "de": "Ich bin gerade in München angekommen.", "id": "Saya baru saja tiba di München.", "en": "I've just arrived in Munich." },
-        { "de": "Nach 5 Jahren bin ich endlich in Deutschland angekommen.", "id": "Setelah 5 tahun, akhirnya saya merasa betah di Jerman.", "en": "After 5 years I've finally settled in Germany." }
+      "de": "ankommen in",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Mobilität", "Gefühle"]
+      "bedeutung": {
+        "id": "tiba di; (kiasan) merasa betah/sudah settle",
+        "en": "to arrive in; (fig.) to feel settled"
+      },
+      "beispiele": [
+        {
+          "de": "Ich bin gerade in München angekommen.",
+          "id": "Saya baru saja tiba di München.",
+          "en": "I've just arrived in Munich."
+        },
+        {
+          "de": "Nach 5 Jahren bin ich endlich in Deutschland angekommen.",
+          "id": "Setelah 5 tahun, akhirnya saya merasa betah di Jerman.",
+          "en": "After 5 years I've finally settled in Germany."
+        }
+      ],
+      "tags": [
+        "Mobilität",
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-wohlfuehlen",
-      "de": "sich wohlfühlen", "typ": "Verb",
-      "bedeutung": { "id": "merasa nyaman (suasana/lingkungan/orang)", "en": "to feel comfortable" },
-      "kollokationen": ["sich gut fühlen (= kesehatan, bukan suasana)"],
-      "beispiele": [
-        { "de": "Ich fühle mich an der Uni wohl.", "id": "Saya merasa nyaman di kampus.", "en": "I feel comfortable at university." }
+      "de": "sich wohlfühlen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "merasa nyaman (suasana/lingkungan/orang)",
+        "en": "to feel comfortable"
+      },
+      "kollokationen": [
+        "sich gut fühlen (= kesehatan, bukan suasana)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich fühle mich an der Uni wohl.",
+          "id": "Saya merasa nyaman di kampus.",
+          "en": "I feel comfortable at university."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-gut-ankommen",
-      "de": "gut ankommen", "typ": "Redewendung",
-      "bedeutung": { "id": "disukai/diterima baik oleh orang lain", "en": "to go down well / be well received" },
-      "beispiele": [
-        { "de": "Freundlichkeit kommt immer gut an.", "id": "Keramahan selalu disukai orang.", "en": "Friendliness always goes down well." }
+      "de": "gut ankommen",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "disukai/diterima baik oleh orang lain",
+        "en": "to go down well / be well received"
+      },
+      "beispiele": [
+        {
+          "de": "Freundlichkeit kommt immer gut an.",
+          "id": "Keramahan selalu disukai orang.",
+          "en": "Friendliness always goes down well."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-zu-hause",
-      "de": "nach Hause / zu Hause", "typ": "Wendung",
-      "bedeutung": { "id": "nach Hause = (arah) pulang · zu Hause = (posisi) di rumah", "en": "nach Hause = (to) home · zu Hause = at home" },
-      "beispiele": [
-        { "de": "Wann kommst du nach Hause?", "id": "Kapan kamu pulang?", "en": "When are you coming home?" },
-        { "de": "Ich bin spät zu Hause angekommen.", "id": "Saya sampai di rumah larut.", "en": "I got home late." }
+      "de": "nach Hause / zu Hause",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Alltag", "Grammatik"]
+      "bedeutung": {
+        "id": "nach Hause = (arah) pulang · zu Hause = (posisi) di rumah",
+        "en": "nach Hause = (to) home · zu Hause = at home"
+      },
+      "beispiele": [
+        {
+          "de": "Wann kommst du nach Hause?",
+          "id": "Kapan kamu pulang?",
+          "en": "When are you coming home?"
+        },
+        {
+          "de": "Ich bin spät zu Hause angekommen.",
+          "id": "Saya sampai di rumah larut.",
+          "en": "I got home late."
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Grammatik"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-heimweh",
-      "de": "Heimweh haben", "typ": "Wendung",
-      "bedeutung": { "id": "rindu kampung halaman", "en": "to be homesick" },
-      "synonyme": ["das Heimatland vermissen"],
-      "tags": ["Gefühle"]
+      "de": "Heimweh haben",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "rindu kampung halaman",
+        "en": "to be homesick"
+      },
+      "synonyme": [
+        "das Heimatland vermissen"
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-fuss-fassen",
-      "de": "Fuß fassen", "typ": "Redewendung",
-      "bedeutung": { "id": "mulai mapan/berakar di tempat baru", "en": "to find one's feet / get established" },
-      "synonyme": ["sich einleben in"],
-      "beispiele": [
-        { "de": "Ich habe in Deutschland Fuß gefasst.", "id": "Saya sudah mulai mapan di Jerman.", "en": "I've found my feet in Germany." }
+      "de": "Fuß fassen",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "mulai mapan/berakar di tempat baru",
+        "en": "to find one's feet / get established"
+      },
+      "synonyme": [
+        "sich einleben in"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich habe in Deutschland Fuß gefasst.",
+          "id": "Saya sudah mulai mapan di Jerman.",
+          "en": "I've found my feet in Germany."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-ort-platz-stelle",
-      "de": "Ort / Platz / Stelle", "typ": "Wortfeld",
-      "bedeutung": { "id": "tiga kata 'tempat': Ort = tempat/kota umum · Platz = ruang/tempat duduk/lapangan · Stelle = titik persis / posisi kerja", "en": "three words for 'place': Ort (general/town) · Platz (space/seat/square) · Stelle (exact spot / job)" },
+      "de": "Ort / Platz / Stelle",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "tiga kata 'tempat': Ort = tempat/kota umum · Platz = ruang/tempat duduk/lapangan · Stelle = titik persis / posisi kerja",
+        "en": "three words for 'place': Ort (general/town) · Platz (space/seat/square) · Stelle (exact spot / job)"
+      },
       "beispiele": [
-        { "de": "Wir wohnen in einem kleinen Ort in Bayern.", "id": "Kami tinggal di sebuah tempat kecil di Bayern.", "en": "We live in a small place in Bavaria." },
-        { "de": "Ist dieser Platz noch frei?", "id": "Apakah tempat (duduk) ini masih kosong?", "en": "Is this seat still free?" },
-        { "de": "An dieser Stelle ist die Straße gefährlich.", "id": "Di titik ini jalannya berbahaya.", "en": "At this spot the road is dangerous." }
+        {
+          "de": "Wir wohnen in einem kleinen Ort in Bayern.",
+          "id": "Kami tinggal di sebuah tempat kecil di Bayern.",
+          "en": "We live in a small place in Bavaria."
+        },
+        {
+          "de": "Ist dieser Platz noch frei?",
+          "id": "Apakah tempat (duduk) ini masih kosong?",
+          "en": "Is this seat still free?"
+        },
+        {
+          "de": "An dieser Stelle ist die Straße gefährlich.",
+          "id": "Di titik ini jalannya berbahaya.",
+          "en": "At this spot the road is dangerous."
+        }
       ],
-      "tags": ["Grundwortschatz", "Wortschatzunterschiede"]
+      "tags": [
+        "Grundwortschatz",
+        "Wortschatzunterschiede"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-duzen-siezen",
-      "de": "duzen / siezen", "typ": "Verb",
-      "bedeutung": { "id": "duzen = menyapa dengan 'du' · siezen = menyapa dengan 'Sie'", "en": "to address someone informally / formally" },
-      "beispiele": [
-        { "de": "Wollen wir duzen?", "id": "Mau pakai 'du' saja (akrab)?", "en": "Shall we use 'du' (be on first-name terms)?" }
+      "de": "duzen / siezen",
+      "typ": "Verb",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Soziales", "Höflichkeit"]
+      "bedeutung": {
+        "id": "duzen = menyapa dengan 'du' · siezen = menyapa dengan 'Sie'",
+        "en": "to address someone informally / formally"
+      },
+      "beispiele": [
+        {
+          "de": "Wollen wir duzen?",
+          "id": "Mau pakai 'du' saja (akrab)?",
+          "en": "Shall we use 'du' (be on first-name terms)?"
+        }
+      ],
+      "tags": [
+        "Soziales",
+        "Höflichkeit"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-anmachen-ausmachen",
-      "de": "anmachen / ausmachen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "menyalakan / mematikan (alat)", "en": "to switch on / off" },
-      "synonyme": ["einschalten / ausschalten"],
-      "beispiele": [
-        { "de": "Macht bitte die Kamera an!", "id": "Tolong nyalakan kameranya!", "en": "Please turn the camera on!" }
+      "de": "anmachen / ausmachen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc"
       ],
-      "tags": ["Technik", "Alltag"]
+      "bedeutung": {
+        "id": "menyalakan / mematikan (alat)",
+        "en": "to switch on / off"
+      },
+      "synonyme": [
+        "einschalten / ausschalten"
+      ],
+      "beispiele": [
+        {
+          "de": "Macht bitte die Kamera an!",
+          "id": "Tolong nyalakan kameranya!",
+          "en": "Please turn the camera on!"
+        }
+      ],
+      "tags": [
+        "Technik",
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-befreunden",
-      "de": "sich befreunden mit", "typ": "Verb",
-      "bedeutung": { "id": "berteman/berkawan dengan", "en": "to make friends with" },
-      "synonyme": ["befreundet sein mit", "neue Freunde finden"],
-      "beispiele": [
-        { "de": "Ich habe mich schnell mit meinen Kollegen befreundet.", "id": "Saya cepat akrab dengan rekan-rekan saya.", "en": "I quickly made friends with my colleagues." }
+      "de": "sich befreunden mit",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "berteman/berkawan dengan",
+        "en": "to make friends with"
+      },
+      "synonyme": [
+        "befreundet sein mit",
+        "neue Freunde finden"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich habe mich schnell mit meinen Kollegen befreundet.",
+          "id": "Saya cepat akrab dengan rekan-rekan saya.",
+          "en": "I quickly made friends with my colleagues."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-talent",
-      "de": "Talent", "artikel": "das", "plural": "Talente", "typ": "Nomen",
-      "bedeutung": { "id": "bakat", "en": "talent" },
-      "synonyme": ["die Begabung"],
-      "kollokationen": ["talentiert = begabt sein (berbakat)"],
-      "beispiele": [
-        { "de": "Sie hat ein großes Talent für Musik.", "id": "Dia sangat berbakat dalam musik.", "en": "She has a great talent for music." }
+      "de": "Talent",
+      "artikel": "das",
+      "plural": "Talente",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Eigenschaften"]
+      "bedeutung": {
+        "id": "bakat",
+        "en": "talent"
+      },
+      "synonyme": [
+        "die Begabung"
+      ],
+      "kollokationen": [
+        "talentiert = begabt sein (berbakat)"
+      ],
+      "beispiele": [
+        {
+          "de": "Sie hat ein großes Talent für Musik.",
+          "id": "Dia sangat berbakat dalam musik.",
+          "en": "She has a great talent for music."
+        }
+      ],
+      "tags": [
+        "Eigenschaften"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sinn-machen",
-      "de": "Sinn machen", "typ": "Redewendung",
-      "bedeutung": { "id": "masuk akal / ada gunanya", "en": "to make sense" },
-      "synonyme": ["sinnvoll sein"],
-      "gegenteil": ["keinen Sinn machen", "sinnlos sein"],
-      "tags": ["Alltag"]
+      "de": "Sinn machen",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "masuk akal / ada gunanya",
+        "en": "to make sense"
+      },
+      "synonyme": [
+        "sinnvoll sein"
+      ],
+      "gegenteil": [
+        "keinen Sinn machen",
+        "sinnlos sein"
+      ],
+      "tags": [
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-kriegen-bekommen-erhalten",
-      "de": "kriegen / bekommen / erhalten", "typ": "Wortfeld",
-      "bedeutung": { "id": "tiga kata 'mendapat' menurut gaya: kriegen (santai) · bekommen (netral) · erhalten (formal/tertulis)", "en": "three registers of 'to get/receive': kriegen (colloquial) · bekommen (neutral) · erhalten (formal)" },
+      "de": "kriegen / bekommen / erhalten",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "tiga kata 'mendapat' menurut gaya: kriegen (santai) · bekommen (netral) · erhalten (formal/tertulis)",
+        "en": "three registers of 'to get/receive': kriegen (colloquial) · bekommen (neutral) · erhalten (formal)"
+      },
       "beispiele": [
-        { "de": "Alle Bewerber erhalten eine schriftliche Rückmeldung.", "id": "Semua pelamar menerima jawaban tertulis.", "en": "All applicants receive a written reply." }
+        {
+          "de": "Alle Bewerber erhalten eine schriftliche Rückmeldung.",
+          "id": "Semua pelamar menerima jawaban tertulis.",
+          "en": "All applicants receive a written reply."
+        }
       ],
-      "tags": ["Wortschatzunterschiede", "Register"]
+      "tags": [
+        "Wortschatzunterschiede",
+        "Register"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-hilfsbereit",
-      "de": "hilfsbereit / hilfreich", "typ": "Adjektiv",
-      "bedeutung": { "id": "hilfsbereit = suka menolong (orang) · hilfreich = membantu/berguna (hal)", "en": "hilfsbereit = helpful (person, willing) · hilfreich = helpful (thing)" },
-      "beispiele": [
-        { "de": "Meine Kollegin ist immer sehr hilfsbereit.", "id": "Rekan saya selalu suka menolong.", "en": "My colleague is always very helpful." }
+      "de": "hilfsbereit / hilfreich",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Eigenschaften"]
+      "bedeutung": {
+        "id": "hilfsbereit = suka menolong (orang) · hilfreich = membantu/berguna (hal)",
+        "en": "hilfsbereit = helpful (person, willing) · hilfreich = helpful (thing)"
+      },
+      "beispiele": [
+        {
+          "de": "Meine Kollegin ist immer sehr hilfsbereit.",
+          "id": "Rekan saya selalu suka menolong.",
+          "en": "My colleague is always very helpful."
+        }
+      ],
+      "tags": [
+        "Eigenschaften"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-vorstellen",
-      "de": "sich vorstellen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "sich (A) vorstellen = memperkenalkan diri · sich (D) etwas vorstellen = membayangkan sesuatu", "en": "to introduce oneself (A) / to imagine something (D)" },
-      "beispiele": [
-        { "de": "Darf ich mich vorstellen?", "id": "Boleh saya memperkenalkan diri?", "en": "May I introduce myself?" },
-        { "de": "Ich kann mir das nicht vorstellen.", "id": "Saya tak bisa membayangkan itu.", "en": "I can't imagine that." }
+      "de": "sich vorstellen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales", "Grammatik"]
+      "bedeutung": {
+        "id": "sich (A) vorstellen = memperkenalkan diri · sich (D) etwas vorstellen = membayangkan sesuatu",
+        "en": "to introduce oneself (A) / to imagine something (D)"
+      },
+      "beispiele": [
+        {
+          "de": "Darf ich mich vorstellen?",
+          "id": "Boleh saya memperkenalkan diri?",
+          "en": "May I introduce myself?"
+        },
+        {
+          "de": "Ich kann mir das nicht vorstellen.",
+          "id": "Saya tak bisa membayangkan itu.",
+          "en": "I can't imagine that."
+        }
+      ],
+      "tags": [
+        "Soziales",
+        "Grammatik"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-kuemmern",
-      "de": "sich kümmern um", "typ": "Verb",
-      "bedeutung": { "id": "mengurus / merawat", "en": "to take care of" },
-      "beispiele": [
-        { "de": "Kannst du dich um die Katze kümmern?", "id": "Bisakah kamu mengurus kucingnya?", "en": "Can you take care of the cat?" }
+      "de": "sich kümmern um",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Alltag", "Soziales"]
+      "bedeutung": {
+        "id": "mengurus / merawat",
+        "en": "to take care of"
+      },
+      "beispiele": [
+        {
+          "de": "Kannst du dich um die Katze kümmern?",
+          "id": "Bisakah kamu mengurus kucingnya?",
+          "en": "Can you take care of the cat?"
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-stoeren",
-      "de": "stören", "typ": "Verb",
-      "bedeutung": { "id": "mengganggu", "en": "to disturb / bother" },
-      "beispiele": [
-        { "de": "Kann ich dich kurz stören? Ich habe eine Frage.", "id": "Boleh saya mengganggu sebentar? Saya ada pertanyaan.", "en": "Can I bother you for a second? I have a question." }
+      "de": "stören",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "mengganggu",
+        "en": "to disturb / bother"
+      },
+      "beispiele": [
+        {
+          "de": "Kann ich dich kurz stören? Ich habe eine Frage.",
+          "id": "Boleh saya mengganggu sebentar? Saya ada pertanyaan.",
+          "en": "Can I bother you for a second? I have a question."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-ueberwindung",
-      "de": "Überwindung", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "upaya mengatasi rasa takut/enggan; perjuangan batin", "en": "effort to overcome (fear/reluctance)" },
-      "kollokationen": ["die Angst überwinden (mengatasi rasa takut)", "etwas kostet mich Überwindung"],
-      "beispiele": [
-        { "de": "Der Flug war für mich eine echte Überwindung.", "id": "Penerbangan itu benar-benar perjuangan bagi saya.", "en": "The flight really took a lot out of me." }
+      "de": "Überwindung",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "upaya mengatasi rasa takut/enggan; perjuangan batin",
+        "en": "effort to overcome (fear/reluctance)"
+      },
+      "kollokationen": [
+        "die Angst überwinden (mengatasi rasa takut)",
+        "etwas kostet mich Überwindung"
+      ],
+      "beispiele": [
+        {
+          "de": "Der Flug war für mich eine echte Überwindung.",
+          "id": "Penerbangan itu benar-benar perjuangan bagi saya.",
+          "en": "The flight really took a lot out of me."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-komisch-vorkommen",
-      "de": "jemandem komisch vorkommen", "typ": "Redewendung",
-      "bedeutung": { "id": "terasa aneh/janggal bagi seseorang", "en": "to seem strange to someone" },
-      "beispiele": [
-        { "de": "Das kommt mir komisch vor.", "id": "Itu terasa aneh bagi saya.", "en": "That seems strange to me." }
+      "de": "jemandem komisch vorkommen",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Gefühle"]
+      "bedeutung": {
+        "id": "terasa aneh/janggal bagi seseorang",
+        "en": "to seem strange to someone"
+      },
+      "beispiele": [
+        {
+          "de": "Das kommt mir komisch vor.",
+          "id": "Itu terasa aneh bagi saya.",
+          "en": "That seems strange to me."
+        }
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-kontakte-knuepfen",
-      "de": "Kontakte knüpfen / pflegen", "typ": "Wendung",
-      "bedeutung": { "id": "knüpfen = menjalin kontak baru · pflegen = merawat/menjaga kontak", "en": "to make / maintain contacts" },
-      "gegenteil": ["den Kontakt abbrechen (memutus kontak)"],
-      "tags": ["Soziales"]
+      "de": "Kontakte knüpfen / pflegen",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "knüpfen = menjalin kontak baru · pflegen = merawat/menjaga kontak",
+        "en": "to make / maintain contacts"
+      },
+      "gegenteil": [
+        "den Kontakt abbrechen (memutus kontak)"
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-auskennen",
-      "de": "sich auskennen mit / in", "typ": "Verb",
-      "bedeutung": { "id": "mit = paham/ahli dalam suatu hal · in = hafal suatu tempat", "en": "to know a lot about (mit) / to know one's way around (in)" },
-      "beispiele": [
-        { "de": "Ich kenne mich gut mit Autos aus.", "id": "Saya paham betul soal mobil.", "en": "I know a lot about cars." },
-        { "de": "Ich kenne mich in München gut aus.", "id": "Saya hafal daerah München.", "en": "I know my way around Munich." }
+      "de": "sich auskennen mit / in",
+      "typ": "Verb",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Eigenschaften"]
+      "bedeutung": {
+        "id": "mit = paham/ahli dalam suatu hal · in = hafal suatu tempat",
+        "en": "to know a lot about (mit) / to know one's way around (in)"
+      },
+      "beispiele": [
+        {
+          "de": "Ich kenne mich gut mit Autos aus.",
+          "id": "Saya paham betul soal mobil.",
+          "en": "I know a lot about cars."
+        },
+        {
+          "de": "Ich kenne mich in München gut aus.",
+          "id": "Saya hafal daerah München.",
+          "en": "I know my way around Munich."
+        }
+      ],
+      "tags": [
+        "Eigenschaften"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-gleichgesinnte",
-      "de": "Gleichgesinnte", "typ": "Nomen",
-      "bedeutung": { "id": "orang-orang yang sepaham / punya minat sama", "en": "like-minded people" },
-      "beispiele": [
-        { "de": "Durch Apps kann man Gleichgesinnte finden.", "id": "Lewat aplikasi, orang bisa menemukan yang sepaham.", "en": "Through apps you can find like-minded people." }
+      "de": "Gleichgesinnte",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Soziales"]
+      "bedeutung": {
+        "id": "orang-orang yang sepaham / punya minat sama",
+        "en": "like-minded people"
+      },
+      "beispiele": [
+        {
+          "de": "Durch Apps kann man Gleichgesinnte finden.",
+          "id": "Lewat aplikasi, orang bisa menemukan yang sepaham.",
+          "en": "Through apps you can find like-minded people."
+        }
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-neulinge",
-      "de": "Neulinge", "typ": "Nomen",
-      "bedeutung": { "id": "pendatang/pemula baru di suatu tempat", "en": "newcomers" },
-      "synonyme": ["Neuankömmlinge"],
-      "tags": ["Soziales"]
+      "de": "Neulinge",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "pendatang/pemula baru di suatu tempat",
+        "en": "newcomers"
+      },
+      "synonyme": [
+        "Neuankömmlinge"
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-schmuck",
-      "de": "Schmuck", "artikel": "der", "typ": "Wortfeld",
-      "bedeutung": { "id": "perhiasan", "en": "jewellery" },
-      "kollokationen": ["die Kette (kalung)", "der Anhänger (liontin)", "der Ring (cincin)", "der Ohrring (anting)", "das Armband (gelang)", "die Armbanduhr (jam tangan)"],
-      "tags": ["Alltag", "Mode"]
+      "de": "Schmuck",
+      "artikel": "der",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "perhiasan",
+        "en": "jewellery"
+      },
+      "kollokationen": [
+        "die Kette (kalung)",
+        "der Anhänger (liontin)",
+        "der Ring (cincin)",
+        "der Ohrring (anting)",
+        "das Armband (gelang)",
+        "die Armbanduhr (jam tangan)"
+      ],
+      "tags": [
+        "Alltag",
+        "Mode"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-ziehen-druecken",
-      "de": "ziehen / drücken", "typ": "Verb",
-      "bedeutung": { "id": "menarik / mendorong (mis. pintu)", "en": "to pull / push" },
-      "tags": ["Alltag"]
+      "de": "ziehen / drücken",
+      "typ": "Verb",
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "menarik / mendorong (mis. pintu)",
+        "en": "to pull / push"
+      },
+      "tags": [
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-wohnen-verben",
-      "de": "umziehen / einziehen / ausziehen", "typ": "Wortfeld", "trennbar": true,
-      "bedeutung": { "id": "verba pindah rumah: umziehen = pindahan · einziehen (in) = masuk/menempati · ausziehen (aus) = keluar/meninggalkan · wegziehen = pindah pergi · zusammenziehen = tinggal bersama", "en": "moving-house verbs: move / move in / move out / move away / move in together" },
+      "de": "umziehen / einziehen / ausziehen",
+      "typ": "Wortfeld",
+      "trennbar": true,
+      "modi": [],
+      "bedeutung": {
+        "id": "verba pindah rumah: umziehen = pindahan · einziehen (in) = masuk/menempati · ausziehen (aus) = keluar/meninggalkan · wegziehen = pindah pergi · zusammenziehen = tinggal bersama",
+        "en": "moving-house verbs: move / move in / move out / move away / move in together"
+      },
       "beispiele": [
-        { "de": "Ich bin letzte Woche aus der alten Wohnung ausgezogen.", "id": "Minggu lalu saya pindah keluar dari apartemen lama.", "en": "I moved out of the old flat last week." },
-        { "de": "Mein Freund und ich ziehen 2027 zusammen.", "id": "Saya dan pacar saya akan tinggal bersama pada 2027.", "en": "My partner and I are moving in together in 2027." }
+        {
+          "de": "Ich bin letzte Woche aus der alten Wohnung ausgezogen.",
+          "id": "Minggu lalu saya pindah keluar dari apartemen lama.",
+          "en": "I moved out of the old flat last week."
+        },
+        {
+          "de": "Mein Freund und ich ziehen 2027 zusammen.",
+          "id": "Saya dan pacar saya akan tinggal bersama pada 2027.",
+          "en": "My partner and I are moving in together in 2027."
+        }
       ],
-      "tags": ["Wohnen"]
+      "tags": [
+        "Wohnen"
+      ]
     },
     {
       "id": "b2.1-2026-08-31-sich-umziehen",
-      "de": "sich umziehen / anziehen / ausziehen", "typ": "Wortfeld", "trennbar": true,
-      "bedeutung": { "id": "verba pakaian: sich umziehen = ganti baju · sich anziehen = memakai baju · sich ausziehen = melepas baju", "en": "clothing verbs: to change / put on / take off clothes" },
+      "de": "sich umziehen / anziehen / ausziehen",
+      "typ": "Wortfeld",
+      "trennbar": true,
+      "modi": [],
+      "bedeutung": {
+        "id": "verba pakaian: sich umziehen = ganti baju · sich anziehen = memakai baju · sich ausziehen = melepas baju",
+        "en": "clothing verbs: to change / put on / take off clothes"
+      },
       "beispiele": [
-        { "de": "Ich habe mich nach dem Sport umgezogen.", "id": "Saya ganti baju setelah olahraga.", "en": "I changed clothes after sport." }
+        {
+          "de": "Ich habe mich nach dem Sport umgezogen.",
+          "id": "Saya ganti baju setelah olahraga.",
+          "en": "I changed clothes after sport."
+        }
       ],
-      "tags": ["Alltag", "Kleidung"]
+      "tags": [
+        "Alltag",
+        "Kleidung"
+      ]
     }
   ]
 }

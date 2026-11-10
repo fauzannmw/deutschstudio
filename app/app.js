@@ -81,10 +81,14 @@
 
   /* ---------- session ---------- */
   // Which words a chosen exercise mode can use.
+  // A card declares its quiz modes in `modi`; Karteikarten (review) is always available.
   function validForMode(w, mode) {
-    if (mode === "type") return isSimple(w);
-    if (mode === "article") return canArticle(w);
-    return !!meaning(w); // review (flashcard) and mc work for any word with a meaning
+    if (mode === "review") return true;
+    var modi = w.modi || [];
+    if (mode === "mc") return modi.indexOf("mc") >= 0;
+    if (mode === "type") return modi.indexOf("tippen") >= 0;
+    if (mode === "article") return modi.indexOf("artikel") >= 0;
+    return true;
   }
   // Turn a chosen menu mode into the concrete card type for a word.
   function cardMode(w, mode) {

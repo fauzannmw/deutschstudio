@@ -11,445 +11,1320 @@
   "words": [
     {
       "id": "b2.1-2026-09-02-vorurteil",
-      "de": "Vorurteil", "artikel": "das", "plural": "Vorurteile", "typ": "Nomen",
-      "bedeutung": { "id": "prasangka (buruk)", "en": "prejudice" },
-      "kollokationen": ["Vorurteile haben (gegen / gegenüber)"],
-      "beispiele": [
-        { "de": "Viele Menschen haben Vorurteile gegen Ausländer, ohne sie persönlich zu kennen.", "id": "Banyak orang punya prasangka terhadap orang asing tanpa mengenal mereka secara pribadi.", "en": "Many people have prejudices against foreigners without knowing them personally." }
+      "de": "Vorurteil",
+      "artikel": "das",
+      "plural": "Vorurteile",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Gesellschaft", "Werte"]
+      "bedeutung": {
+        "id": "prasangka (buruk)",
+        "en": "prejudice"
+      },
+      "kollokationen": [
+        "Vorurteile haben (gegen / gegenüber)"
+      ],
+      "beispiele": [
+        {
+          "de": "Viele Menschen haben Vorurteile gegen Ausländer, ohne sie persönlich zu kennen.",
+          "id": "Banyak orang punya prasangka terhadap orang asing tanpa mengenal mereka secara pribadi.",
+          "en": "Many people have prejudices against foreigners without knowing them personally."
+        }
+      ],
+      "tags": [
+        "Gesellschaft",
+        "Werte"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bringen-zu",
-      "de": "bringen zu", "typ": "Verb",
-      "bedeutung": { "id": "mengantar (ke) — dengan kendaraan", "en": "to take / drive (to)" },
-      "hinweis": { "id": "mengangkut seseorang/sesuatu ke suatu tempat dengan kendaraan.", "en": "to transport someone/something somewhere by vehicle." },
-      "beispiele": [
-        { "de": "Ich bringe meine Tochter zur Schule.", "id": "Saya mengantar anak perempuan saya ke sekolah.", "en": "I take my daughter to school." }
+      "de": "bringen zu",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Alltag", "Mobilität"]
+      "bedeutung": {
+        "id": "mengantar (ke) — dengan kendaraan",
+        "en": "to take / drive (to)"
+      },
+      "hinweis": {
+        "id": "mengangkut seseorang/sesuatu ke suatu tempat dengan kendaraan.",
+        "en": "to transport someone/something somewhere by vehicle."
+      },
+      "beispiele": [
+        {
+          "de": "Ich bringe meine Tochter zur Schule.",
+          "id": "Saya mengantar anak perempuan saya ke sekolah.",
+          "en": "I take my daughter to school."
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Mobilität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-abholen-von",
-      "de": "abholen von", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "menjemput (dari)", "en": "to pick up (from)" },
-      "beispiele": [
-        { "de": "Ich hole meine Tochter von der Schule ab.", "id": "Saya menjemput anak perempuan saya dari sekolah.", "en": "I pick my daughter up from school." }
+      "de": "abholen von",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Alltag", "Mobilität"]
+      "bedeutung": {
+        "id": "menjemput (dari)",
+        "en": "to pick up (from)"
+      },
+      "beispiele": [
+        {
+          "de": "Ich hole meine Tochter von der Schule ab.",
+          "id": "Saya menjemput anak perempuan saya dari sekolah.",
+          "en": "I pick my daughter up from school."
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Mobilität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-schreiner",
-      "de": "Schreiner", "artikel": "der", "typ": "Nomen",
-      "bedeutung": { "id": "tukang kayu / pembuat mebel", "en": "carpenter / joiner" },
-      "synonyme": ["der Tischler"],
-      "tags": ["Beruf"]
+      "de": "Schreiner",
+      "artikel": "der",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "tukang kayu / pembuat mebel",
+        "en": "carpenter / joiner"
+      },
+      "synonyme": [
+        "der Tischler"
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-hochwertig",
-      "de": "hochwertig", "typ": "Adjektiv",
-      "bedeutung": { "id": "bermutu tinggi / berkualitas", "en": "high-quality" },
-      "synonyme": ["aus gutem Material", "von guter Qualität"],
-      "kollokationen": ["hochwertige Produkte", "hochwertige Verpackungen"],
-      "tags": ["Konsum", "Qualität"]
+      "de": "hochwertig",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "bermutu tinggi / berkualitas",
+        "en": "high-quality"
+      },
+      "synonyme": [
+        "aus gutem Material",
+        "von guter Qualität"
+      ],
+      "kollokationen": [
+        "hochwertige Produkte",
+        "hochwertige Verpackungen"
+      ],
+      "tags": [
+        "Konsum",
+        "Qualität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bankueberfall",
-      "de": "Banküberfall", "artikel": "der", "plural": "Banküberfälle", "typ": "Nomen",
-      "bedeutung": { "id": "perampokan bank", "en": "bank robbery" },
-      "kollokationen": ["eine Bank überfallen"],
-      "beispiele": [
-        { "de": "Die Polizei konnte den Banküberfall verhindern.", "id": "Polisi berhasil mencegah perampokan bank itu.", "en": "The police were able to prevent the bank robbery." }
+      "de": "Banküberfall",
+      "artikel": "der",
+      "plural": "Banküberfälle",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Kriminalität"]
+      "bedeutung": {
+        "id": "perampokan bank",
+        "en": "bank robbery"
+      },
+      "kollokationen": [
+        "eine Bank überfallen"
+      ],
+      "beispiele": [
+        {
+          "de": "Die Polizei konnte den Banküberfall verhindern.",
+          "id": "Polisi berhasil mencegah perampokan bank itu.",
+          "en": "The police were able to prevent the bank robbery."
+        }
+      ],
+      "tags": [
+        "Kriminalität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-diebstahl",
-      "de": "Diebstahl", "artikel": "der", "plural": "Diebstähle", "typ": "Nomen",
-      "bedeutung": { "id": "pencurian", "en": "theft" },
-      "kollokationen": ["Geld stehlen", "etwas klauen (umg.)"],
-      "synonyme": ["stehlen = klauen"],
-      "tags": ["Kriminalität"]
+      "de": "Diebstahl",
+      "artikel": "der",
+      "plural": "Diebstähle",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "pencurian",
+        "en": "theft"
+      },
+      "synonyme": [
+        "stehlen = klauen"
+      ],
+      "kollokationen": [
+        "Geld stehlen",
+        "etwas klauen (umg.)"
+      ],
+      "tags": [
+        "Kriminalität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-gut-drauf-sein",
-      "de": "gut drauf sein", "typ": "Redewendung",
-      "bedeutung": { "id": "sedang dalam suasana hati yang baik", "en": "to be in a good mood" },
-      "synonyme": ["gute Laune haben"],
-      "gegenteil": ["nicht gut drauf sein", "schlechte Laune haben"],
-      "beispiele": [
-        { "de": "Ich bin heute gut drauf.", "id": "Hari ini suasana hatiku sedang bagus.", "en": "I'm in a good mood today." }
+      "de": "gut drauf sein",
+      "typ": "Redewendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Alltag", "Gefühle"]
+      "bedeutung": {
+        "id": "sedang dalam suasana hati yang baik",
+        "en": "to be in a good mood"
+      },
+      "synonyme": [
+        "gute Laune haben"
+      ],
+      "gegenteil": [
+        "nicht gut drauf sein",
+        "schlechte Laune haben"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich bin heute gut drauf.",
+          "id": "Hari ini suasana hatiku sedang bagus.",
+          "en": "I'm in a good mood today."
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-gastgeber",
-      "de": "Gastgeber", "artikel": "der", "plural": "Gastgeber", "typ": "Nomen",
-      "bedeutung": { "id": "tuan rumah", "en": "host" },
-      "kollokationen": ["der Gast (tamu)"],
-      "tags": ["Alltag", "Soziales"]
+      "de": "Gastgeber",
+      "artikel": "der",
+      "plural": "Gastgeber",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "tuan rumah",
+        "en": "host"
+      },
+      "kollokationen": [
+        "der Gast (tamu)"
+      ],
+      "tags": [
+        "Alltag",
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-ueberrascht",
-      "de": "überrascht", "typ": "Adjektiv",
-      "bedeutung": { "id": "terkejut / heran", "en": "surprised" },
-      "synonyme": ["schockiert (lebih kuat: syok)"],
-      "tags": ["Gefühle"]
+      "de": "überrascht",
+      "typ": "Adjektiv",
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "terkejut / heran",
+        "en": "surprised"
+      },
+      "synonyme": [
+        "schockiert (lebih kuat: syok)"
+      ],
+      "tags": [
+        "Gefühle"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-ziel",
-      "de": "Ziel", "artikel": "das", "plural": "Ziele", "typ": "Nomen",
-      "bedeutung": { "id": "tujuan / sasaran", "en": "goal / aim" },
-      "kollokationen": ["sich (Dat.) ein Ziel setzen", "ein Ziel verfolgen", "ein Ziel erreichen"],
-      "beispiele": [
-        { "de": "Um berufliche Ziele zu erreichen, braucht man oft Geduld.", "id": "Untuk mencapai tujuan karier, orang sering membutuhkan kesabaran.", "en": "To reach professional goals, you often need patience." }
+      "de": "Ziel",
+      "artikel": "das",
+      "plural": "Ziele",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Werte"]
+      "bedeutung": {
+        "id": "tujuan / sasaran",
+        "en": "goal / aim"
+      },
+      "kollokationen": [
+        "sich (Dat.) ein Ziel setzen",
+        "ein Ziel verfolgen",
+        "ein Ziel erreichen"
+      ],
+      "beispiele": [
+        {
+          "de": "Um berufliche Ziele zu erreichen, braucht man oft Geduld.",
+          "id": "Untuk mencapai tujuan karier, orang sering membutuhkan kesabaran.",
+          "en": "To reach professional goals, you often need patience."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Werte"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-herkunft",
-      "de": "Herkunft", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "asal-usul", "en": "origin" },
-      "tags": ["Gesellschaft", "Identität"]
+      "de": "Herkunft",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "asal-usul",
+        "en": "origin"
+      },
+      "tags": [
+        "Gesellschaft",
+        "Identität"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-sich-entscheiden",
-      "de": "sich entscheiden", "typ": "Verb",
-      "bedeutung": { "id": "memutuskan / mengambil keputusan", "en": "to decide" },
-      "synonyme": ["eine Entscheidung treffen"],
-      "kollokationen": ["sich entscheiden für (+ Akk.)", "entscheiden über (+ Akk.)"],
-      "beispiele": [
-        { "de": "Sie hat sich für ein Studium im Ausland entschieden.", "id": "Dia memutuskan untuk kuliah di luar negeri.", "en": "She decided on studying abroad." },
-        { "de": "Ich will über mein Leben selbst entscheiden.", "id": "Saya ingin memutuskan sendiri soal hidup saya.", "en": "I want to decide about my life myself." }
+      "de": "sich entscheiden",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Beruf", "Werte"]
+      "bedeutung": {
+        "id": "memutuskan / mengambil keputusan",
+        "en": "to decide"
+      },
+      "synonyme": [
+        "eine Entscheidung treffen"
+      ],
+      "kollokationen": [
+        "sich entscheiden für (+ Akk.)",
+        "entscheiden über (+ Akk.)"
+      ],
+      "beispiele": [
+        {
+          "de": "Sie hat sich für ein Studium im Ausland entschieden.",
+          "id": "Dia memutuskan untuk kuliah di luar negeri.",
+          "en": "She decided on studying abroad."
+        },
+        {
+          "de": "Ich will über mein Leben selbst entscheiden.",
+          "id": "Saya ingin memutuskan sendiri soal hidup saya.",
+          "en": "I want to decide about my life myself."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Werte"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-kaempfen-fuer",
-      "de": "kämpfen für", "typ": "Verb",
-      "bedeutung": { "id": "berjuang untuk", "en": "to fight for" },
-      "beispiele": [
-        { "de": "Viele Menschen kämpfen für ihre Rechte.", "id": "Banyak orang berjuang untuk hak-hak mereka.", "en": "Many people fight for their rights." }
+      "de": "kämpfen für",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Gesellschaft", "Werte"]
+      "bedeutung": {
+        "id": "berjuang untuk",
+        "en": "to fight for"
+      },
+      "beispiele": [
+        {
+          "de": "Viele Menschen kämpfen für ihre Rechte.",
+          "id": "Banyak orang berjuang untuk hak-hak mereka.",
+          "en": "Many people fight for their rights."
+        }
+      ],
+      "tags": [
+        "Gesellschaft",
+        "Werte"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-helfen",
-      "de": "helfen", "typ": "Verb",
-      "bedeutung": { "id": "membantu / menolong", "en": "to help" },
-      "synonyme": ["unterstützen", "fördern"],
-      "tags": ["Soziales"]
+      "de": "helfen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "membantu / menolong",
+        "en": "to help"
+      },
+      "synonyme": [
+        "unterstützen",
+        "fördern"
+      ],
+      "tags": [
+        "Soziales"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-beschaeftigung",
-      "de": "Beschäftigung", "artikel": "die", "plural": "Beschäftigungen", "typ": "Nomen",
-      "bedeutung": { "id": "1) pekerjaan  2) kesibukan / kegiatan", "en": "1) employment  2) occupation / activity" },
-      "kollokationen": ["in dieser Branche beschäftigt sein", "sich beschäftigen mit (+ Dat.)"],
-      "beispiele": [
-        { "de": "Weltweit sind Millionen von Menschen in der Tourismusbranche beschäftigt.", "id": "Di seluruh dunia jutaan orang bekerja di bidang pariwisata.", "en": "Worldwide, millions of people work in the tourism sector." },
-        { "de": "Ich beschäftige mich gerade mit einer wichtigen Präsentation.", "id": "Saya sedang menekuni sebuah presentasi penting.", "en": "I'm currently working on an important presentation." }
+      "de": "Beschäftigung",
+      "artikel": "die",
+      "plural": "Beschäftigungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Arbeit"]
+      "bedeutung": {
+        "id": "1) pekerjaan  2) kesibukan / kegiatan",
+        "en": "1) employment  2) occupation / activity"
+      },
+      "kollokationen": [
+        "in dieser Branche beschäftigt sein",
+        "sich beschäftigen mit (+ Dat.)"
+      ],
+      "beispiele": [
+        {
+          "de": "Weltweit sind Millionen von Menschen in der Tourismusbranche beschäftigt.",
+          "id": "Di seluruh dunia jutaan orang bekerja di bidang pariwisata.",
+          "en": "Worldwide, millions of people work in the tourism sector."
+        },
+        {
+          "de": "Ich beschäftige mich gerade mit einer wichtigen Präsentation.",
+          "id": "Saya sedang menekuni sebuah presentasi penting.",
+          "en": "I'm currently working on an important presentation."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Arbeit"
+      ]
     },
-
     {
       "id": "b2.1-2026-09-02-beruf",
-      "de": "Beruf", "artikel": "der", "plural": "Berufe", "typ": "Nomen",
-      "bedeutung": { "id": "profesi / pekerjaan", "en": "profession" },
-      "kollokationen": ["Was bist du von Beruf?", "Was sind Sie von Beruf? (formell)"],
-      "beispiele": [
-        { "de": "Ich bin Arzt von Beruf.", "id": "Profesi saya dokter.", "en": "I'm a doctor by profession." }
+      "de": "Beruf",
+      "artikel": "der",
+      "plural": "Berufe",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Grundwortschatz"]
+      "bedeutung": {
+        "id": "profesi / pekerjaan",
+        "en": "profession"
+      },
+      "kollokationen": [
+        "Was bist du von Beruf?",
+        "Was sind Sie von Beruf? (formell)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich bin Arzt von Beruf.",
+          "id": "Profesi saya dokter.",
+          "en": "I'm a doctor by profession."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Grundwortschatz"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-berufe-beispiele",
-      "de": "Berufsbezeichnungen (Beispiele)", "typ": "Wortfeld",
-      "bedeutung": { "id": "contoh nama profesi", "en": "example job titles" },
-      "kollokationen": ["der Arzt / die Ärztin", "der Wissenschaftler / die Wissenschaftlerin (scientist)", "der Kaufmann / die Kauffrau", "der Lehrer / die Lehrerin", "der Kellner / die Kellnerin"],
-      "tags": ["Beruf", "Grundwortschatz"]
+      "de": "Berufsbezeichnungen (Beispiele)",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "contoh nama profesi",
+        "en": "example job titles"
+      },
+      "kollokationen": [
+        "der Arzt / die Ärztin",
+        "der Wissenschaftler / die Wissenschaftlerin (scientist)",
+        "der Kaufmann / die Kauffrau",
+        "der Lehrer / die Lehrerin",
+        "der Kellner / die Kellnerin"
+      ],
+      "tags": [
+        "Beruf",
+        "Grundwortschatz"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-arbeitszeit",
-      "de": "Arbeitszeit (Wendungen)", "typ": "Wortfeld",
-      "bedeutung": { "id": "ungkapan seputar waktu kerja", "en": "working-time expressions" },
-      "kollokationen": ["pro Tag / Woche / Jahr (per hari/minggu/tahun)", "unter der Woche (= Mo–Fr)", "am Wochenende", "einen Tag frei haben", "von … bis …"],
-      "beispiele": [
-        { "de": "Ich arbeite von 8 bis 17 Uhr.", "id": "Saya bekerja dari jam 8 sampai jam 17.", "en": "I work from 8 to 5." }
+      "de": "Arbeitszeit (Wendungen)",
+      "typ": "Wortfeld",
+      "modi": [],
+      "bedeutung": {
+        "id": "ungkapan seputar waktu kerja",
+        "en": "working-time expressions"
+      },
+      "kollokationen": [
+        "pro Tag / Woche / Jahr (per hari/minggu/tahun)",
+        "unter der Woche (= Mo–Fr)",
+        "am Wochenende",
+        "einen Tag frei haben",
+        "von … bis …"
       ],
-      "tags": ["Arbeit", "Grundwortschatz"]
+      "beispiele": [
+        {
+          "de": "Ich arbeite von 8 bis 17 Uhr.",
+          "id": "Saya bekerja dari jam 8 sampai jam 17.",
+          "en": "I work from 8 to 5."
+        }
+      ],
+      "tags": [
+        "Arbeit",
+        "Grundwortschatz"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-netzwerk",
-      "de": "Netzwerk", "artikel": "das", "plural": "Netzwerke", "typ": "Nomen",
-      "bedeutung": { "id": "jaringan (relasi)", "en": "network" },
-      "kollokationen": ["ein Netzwerk aufbauen (membangun)", "ein Netzwerk ausbauen (memperluas)", "ein Netzwerk pflegen (merawat)"],
-      "beispiele": [
-        { "de": "Ich versuche, mein berufliches Netzwerk aufzubauen.", "id": "Saya berusaha membangun jaringan profesional saya.", "en": "I'm trying to build up my professional network." }
+      "de": "Netzwerk",
+      "artikel": "das",
+      "plural": "Netzwerke",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Bewerbung"]
+      "bedeutung": {
+        "id": "jaringan (relasi)",
+        "en": "network"
+      },
+      "kollokationen": [
+        "ein Netzwerk aufbauen (membangun)",
+        "ein Netzwerk ausbauen (memperluas)",
+        "ein Netzwerk pflegen (merawat)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich versuche, mein berufliches Netzwerk aufzubauen.",
+          "id": "Saya berusaha membangun jaringan profesional saya.",
+          "en": "I'm trying to build up my professional network."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-stellenanzeige",
-      "de": "Stellenanzeige", "artikel": "die", "plural": "Stellenanzeigen", "typ": "Nomen",
-      "bedeutung": { "id": "iklan lowongan kerja", "en": "job advertisement" },
-      "synonyme": ["das Stellenangebot"],
-      "tags": ["Bewerbung"]
+      "de": "Stellenanzeige",
+      "artikel": "die",
+      "plural": "Stellenanzeigen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "iklan lowongan kerja",
+        "en": "job advertisement"
+      },
+      "synonyme": [
+        "das Stellenangebot"
+      ],
+      "tags": [
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bereich",
-      "de": "Bereich", "artikel": "der", "plural": "Bereiche", "typ": "Nomen",
-      "bedeutung": { "id": "bidang / area", "en": "field / area" },
-      "beispiele": [
-        { "de": "Sie arbeitet im Bereich Marketing.", "id": "Dia bekerja di bidang pemasaran.", "en": "She works in the marketing area." }
+      "de": "Bereich",
+      "artikel": "der",
+      "plural": "Bereiche",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "bidang / area",
+        "en": "field / area"
+      },
+      "beispiele": [
+        {
+          "de": "Sie arbeitet im Bereich Marketing.",
+          "id": "Dia bekerja di bidang pemasaran.",
+          "en": "She works in the marketing area."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-branche",
-      "de": "Branche", "artikel": "die", "plural": "Branchen", "typ": "Nomen",
-      "bedeutung": { "id": "sektor / cabang industri", "en": "sector / industry" },
-      "beispiele": [
-        { "de": "Die IT-Branche wächst sehr schnell.", "id": "Sektor TI tumbuh sangat cepat.", "en": "The IT sector is growing very fast." }
+      "de": "Branche",
+      "artikel": "die",
+      "plural": "Branchen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "sektor / cabang industri",
+        "en": "sector / industry"
+      },
+      "beispiele": [
+        {
+          "de": "Die IT-Branche wächst sehr schnell.",
+          "id": "Sektor TI tumbuh sangat cepat.",
+          "en": "The IT sector is growing very fast."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-abteilung",
-      "de": "Abteilung", "artikel": "die", "plural": "Abteilungen", "typ": "Nomen",
-      "bedeutung": { "id": "departemen / divisi", "en": "department" },
-      "beispiele": [
-        { "de": "Bitte melden Sie sich bei der Personalabteilung.", "id": "Silakan lapor ke departemen SDM.", "en": "Please report to the HR department." }
+      "de": "Abteilung",
+      "artikel": "die",
+      "plural": "Abteilungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "departemen / divisi",
+        "en": "department"
+      },
+      "beispiele": [
+        {
+          "de": "Bitte melden Sie sich bei der Personalabteilung.",
+          "id": "Silakan lapor ke departemen SDM.",
+          "en": "Please report to the HR department."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-firma-unternehmen",
-      "de": "Firma", "artikel": "die", "plural": "Firmen", "typ": "Nomen",
-      "bedeutung": { "id": "perusahaan", "en": "company" },
-      "synonyme": ["das Unternehmen"],
-      "tags": ["Beruf"]
+      "de": "Firma",
+      "artikel": "die",
+      "plural": "Firmen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "perusahaan",
+        "en": "company"
+      },
+      "synonyme": [
+        "das Unternehmen"
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-betrieb",
-      "de": "Betrieb", "artikel": "der", "plural": "Betriebe", "typ": "Nomen",
-      "bedeutung": { "id": "1) perusahaan/pabrik  2) operasi (mesin berjalan)", "en": "1) business/plant  2) operation" },
-      "kollokationen": ["in Betrieb sein (= funktioniert / beroperasi)", "außer Betrieb (= funktioniert nicht / rusak)"],
-      "tags": ["Beruf", "Technik"]
+      "de": "Betrieb",
+      "artikel": "der",
+      "plural": "Betriebe",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "1) perusahaan/pabrik  2) operasi (mesin berjalan)",
+        "en": "1) business/plant  2) operation"
+      },
+      "kollokationen": [
+        "in Betrieb sein (= funktioniert / beroperasi)",
+        "außer Betrieb (= funktioniert nicht / rusak)"
+      ],
+      "tags": [
+        "Beruf",
+        "Technik"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-sich-bewerben",
-      "de": "sich bewerben um", "typ": "Verb",
-      "bedeutung": { "id": "melamar (untuk suatu posisi)", "en": "to apply for" },
-      "kollokationen": ["die Bewerbung (lamaran)", "sich um eine Stelle als … bewerben"],
-      "beispiele": [
-        { "de": "Ich habe mich um eine Stelle als Managerin beworben.", "id": "Saya melamar posisi sebagai manajer.", "en": "I applied for a position as a manager." }
+      "de": "sich bewerben um",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Bewerbung"]
+      "bedeutung": {
+        "id": "melamar (untuk suatu posisi)",
+        "en": "to apply for"
+      },
+      "kollokationen": [
+        "die Bewerbung (lamaran)",
+        "sich um eine Stelle als … bewerben"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich habe mich um eine Stelle als Managerin beworben.",
+          "id": "Saya melamar posisi sebagai manajer.",
+          "en": "I applied for a position as a manager."
+        }
+      ],
+      "tags": [
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-rueckmeldung",
-      "de": "Rückmeldung", "artikel": "die", "plural": "Rückmeldungen", "typ": "Nomen",
-      "bedeutung": { "id": "tanggapan / balasan", "en": "reply / feedback" },
-      "beispiele": [
-        { "de": "Ich warte auf Ihre Rückmeldung.", "id": "Saya menunggu balasan Anda.", "en": "I'm waiting for your reply." }
+      "de": "Rückmeldung",
+      "artikel": "die",
+      "plural": "Rückmeldungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Bewerbung"]
+      "bedeutung": {
+        "id": "tanggapan / balasan",
+        "en": "reply / feedback"
+      },
+      "beispiele": [
+        {
+          "de": "Ich warte auf Ihre Rückmeldung.",
+          "id": "Saya menunggu balasan Anda.",
+          "en": "I'm waiting for your reply."
+        }
+      ],
+      "tags": [
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-stelle",
-      "de": "Stelle", "artikel": "die", "plural": "Stellen", "typ": "Nomen",
-      "bedeutung": { "id": "posisi / lowongan kerja", "en": "job position" },
-      "synonyme": ["der Job", "die Position"],
-      "tags": ["Bewerbung"]
+      "de": "Stelle",
+      "artikel": "die",
+      "plural": "Stellen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "posisi / lowongan kerja",
+        "en": "job position"
+      },
+      "synonyme": [
+        "der Job",
+        "die Position"
+      ],
+      "tags": [
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bewerbungsunterlagen",
-      "de": "Bewerbungsunterlagen", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "berkas lamaran", "en": "application documents" },
-      "kollokationen": ["das Anschreiben (surat lamaran)", "der Lebenslauf (CV)", "die Zeugnisse (ijazah/rapor)", "die Zertifikate (sertifikat)"],
-      "tags": ["Bewerbung"]
+      "de": "Bewerbungsunterlagen",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "berkas lamaran",
+        "en": "application documents"
+      },
+      "kollokationen": [
+        "das Anschreiben (surat lamaran)",
+        "der Lebenslauf (CV)",
+        "die Zeugnisse (ijazah/rapor)",
+        "die Zertifikate (sertifikat)"
+      ],
+      "tags": [
+        "Bewerbung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-dokument",
-      "de": "Dokument", "artikel": "das", "plural": "Dokumente", "typ": "Nomen",
-      "bedeutung": { "id": "dokumen", "en": "document" },
-      "kollokationen": ["der Ausweis (kartu identitas)", "der Pass (paspor)", "das Visum (visa)", "der Führerschein (SIM)"],
-      "tags": ["Dokumente", "Alltag"]
+      "de": "Dokument",
+      "artikel": "das",
+      "plural": "Dokumente",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "dokumen",
+        "en": "document"
+      },
+      "kollokationen": [
+        "der Ausweis (kartu identitas)",
+        "der Pass (paspor)",
+        "das Visum (visa)",
+        "der Führerschein (SIM)"
+      ],
+      "tags": [
+        "Dokumente",
+        "Alltag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bescheinigung",
-      "de": "Bescheinigung", "artikel": "die", "plural": "Bescheinigungen", "typ": "Nomen",
-      "bedeutung": { "id": "surat keterangan (tertulis)", "en": "certificate / written confirmation" },
-      "kollokationen": ["bescheinigen (= schriftlich bestätigen)"],
-      "beispiele": [
-        { "de": "Ich brauche eine Bescheinigung vom Einwohnermeldeamt.", "id": "Saya butuh surat keterangan dari kantor pendaftaran penduduk.", "en": "I need a certificate from the residents' registration office." }
+      "de": "Bescheinigung",
+      "artikel": "die",
+      "plural": "Bescheinigungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Dokumente", "Amt"]
+      "bedeutung": {
+        "id": "surat keterangan (tertulis)",
+        "en": "certificate / written confirmation"
+      },
+      "kollokationen": [
+        "bescheinigen (= schriftlich bestätigen)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich brauche eine Bescheinigung vom Einwohnermeldeamt.",
+          "id": "Saya butuh surat keterangan dari kantor pendaftaran penduduk.",
+          "en": "I need a certificate from the residents' registration office."
+        }
+      ],
+      "tags": [
+        "Dokumente",
+        "Amt"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-bestaetigung",
-      "de": "Bestätigung", "artikel": "die", "plural": "Bestätigungen", "typ": "Nomen",
-      "bedeutung": { "id": "konfirmasi", "en": "confirmation" },
-      "kollokationen": ["bestätigen (mengonfirmasi)"],
-      "beispiele": [
-        { "de": "Können Sie mir bitte meine Reservierung bestätigen?", "id": "Bisakah Anda mengonfirmasi reservasi saya?", "en": "Could you please confirm my reservation?" }
+      "de": "Bestätigung",
+      "artikel": "die",
+      "plural": "Bestätigungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Alltag", "Kommunikation"]
+      "bedeutung": {
+        "id": "konfirmasi",
+        "en": "confirmation"
+      },
+      "kollokationen": [
+        "bestätigen (mengonfirmasi)"
+      ],
+      "beispiele": [
+        {
+          "de": "Können Sie mir bitte meine Reservierung bestätigen?",
+          "id": "Bisakah Anda mengonfirmasi reservasi saya?",
+          "en": "Could you please confirm my reservation?"
+        }
+      ],
+      "tags": [
+        "Alltag",
+        "Kommunikation"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-einstellen",
-      "de": "jemanden einstellen", "typ": "Verb", "trennbar": true,
-      "bedeutung": { "id": "mempekerjakan / merekrut seseorang", "en": "to hire someone" },
-      "gegenteil": ["jemanden entlassen"],
-      "tags": ["Beruf", "Arbeit"]
+      "de": "jemanden einstellen",
+      "typ": "Verb",
+      "trennbar": true,
+      "modi": [
+        "mc",
+        "tippen"
+      ],
+      "bedeutung": {
+        "id": "mempekerjakan / merekrut seseorang",
+        "en": "to hire someone"
+      },
+      "gegenteil": [
+        "jemanden entlassen"
+      ],
+      "tags": [
+        "Beruf",
+        "Arbeit"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-fest-eingestellt",
-      "de": "fest eingestellt sein", "typ": "Wendung",
-      "bedeutung": { "id": "dipekerjakan tetap (kontrak tak terbatas)", "en": "to be permanently employed" },
-      "synonyme": ["einen unbefristeten / festen Vertrag haben"],
-      "kollokationen": ["unbefristet = fest (tak terbatas)", "befristet (kontrak terbatas waktu)"],
-      "beispiele": [
-        { "de": "Mein Vater ist bei Siemens fest eingestellt.", "id": "Ayah saya dipekerjakan tetap di Siemens.", "en": "My father is permanently employed at Siemens." }
+      "de": "fest eingestellt sein",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Beruf", "Vertrag"]
+      "bedeutung": {
+        "id": "dipekerjakan tetap (kontrak tak terbatas)",
+        "en": "to be permanently employed"
+      },
+      "synonyme": [
+        "einen unbefristeten / festen Vertrag haben"
+      ],
+      "kollokationen": [
+        "unbefristet = fest (tak terbatas)",
+        "befristet (kontrak terbatas waktu)"
+      ],
+      "beispiele": [
+        {
+          "de": "Mein Vater ist bei Siemens fest eingestellt.",
+          "id": "Ayah saya dipekerjakan tetap di Siemens.",
+          "en": "My father is permanently employed at Siemens."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Vertrag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-selbststaendig",
-      "de": "selbstständig sein", "typ": "Wendung",
-      "bedeutung": { "id": "berwiraswasta / bekerja mandiri", "en": "to be self-employed" },
-      "synonyme": ["freiberuflich arbeiten", "als Freiberufler arbeiten"],
-      "tags": ["Beruf", "Vertrag"]
+      "de": "selbstständig sein",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
+      ],
+      "bedeutung": {
+        "id": "berwiraswasta / bekerja mandiri",
+        "en": "to be self-employed"
+      },
+      "synonyme": [
+        "freiberuflich arbeiten",
+        "als Freiberufler arbeiten"
+      ],
+      "tags": [
+        "Beruf",
+        "Vertrag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-entlassen",
-      "de": "jemanden entlassen", "typ": "Verb",
-      "bedeutung": { "id": "memecat seseorang / mem-PHK", "en": "to fire / lay off someone" },
-      "synonyme": ["feuern (umg.)"],
-      "kollokationen": ["die Entlassung (pemecatan/PHK)"],
-      "beispiele": [
-        { "de": "Mein Kollege wurde gestern entlassen.", "id": "Rekan saya kemarin dipecat.", "en": "My colleague was fired yesterday." }
+      "de": "jemanden entlassen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Beruf", "Vertrag"]
+      "bedeutung": {
+        "id": "memecat seseorang / mem-PHK",
+        "en": "to fire / lay off someone"
+      },
+      "synonyme": [
+        "feuern (umg.)"
+      ],
+      "kollokationen": [
+        "die Entlassung (pemecatan/PHK)"
+      ],
+      "beispiele": [
+        {
+          "de": "Mein Kollege wurde gestern entlassen.",
+          "id": "Rekan saya kemarin dipecat.",
+          "en": "My colleague was fired yesterday."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Vertrag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-kuendigen",
-      "de": "kündigen", "typ": "Verb",
-      "bedeutung": { "id": "mengundurkan diri / memutus kontrak (memberi pemberitahuan)", "en": "to resign / give notice" },
-      "kollokationen": ["die Kündigung (pemutusan)", "Ich habe gekündigt. (sendiri)", "Mir wurde gekündigt. (perusahaan yang memutus)"],
-      "beispiele": [
-        { "de": "Ich habe bei meiner Firma gekündigt.", "id": "Saya mengundurkan diri dari perusahaan saya.", "en": "I resigned from my company." }
+      "de": "kündigen",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Beruf", "Vertrag"]
+      "bedeutung": {
+        "id": "mengundurkan diri / memutus kontrak (memberi pemberitahuan)",
+        "en": "to resign / give notice"
+      },
+      "kollokationen": [
+        "die Kündigung (pemutusan)",
+        "Ich habe gekündigt. (sendiri)",
+        "Mir wurde gekündigt. (perusahaan yang memutus)"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich habe bei meiner Firma gekündigt.",
+          "id": "Saya mengundurkan diri dari perusahaan saya.",
+          "en": "I resigned from my company."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Vertrag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-kuendigungsfrist",
-      "de": "Kündigungsfrist", "artikel": "die", "plural": "Kündigungsfristen", "typ": "Nomen",
-      "bedeutung": { "id": "masa pemberitahuan sebelum berhenti", "en": "notice period" },
-      "beispiele": [
-        { "de": "Die Kündigungsfrist beträgt 3 Monate.", "id": "Masa pemberitahuannya 3 bulan.", "en": "The notice period is 3 months." }
+      "de": "Kündigungsfrist",
+      "artikel": "die",
+      "plural": "Kündigungsfristen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Beruf", "Vertrag"]
+      "bedeutung": {
+        "id": "masa pemberitahuan sebelum berhenti",
+        "en": "notice period"
+      },
+      "beispiele": [
+        {
+          "de": "Die Kündigungsfrist beträgt 3 Monate.",
+          "id": "Masa pemberitahuannya 3 bulan.",
+          "en": "The notice period is 3 months."
+        }
+      ],
+      "tags": [
+        "Beruf",
+        "Vertrag"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-gehalt-lohn",
-      "de": "Gehalt", "artikel": "das", "plural": "Gehälter", "typ": "Nomen",
-      "bedeutung": { "id": "gaji (bulanan, karyawan tetap)", "en": "salary" },
-      "synonyme": ["der Lohn (upah, sering per jam)", "der Verdienst (penghasilan)"],
-      "tags": ["Beruf", "Geld"]
+      "de": "Gehalt",
+      "artikel": "das",
+      "plural": "Gehälter",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "gaji (bulanan, karyawan tetap)",
+        "en": "salary"
+      },
+      "synonyme": [
+        "der Lohn (upah, sering per jam)",
+        "der Verdienst (penghasilan)"
+      ],
+      "tags": [
+        "Beruf",
+        "Geld"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-honorar",
-      "de": "Honorar", "artikel": "das", "plural": "Honorare", "typ": "Nomen",
-      "bedeutung": { "id": "honor (untuk pekerja lepas)", "en": "fee (freelance)" },
-      "kollokationen": ["eine Rechnung ausstellen (menerbitkan faktur)"],
-      "tags": ["Beruf", "Geld"]
+      "de": "Honorar",
+      "artikel": "das",
+      "plural": "Honorare",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "honor (untuk pekerja lepas)",
+        "en": "fee (freelance)"
+      },
+      "kollokationen": [
+        "eine Rechnung ausstellen (menerbitkan faktur)"
+      ],
+      "tags": [
+        "Beruf",
+        "Geld"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-einkommen",
-      "de": "Einkommen", "artikel": "das", "plural": "Einkommen", "typ": "Nomen",
-      "bedeutung": { "id": "pendapatan", "en": "income" },
-      "tags": ["Geld"]
+      "de": "Einkommen",
+      "artikel": "das",
+      "plural": "Einkommen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "pendapatan",
+        "en": "income"
+      },
+      "tags": [
+        "Geld"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-abzuege",
-      "de": "Abzüge", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "potongan (dari gaji)", "en": "deductions" },
-      "kollokationen": ["die Krankenversicherung (asuransi kesehatan)", "die Rentenversicherung (asuransi pensiun)", "die Steuern (pajak)"],
-      "tags": ["Geld", "Amt"]
+      "de": "Abzüge",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "potongan (dari gaji)",
+        "en": "deductions"
+      },
+      "kollokationen": [
+        "die Krankenversicherung (asuransi kesehatan)",
+        "die Rentenversicherung (asuransi pensiun)",
+        "die Steuern (pajak)"
+      ],
+      "tags": [
+        "Geld",
+        "Amt"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-mindestlohn",
-      "de": "Mindestlohn", "artikel": "der", "typ": "Nomen",
-      "bedeutung": { "id": "upah minimum (yang ditetapkan undang-undang)", "en": "minimum wage" },
-      "beispiele": [
-        { "de": "Der gesetzliche Mindestlohn liegt aktuell bei 13,90 Euro brutto pro Stunde.", "id": "Upah minimum resmi saat ini 13,90 euro bruto per jam.", "en": "The statutory minimum wage is currently 13.90 euros gross per hour." }
+      "de": "Mindestlohn",
+      "artikel": "der",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Geld", "Arbeit"]
+      "bedeutung": {
+        "id": "upah minimum (yang ditetapkan undang-undang)",
+        "en": "minimum wage"
+      },
+      "beispiele": [
+        {
+          "de": "Der gesetzliche Mindestlohn liegt aktuell bei 13,90 Euro brutto pro Stunde.",
+          "id": "Upah minimum resmi saat ini 13,90 euro bruto per jam.",
+          "en": "The statutory minimum wage is currently 13.90 euros gross per hour."
+        }
+      ],
+      "tags": [
+        "Geld",
+        "Arbeit"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-arbeitslos",
-      "de": "arbeitslos sein / werden", "typ": "Wendung",
-      "bedeutung": { "id": "menganggur / menjadi pengangguran", "en": "to be / become unemployed" },
-      "beispiele": [
-        { "de": "Wenn die Fabrik schließt, werden hunderte Mitarbeiter arbeitslos.", "id": "Kalau pabrik tutup, ratusan karyawan menjadi pengangguran.", "en": "If the factory closes, hundreds of employees will become unemployed." }
+      "de": "arbeitslos sein / werden",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Arbeit"]
+      "bedeutung": {
+        "id": "menganggur / menjadi pengangguran",
+        "en": "to be / become unemployed"
+      },
+      "beispiele": [
+        {
+          "de": "Wenn die Fabrik schließt, werden hunderte Mitarbeiter arbeitslos.",
+          "id": "Kalau pabrik tutup, ratusan karyawan menjadi pengangguran.",
+          "en": "If the factory closes, hundreds of employees will become unemployed."
+        }
+      ],
+      "tags": [
+        "Arbeit"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-berufstaetig",
-      "de": "berufstätig sein", "typ": "Wendung",
-      "bedeutung": { "id": "bekerja (aktif berkarier)", "en": "to be employed / working" },
-      "beispiele": [
-        { "de": "In Deutschland sind immer mehr Frauen berufstätig.", "id": "Di Jerman semakin banyak perempuan yang bekerja.", "en": "In Germany, more and more women are working." }
+      "de": "berufstätig sein",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Arbeit"]
+      "bedeutung": {
+        "id": "bekerja (aktif berkarier)",
+        "en": "to be employed / working"
+      },
+      "beispiele": [
+        {
+          "de": "In Deutschland sind immer mehr Frauen berufstätig.",
+          "id": "Di Jerman semakin banyak perempuan yang bekerja.",
+          "en": "In Germany, more and more women are working."
+        }
+      ],
+      "tags": [
+        "Arbeit"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-elternzeit",
-      "de": "Elternzeit", "artikel": "die", "typ": "Nomen",
-      "bedeutung": { "id": "cuti mengasuh anak (orang tua)", "en": "parental leave" },
-      "kollokationen": ["der Mutterschutz (cuti pelindungan ibu, 6 Wochen vor der Geburt)", "die Babypause"],
-      "beispiele": [
-        { "de": "Ich bin 2 Jahre in der Elternzeit.", "id": "Saya cuti mengasuh anak selama 2 tahun.", "en": "I'm on parental leave for 2 years." }
+      "de": "Elternzeit",
+      "artikel": "die",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
       ],
-      "tags": ["Arbeit", "Familie"]
+      "bedeutung": {
+        "id": "cuti mengasuh anak (orang tua)",
+        "en": "parental leave"
+      },
+      "kollokationen": [
+        "der Mutterschutz (cuti pelindungan ibu, 6 Wochen vor der Geburt)",
+        "die Babypause"
+      ],
+      "beispiele": [
+        {
+          "de": "Ich bin 2 Jahre in der Elternzeit.",
+          "id": "Saya cuti mengasuh anak selama 2 tahun.",
+          "en": "I'm on parental leave for 2 years."
+        }
+      ],
+      "tags": [
+        "Arbeit",
+        "Familie"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-mitarbeitergespraech",
-      "de": "Mitarbeitergespräch", "artikel": "das", "plural": "Mitarbeitergespräche", "typ": "Nomen",
-      "bedeutung": { "id": "percakapan evaluasi karyawan (feedback)", "en": "employee appraisal / feedback meeting" },
-      "kollokationen": ["gute / schlechte Arbeitsbedingungen (kondisi kerja)"],
-      "tags": ["Arbeit"]
+      "de": "Mitarbeitergespräch",
+      "artikel": "das",
+      "plural": "Mitarbeitergespräche",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "percakapan evaluasi karyawan (feedback)",
+        "en": "employee appraisal / feedback meeting"
+      },
+      "kollokationen": [
+        "gute / schlechte Arbeitsbedingungen (kondisi kerja)"
+      ],
+      "tags": [
+        "Arbeit"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-weiterbildung",
-      "de": "Weiterbildung", "artikel": "die", "plural": "Weiterbildungen", "typ": "Nomen",
-      "bedeutung": { "id": "pendidikan/pelatihan lanjutan", "en": "further training" },
-      "synonyme": ["die Fortbildung", "die Schulung"],
-      "kollokationen": ["eine Weiterbildung machen"],
-      "tags": ["Arbeit", "Bildung"]
+      "de": "Weiterbildung",
+      "artikel": "die",
+      "plural": "Weiterbildungen",
+      "typ": "Nomen",
+      "modi": [
+        "mc",
+        "tippen",
+        "artikel"
+      ],
+      "bedeutung": {
+        "id": "pendidikan/pelatihan lanjutan",
+        "en": "further training"
+      },
+      "synonyme": [
+        "die Fortbildung",
+        "die Schulung"
+      ],
+      "kollokationen": [
+        "eine Weiterbildung machen"
+      ],
+      "tags": [
+        "Arbeit",
+        "Bildung"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-karriere-machen",
-      "de": "Karriere machen", "typ": "Wendung",
-      "bedeutung": { "id": "meniti/menanjak karier", "en": "to build a career / climb the ladder" },
-      "hinweis": { "id": "mendapat posisi makin tinggi, tanggung jawab & gaji lebih besar.", "en": "getting higher positions, more responsibility and pay." },
-      "beispiele": [
-        { "de": "Sie hat in ihrem Unternehmen schnell Karriere gemacht.", "id": "Dia cepat meniti karier di perusahaannya.", "en": "She quickly built a career in her company." }
+      "de": "Karriere machen",
+      "typ": "Wendung",
+      "modi": [
+        "mc"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "meniti/menanjak karier",
+        "en": "to build a career / climb the ladder"
+      },
+      "hinweis": {
+        "id": "mendapat posisi makin tinggi, tanggung jawab & gaji lebih besar.",
+        "en": "getting higher positions, more responsibility and pay."
+      },
+      "beispiele": [
+        {
+          "de": "Sie hat in ihrem Unternehmen schnell Karriere gemacht.",
+          "id": "Dia cepat meniti karier di perusahaannya.",
+          "en": "She quickly built a career in her company."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     },
     {
       "id": "b2.1-2026-09-02-befoerdern",
-      "de": "befördern", "typ": "Verb",
-      "bedeutung": { "id": "mempromosikan (naik jabatan)", "en": "to promote" },
-      "kollokationen": ["die Beförderung (promosi jabatan)", "eine Beförderung bekommen", "befördert werden"],
-      "beispiele": [
-        { "de": "Er wurde befördert und ist jetzt Oberarzt.", "id": "Dia dipromosikan dan kini menjadi dokter senior.", "en": "He was promoted and is now a senior physician." }
+      "de": "befördern",
+      "typ": "Verb",
+      "modi": [
+        "mc",
+        "tippen"
       ],
-      "tags": ["Beruf"]
+      "bedeutung": {
+        "id": "mempromosikan (naik jabatan)",
+        "en": "to promote"
+      },
+      "kollokationen": [
+        "die Beförderung (promosi jabatan)",
+        "eine Beförderung bekommen",
+        "befördert werden"
+      ],
+      "beispiele": [
+        {
+          "de": "Er wurde befördert und ist jetzt Oberarzt.",
+          "id": "Dia dipromosikan dan kini menjadi dokter senior.",
+          "en": "He was promoted and is now a senior physician."
+        }
+      ],
+      "tags": [
+        "Beruf"
+      ]
     }
   ]
 }

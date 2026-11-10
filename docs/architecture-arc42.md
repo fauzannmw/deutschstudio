@@ -135,7 +135,7 @@ No runtime server. `vercel.json` pins build command + output directory.
 
 ## 8. Crosscutting Concepts (draft)
 
-- **Vocabulary data model** — _file level_: `schema`, `class`, `level`, `meeting`, `topic`, `sources[]`, `words[]`. _Per word (required)_: `id`, `de`, `typ`, `bedeutung {id, en}`. _Per word (optional)_: `artikel`, `plural`, `trennbar`, `synonyme[]`, `kollokationen[]`, `gegenteil[]`, `hinweis {id, en}`, `beispiele[{de, id, en}]`, `tags[]`. `typ` ∈ {Nomen, Verb, Adjektiv, Redewendung, Wendung, Wortfeld}. Field keys are German by decision; meanings/examples carry `id` + `en`.
+- **Vocabulary data model** — _file level_: `schema`, `class`, `level`, `meeting`, `topic`, `sources[]`, `words[]`. _Per word (required)_: `id`, `de`, `typ`, `modi[]`, `bedeutung {id, en}`. _Per word (optional)_: `artikel`, `plural`, `trennbar`, `synonyme[]`, `kollokationen[]`, `gegenteil[]`, `hinweis {id, en}`, `beispiele[{de, id, en}]`, `tags[]`. `typ` ∈ {Nomen, Verb, Adjektiv, Adverb, Redewendung, Wendung, Wortfeld}; `modi` ⊆ {mc, tippen, artikel} — which quizzes a card supports (Karteikarten always on; `[]` = Karteikarten only), read by the app and enforced by `build.js`. Full strict template: [`content-schema.md`](content-schema.md) (ADR-0007). Field keys are German; meanings/examples carry `id` + `en`.
 - **Spaced repetition**: Leitner boxes 1–5; correct → up a box (longer interval), wrong → back to box 1.
 - **i18n**: meanings stored per language; a UI toggle switches display language; German word + example are language-neutral.
 - **Persistence**: namespaced `localStorage` keys; progress keyed by word `id` so content can change without losing history.
@@ -146,7 +146,7 @@ No runtime server. `vercel.json` pins build command + output directory.
 
 ## 9. Architecture Decisions
 
-See [`adr/README.md`](adr/README.md). Current: ADR-0001 … ADR-0006.
+See [`adr/README.md`](adr/README.md). Current: ADR-0001 … ADR-0007. Content template: [`content-schema.md`](content-schema.md).
 
 ---
 
