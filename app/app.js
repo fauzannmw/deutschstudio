@@ -5,7 +5,7 @@
   var DECK = (window.DECK && Array.isArray(window.DECK.words)) ? window.DECK : { words: [], meetings: [] };
   var DAY = 86400000;
   var INTERVALS = [0, 0, 1, 3, 7, 16]; // index = box (1..5); box1 -> due next session
-  var SESSION_SIZE = 15;
+  var SESSION_SIZE = 10;
   var K = { prog: "ds.progress.v1", stats: "ds.stats.v1", set: "ds.settings.v1" };
 
   /* ---------- storage ---------- */
@@ -80,33 +80,42 @@
   }
 
   /* ---------- session ---------- */
-  function pickMode(w, isNew) {
-    if (isNew) return "flash";
-    var modes = ["flash"];
-    if (isSimple(w)) modes.push("type", "mcDe", "mcMean");
+  // Active-recall modes: MC works for every word; type for simple lexemes; article for nouns.
+  function activeModes(w) {
+    var modes = ["mcDe", "mcMean"];
+    if (isSimple(w)) modes.push("type");
     if (canArticle(w)) modes.push("article");
-    return modes[Math.floor(Math.random() * modes.length)];
+    return modes;
   }
+  function pickActive(w) { var m = activeModes(w); return m[Math.floor(Math.random() * m.length)]; }
+
   function buildSession(opts) {
     opts = opts || {};
     var now = Date.now();
     var pool = levelWords();
     if (opts.meeting) pool = pool.filter(function (w) { return w._meeting === opts.meeting; });
-    var queue;
+    var size = opts.size || SESSION_SIZE;
+    var list;
     if (opts.difficult) {
-      pool = pool.filter(function (w) { var p = prog(w.id); return (p && p.unsure) || boxOf(w) === 1; });
-      queue = shuffle(pool).slice(0, opts.size || 20).map(function (w) { return { word: w, mode: pickMode(w, !prog(w.id)) }; });
+      list = shuffle(pool.filter(function (w) { var p = prog(w.id); return (p && p.unsure) || boxOf(w) === 1; })).slice(0, size);
     } else {
       var due = shuffle(pool.filter(function (w) { var p = prog(w.id); return p && p.due <= now; }));
       var neu = shuffle(pool.filter(function (w) { return !prog(w.id); }));
-      var list = due.concat(neu).slice(0, opts.size || SESSION_SIZE);
-      if (list.length === 0) { // nothing due & nothing new -> early review
-        list = pool.filter(function (w) { return prog(w.id); }).sort(function (a, b) { return prog(a.id).due - prog(b.id).due; }).slice(0, opts.size || SESSION_SIZE);
+      list = due.concat(neu).slice(0, size);
+      if (!list.length) { // nothing due & nothing new -> bring back the soonest reviews
+        list = pool.filter(function (w) { return prog(w.id); }).sort(function (a, b) { return prog(a.id).due - prog(b.id).due; }).slice(0, size);
       }
-      queue = list.map(function (w) { return { word: w, mode: pickMode(w, !prog(w.id)) }; });
     }
+    // New word: introduce as a flashcard, then test it actively later in the same session.
+    // Already-seen word: go straight to an active exercise.
+    var intro = [], test = [];
+    list.forEach(function (w) {
+      if (prog(w.id)) { intro.push({ word: w, mode: pickActive(w) }); }
+      else { intro.push({ word: w, mode: "flash" }); test.push({ word: w, mode: pickActive(w) }); }
+    });
+    var queue = shuffle(intro).concat(shuffle(test));
     if (!queue.length) return null;
-    return { queue: queue, i: 0, right: 0, wrong: 0, title: opts.title || "Latihan hari ini" };
+    return { queue: queue, i: 0, right: 0, wrong: 0, title: opts.title || "Training" };
   }
 
   /* ---------- distractors ---------- */
@@ -152,7 +161,7 @@
 
   function render() {
     setKey(null);
-    if (!DECK.words.length) { app.innerHTML = header() + '<div class="card empty">Belum ada kata. Jalankan <code>node build.js</code> dulu.</div>'; wireHeader(); return; }
+    if (!DECK.words.length) { app.innerHTML = header() + '<div class="card empty">Noch keine Wörter. Zuerst <code>node build.js</code> ausführen.</div>'; wireHeader(); return; }
     if (S.view === "session") renderSession();
     else if (S.view === "browse") renderBrowse();
     else renderDashboard();
@@ -178,7 +187,7 @@
       '</div>';
 
     html += '<div class="card" style="margin-top:14px">' +
-      '<button class="btn btn-primary btn-lg" id="startBtn">▶  Latihan hari ini' + (due ? '  <span class="badge due">' + due + ' fällig</span>' : (neu ? '  <span class="badge">' + Math.min(SESSION_SIZE, neu) + ' neu</span>' : '')) + '</button>' +
+      '<button class="btn btn-primary btn-lg" id="startBtn">▶  Heute üben' + (due ? '  <span class="badge due">' + due + ' fällig</span>' : (neu ? '  <span class="badge">' + Math.min(SESSION_SIZE, neu) + ' neu</span>' : '')) + '</button>' +
       '<div class="btn-row" style="margin-top:10px">' +
         '<button class="btn btn-ghost" id="diffBtn" style="flex:1">⚑ Schwierige (' + unsure + ')</button>' +
         '<button class="btn btn-ghost" id="browseBtn" style="flex:1">📖 Alle Wörter</button>' +
