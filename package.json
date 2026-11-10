@@ -1,0 +1,9 @@
+{
+  "name": "deutschstudio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal German B1 to C1 vocabulary trainer (vanilla, zero dependencies).",
+  "scripts": {
+    "build": "node build.js"
+  }
+}

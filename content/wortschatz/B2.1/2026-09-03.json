@@ -1,0 +1,263 @@
+{
+  "schema": 1,
+  "class": "B2.1",
+  "level": "B2",
+  "meeting": "2026-09-03",
+  "topic": "Beruf & Bewerbung, Stadt/Wegbeschreibung & Termine",
+  "sources": [
+    "B2.1 IC HFT Wise 26/03.09.2026-20260905/03.09._Wortschatz.docx",
+    "B2.1 IC HFT Wise 26/03.09.2026-20260905/nutzen_verwenden_anwenden_einsetzen_gebrauchen_Übungen.docx",
+    "B2.1 IC HFT Wise 26/03.09.2026-20260905/Wortschatz_Stadt_Wegbeschreibung_Übungen.docx",
+    "B2.1 IC HFT Wise 26/03.09.2026-20260905/Wortschatz_Termine_Wiederholung.docx"
+  ],
+  "words": [
+    {
+      "id": "b2.1-2026-09-03-synonympaare-arbeit",
+      "de": "Synonympaare rund um die Arbeit", "typ": "Wortfeld",
+      "bedeutung": { "id": "pasangan sinonim dunia kerja", "en": "work-related synonym pairs" },
+      "kollokationen": [
+        "das Unternehmen = die Firma (perusahaan)",
+        "die Unterlagen = die Dokumente (berkas)",
+        "der Chef = der/die Vorgesetzte (atasan)",
+        "die Bezahlung = die Vergütung (imbalan/bayaran)",
+        "der Job = die Stelle (posisi)",
+        "die Kompetenz = die Fähigkeit (kemampuan)",
+        "die Chance = die Möglichkeit (peluang)",
+        "die Ware = das Produkt (barang)"
+      ],
+      "tags": ["Beruf", "Synonyme"]
+    },
+    {
+      "id": "b2.1-2026-09-03-unterschreiben",
+      "de": "unterschreiben / unterzeichnen", "typ": "Verb",
+      "bedeutung": { "id": "menandatangani", "en": "to sign" },
+      "kollokationen": ["die Unterschrift = die Unterzeichnung (tanda tangan)"],
+      "beispiele": [
+        { "de": "Beide Parteien müssen den Vertrag unterzeichnen.", "id": "Kedua pihak harus menandatangani kontrak.", "en": "Both parties must sign the contract." }
+      ],
+      "tags": ["Beruf", "Dokumente"]
+    },
+    {
+      "id": "b2.1-2026-09-03-verfuegen-ueber",
+      "de": "verfügen über", "typ": "Verb",
+      "bedeutung": { "id": "memiliki / menguasai (kompetensi, pengalaman)", "en": "to have / possess (at one's disposal)" },
+      "synonyme": ["besitzen", "haben"],
+      "beispiele": [
+        { "de": "Der Bewerber verfügt über 2 Jahre Erfahrung im Marketing.", "id": "Pelamar itu memiliki 2 tahun pengalaman di marketing.", "en": "The applicant has 2 years of experience in marketing." }
+      ],
+      "tags": ["Beruf", "Bewerbung"]
+    },
+    {
+      "id": "b2.1-2026-09-03-berufseinstieg",
+      "de": "Berufseinstieg", "artikel": "der", "typ": "Nomen",
+      "bedeutung": { "id": "awal masuk kerja setelah studi", "en": "career entry / start of working life" },
+      "kollokationen": ["in den Beruf einsteigen (mulai bekerja)"],
+      "beispiele": [
+        { "de": "Ich bin direkt nach dem Studium in meinen Beruf eingestiegen.", "id": "Saya langsung bekerja setelah lulus.", "en": "I started my career right after my studies." }
+      ],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.1-2026-09-03-sich-freuen",
+      "de": "sich freuen auf / über", "typ": "Verb",
+      "bedeutung": { "id": "auf = menanti-nanti (masa depan) · über = senang atas (sesuatu yang ada/terjadi)", "en": "to look forward to (auf) / to be happy about (über)" },
+      "beispiele": [
+        { "de": "Ich freue mich auf meinen Urlaub im Herbst.", "id": "Saya menanti-nanti liburan musim gugur.", "en": "I'm looking forward to my holiday in autumn." },
+        { "de": "Ich freue mich über mein Leben in Deutschland.", "id": "Saya bahagia dengan hidup saya di Jerman.", "en": "I'm happy about my life in Germany." }
+      ],
+      "tags": ["Gefühle", "Grammatik"]
+    },
+    {
+      "id": "b2.1-2026-09-03-erstaunt-erstaunlich",
+      "de": "erstaunt / erstaunlich", "typ": "Adjektiv",
+      "bedeutung": { "id": "erstaunt = terheran (orang) · erstaunlich = mengherankan (hal)", "en": "astonished (person) / astonishing (thing)" },
+      "synonyme": ["überrascht / überraschend", "die Überraschung (kejutan)"],
+      "beispiele": [
+        { "de": "Es ist erstaunlich, wie schnell sich die Firma entwickelt.", "id": "Menakjubkan betapa cepat perusahaan itu berkembang.", "en": "It's astonishing how fast the company is developing." }
+      ],
+      "tags": ["Gefühle", "Adjektive"]
+    },
+    {
+      "id": "b2.1-2026-09-03-unterwegs",
+      "de": "unterwegs", "typ": "Adverb",
+      "bedeutung": { "id": "sedang di jalan / dalam perjalanan / tidak di rumah", "en": "on the way / out and about" },
+      "beispiele": [
+        { "de": "Ich bin gerade unterwegs zur Arbeit.", "id": "Saya sedang dalam perjalanan ke kantor.", "en": "I'm on my way to work." },
+        { "de": "Herr Schneider ist diese Woche beruflich unterwegs.", "id": "Pak Schneider minggu ini dinas ke luar.", "en": "Mr Schneider is travelling for work this week." }
+      ],
+      "tags": ["Mobilität", "Alltag"]
+    },
+    {
+      "id": "b2.1-2026-09-03-betreuen",
+      "de": "betreuen", "typ": "Verb",
+      "bedeutung": { "id": "mendampingi / menangani / merawat (klien, anak, lansia)", "en": "to look after / support / supervise" },
+      "kollokationen": ["die Betreuung (pendampingan)"],
+      "beispiele": [
+        { "de": "Frau Keller betreut internationale Kunden.", "id": "Bu Keller menangani klien internasional.", "en": "Ms Keller looks after international clients." }
+      ],
+      "tags": ["Beruf", "Soziales"]
+    },
+    {
+      "id": "b2.1-2026-09-03-arbeitsablauf",
+      "de": "Tagesablauf / Arbeitsablauf", "typ": "Nomen",
+      "bedeutung": { "id": "alur harian / alur kerja (= Arbeitsprozess)", "en": "daily routine / workflow" },
+      "beispiele": [
+        { "de": "Wie sind die Arbeitsabläufe im Büro?", "id": "Bagaimana alur kerja di kantor?", "en": "What are the workflows in the office?" }
+      ],
+      "tags": ["Beruf", "Alltag"]
+    },
+    {
+      "id": "b2.1-2026-09-03-sich-einarbeiten",
+      "de": "sich einarbeiten", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "beradaptasi/belajar tugas di pekerjaan baru (onboarding)", "en": "to get settled into a new job" },
+      "synonyme": ["die Einarbeitung = das Onboarding"],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.1-2026-09-03-abhaengen-von",
+      "de": "abhängen von", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "bergantung pada", "en": "to depend on" },
+      "synonyme": ["abhängig sein von", "Je nachdem.", "Es kommt darauf an."],
+      "beispiele": [
+        { "de": "Das hängt vom Wetter ab.", "id": "Itu tergantung cuaca.", "en": "That depends on the weather." }
+      ],
+      "tags": ["Alltag", "Grammatik"]
+    },
+    {
+      "id": "b2.1-2026-09-03-besprechung",
+      "de": "Besprechung", "artikel": "die", "plural": "Besprechungen", "typ": "Nomen",
+      "bedeutung": { "id": "rapat / pertemuan kerja", "en": "meeting" },
+      "synonyme": ["das Meeting"],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.1-2026-09-03-fuehrungskraft",
+      "de": "Führungskraft", "artikel": "die", "plural": "Führungskräfte", "typ": "Nomen",
+      "bedeutung": { "id": "pimpinan / eksekutif", "en": "manager / executive" },
+      "kollokationen": ["ein Unternehmen leiten (memimpin perusahaan)", "= die Vorgesetzten / die Chefs"],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.1-2026-09-03-autoverleih",
+      "de": "Autoverleih", "artikel": "der", "typ": "Nomen",
+      "bedeutung": { "id": "penyewaan mobil (leihen = mieten: menyewa)", "en": "car rental" },
+      "synonyme": ["die Autovermietung", "der Fahrradverleih / die Fahrradvermietung"],
+      "tags": ["Mobilität", "Dienstleistung"]
+    },
+    {
+      "id": "b2.1-2026-09-03-nutzen-wortfeld",
+      "de": "benutzen / verwenden / anwenden / einsetzen / gebrauchen", "typ": "Wortfeld",
+      "bedeutung": { "id": "lima verba 'memakai' menurut konteks", "en": "five 'to use' verbs by context" },
+      "kollokationen": [
+        "benutzen → benda/alat sehari-hari (Laptop benutzen)",
+        "verwenden → untuk tujuan tertentu (nachhaltige Materialien verwenden)",
+        "anwenden → ilmu/metode/aturan secara praktis (eine Methode anwenden)",
+        "einsetzen → profesional/strategis (KI-Systeme einsetzen)",
+        "gebrauchen → agak lama; 'bisa dipakai/butuh' (Ich könnte Hilfe gebrauchen)"
+      ],
+      "beispiele": [
+        { "de": "Wer eine Fremdsprache lernt, muss sie regelmäßig anwenden.", "id": "Yang belajar bahasa asing harus rutin menerapkannya.", "en": "Whoever learns a foreign language must apply it regularly." }
+      ],
+      "tags": ["Wortschatzunterschiede", "Verben"]
+    },
+    {
+      "id": "b2.1-2026-09-03-sich-einsetzen-fuer",
+      "de": "sich einsetzen für", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "memperjuangkan / aktif mendukung sesuatu", "en": "to stand up / advocate for" },
+      "synonyme": ["sich engagieren für"],
+      "beispiele": [
+        { "de": "Sie setzt sich für den Umweltschutz ein.", "id": "Dia memperjuangkan perlindungan lingkungan.", "en": "She advocates for environmental protection." }
+      ],
+      "tags": ["Gesellschaft", "Werte"]
+    },
+    {
+      "id": "b2.1-2026-09-03-verkehrsmittel",
+      "de": "Öffentliche Verkehrsmittel", "typ": "Wortfeld",
+      "bedeutung": { "id": "transportasi umum", "en": "public transport" },
+      "kollokationen": ["der Zug", "der Bus", "die U-Bahn", "die S-Bahn", "die Straßenbahn", "das Taxi"],
+      "beispiele": [
+        { "de": "Ich fahre oft mit dem Zug.", "id": "Saya sering naik kereta.", "en": "I often go by train." }
+      ],
+      "tags": ["Mobilität", "Stadt"]
+    },
+    {
+      "id": "b2.1-2026-09-03-ein-aus-umsteigen",
+      "de": "einsteigen / aussteigen / umsteigen", "typ": "Wortfeld", "trennbar": true,
+      "bedeutung": { "id": "naik / turun / ganti kendaraan", "en": "to get on / get off / change (transport)" },
+      "beispiele": [
+        { "de": "Am Marktplatz musst du umsteigen.", "id": "Di Marktplatz kamu harus ganti kendaraan.", "en": "You have to change at Marktplatz." }
+      ],
+      "tags": ["Mobilität"]
+    },
+    {
+      "id": "b2.1-2026-09-03-gewaesser",
+      "de": "Fluss / See / Meer", "typ": "Wortfeld",
+      "bedeutung": { "id": "perairan: der Fluss = sungai · der See = danau · die See/das Meer = laut", "en": "waters: river / lake / sea" },
+      "tags": ["Natur", "Geografie"]
+    },
+    {
+      "id": "b2.1-2026-09-03-stadt-gebaeude",
+      "de": "Stadt & Gebäude", "typ": "Wortfeld",
+      "bedeutung": { "id": "kosakata kota & bangunan", "en": "city & buildings vocabulary" },
+      "kollokationen": ["das Gebäude (bangunan)", "der Turm (menara)", "die Brücke (jembatan)", "das Schwimmbad (kolam dalam) / das Freibad (kolam terbuka)"],
+      "tags": ["Stadt"]
+    },
+    {
+      "id": "b2.1-2026-09-03-wegbeschreibung",
+      "de": "Wegbeschreibung", "typ": "Wortfeld",
+      "bedeutung": { "id": "menjelaskan arah jalan", "en": "giving directions" },
+      "kollokationen": [
+        "(nach) links / rechts / geradeaus (kiri/kanan/lurus)",
+        "an der Kreuzung (di perempatan)",
+        "an der Ampel (di lampu merah)",
+        "im Kreisverkehr (di bundaran)",
+        "um die Ecke (di belokan/sudut)",
+        "die zweite Straße rechts nehmen (ambil jalan kedua ke kanan)"
+      ],
+      "beispiele": [
+        { "de": "Gehen Sie an der Kreuzung links und dann geradeaus.", "id": "Belok kiri di perempatan lalu lurus.", "en": "Turn left at the junction and then go straight." }
+      ],
+      "tags": ["Stadt", "Orientierung"]
+    },
+    {
+      "id": "b2.1-2026-09-03-zu-fuss",
+      "de": "zu Fuß gehen", "typ": "Wendung",
+      "bedeutung": { "id": "berjalan kaki", "en": "to go on foot / walk" },
+      "tags": ["Mobilität"]
+    },
+    {
+      "id": "b2.1-2026-09-03-termin",
+      "de": "Termin", "artikel": "der", "plural": "Termine", "typ": "Nomen",
+      "bedeutung": { "id": "janji temu (resmi)", "en": "appointment" },
+      "kollokationen": [
+        "einen Termin vereinbaren (= ausmachen) — membuat janji",
+        "einen Termin absagen — membatalkan",
+        "einen Termin verschieben — menunda/menggeser"
+      ],
+      "beispiele": [
+        { "de": "Ich hätte gern einen Termin am Montag.", "id": "Saya ingin janji temu hari Senin.", "en": "I'd like an appointment on Monday." },
+        { "de": "Leider muss ich den Termin absagen.", "id": "Maaf, saya harus membatalkan janjinya.", "en": "Unfortunately I have to cancel the appointment." }
+      ],
+      "tags": ["Alltag", "Kommunikation"]
+    },
+    {
+      "id": "b2.1-2026-09-03-verabredung",
+      "de": "sich verabreden / verabredet sein", "typ": "Verb",
+      "bedeutung": { "id": "janjian (dengan teman) / sudah ada janji", "en": "to arrange to meet / to have plans" },
+      "kollokationen": ["verplant sein (sudah penuh jadwalnya)", "Hast du Zeit? – Ja, das passt / Nein, das geht nicht."],
+      "beispiele": [
+        { "de": "Ich bin am Wochenende komplett verplant.", "id": "Akhir pekan saya benar-benar penuh jadwal.", "en": "My weekend is completely booked up." }
+      ],
+      "tags": ["Alltag", "Soziales"]
+    },
+    {
+      "id": "b2.1-2026-09-03-reservieren",
+      "de": "reservieren", "typ": "Verb",
+      "bedeutung": { "id": "memesan (meja/tempat)", "en": "to reserve / book" },
+      "beispiele": [
+        { "de": "Ich möchte für Samstag einen Tisch für 4 Personen reservieren.", "id": "Saya ingin memesan meja untuk 4 orang hari Sabtu.", "en": "I'd like to reserve a table for 4 on Saturday." }
+      ],
+      "tags": ["Alltag", "Dienstleistung"]
+    }
+  ]
+}

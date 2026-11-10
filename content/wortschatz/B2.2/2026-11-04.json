@@ -1,0 +1,292 @@
+{
+  "schema": 1,
+  "class": "B2.2",
+  "level": "B2",
+  "meeting": "2026-11-04",
+  "topic": "Arbeit & Verwaltung, Nomen-Verb mit Präpositionen, Freundschaft & Gefühle",
+  "sources": [
+    "B2.2 SC HFT Wise 26/04.11.2026-20261109/04.11._Wortschatz.docx"
+  ],
+  "words": [
+    {
+      "id": "b2.2-2026-11-04-urlaubsantrag",
+      "de": "Urlaubsantrag", "artikel": "der", "plural": "Urlaubsanträge", "typ": "Nomen",
+      "bedeutung": { "id": "permohonan cuti", "en": "holiday/leave request" },
+      "kollokationen": [
+        "einen Urlaubsantrag stellen (mengajukan)",
+        "bearbeiten (memproses)",
+        "abgeben / weiterleiten (menyerahkan / meneruskan)",
+        "ausfüllen (mengisi)",
+        "vorlegen (= geben, menyerahkan untuk disetujui)",
+        "verlangen / einfordern (meminta secara formal)"
+      ],
+      "beispiele": [
+        { "de": "Ich stelle einen Urlaubsantrag für zwei Wochen im August.", "id": "Saya mengajukan permohonan cuti dua minggu di bulan Agustus.", "en": "I'm submitting a leave request for two weeks in August." }
+      ],
+      "tags": ["Arbeit", "Verwaltung"]
+    },
+    {
+      "id": "b2.2-2026-11-04-krankmeldung",
+      "de": "Krankmeldung", "artikel": "die", "plural": "Krankmeldungen", "typ": "Nomen",
+      "bedeutung": { "id": "surat keterangan sakit", "en": "sick note / medical certificate" },
+      "synonyme": ["die Krankenbescheinigung", "das Attest"],
+      "kollokationen": [
+        "eine Krankmeldung einholen (= bekommen, mengambil dari dokter)",
+        "vorweisen / vorlegen (menunjukkan / menyerahkan)",
+        "zusenden (= schicken, mengirim)",
+        "in der Akte ablegen (mengarsipkan)"
+      ],
+      "beispiele": [
+        { "de": "Ab dem dritten Krankheitstag muss ich eine Krankmeldung vorweisen.", "id": "Mulai hari sakit ketiga, saya harus menunjukkan surat sakit.", "en": "From the third day of illness I must show a sick note." }
+      ],
+      "tags": ["Arbeit", "Verwaltung", "Gesundheit"]
+    },
+    {
+      "id": "b2.2-2026-11-04-synonympaare-verben",
+      "de": "Synonympaare (Verben)", "typ": "Wortfeld",
+      "bedeutung": { "id": "pasangan verba bersinonim", "en": "verb synonym pairs" },
+      "kollokationen": [
+        "anstreben = ein Ziel verfolgen (mengejar tujuan)",
+        "beinhalten = umfassen (mencakup)",
+        "fördern = unterstützen (mendukung)",
+        "gewinnbringend = lohnend (menguntungkan)",
+        "verhindern = vermeiden (mencegah / menghindari)"
+      ],
+      "beispiele": [
+        { "de": "Sie strebt eine Führungsposition an.", "id": "Dia mengincar posisi pimpinan.", "en": "She is aiming for a leadership position." }
+      ],
+      "tags": ["Beruf", "Synonyme", "Verben"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-mit",
+      "de": "Nomen/Verben mit „mit\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'mit' (+ Dativ)", "en": "nouns/verbs taking 'mit' (+ dative)" },
+      "kollokationen": [
+        "die Erfahrung mit (pengalaman dengan)",
+        "sich beschäftigen mit / die Beschäftigung mit (menekuni)",
+        "der Umgang mit / umgehen mit (cara menghadapi)",
+        "die Zufriedenheit mit (kepuasan terhadap)",
+        "der Konflikt mit (konflik dengan)",
+        "die Interaktion mit / interagieren mit (interaksi dengan)",
+        "etwas teilen mit (berbagi dengan)"
+      ],
+      "beispiele": [
+        { "de": "Der Umgang mit Kritik ist nicht immer einfach.", "id": "Menghadapi kritik tidak selalu mudah.", "en": "Dealing with criticism isn't always easy." }
+      ],
+      "tags": ["Rektion", "Grammatik", "C1"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-an",
+      "de": "Nomen/Verben mit „an\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'an'", "en": "nouns/verbs taking 'an'" },
+      "kollokationen": [
+        "das Interesse an (+ Dat.) (minat pada)",
+        "der Zweifel an (+ Dat.) (keraguan atas)",
+        "die Teilnahme an / teilnehmen an (+ Dat.) (ikut serta dalam)",
+        "sich gewöhnen an (+ Akk.) (terbiasa dengan)",
+        "das Interesse wecken (membangkitkan minat)"
+      ],
+      "beispiele": [
+        { "de": "Ich habe großes Interesse an Sprachen.", "id": "Saya sangat berminat pada bahasa.", "en": "I have a great interest in languages." }
+      ],
+      "tags": ["Rektion", "Grammatik", "C1"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-um",
+      "de": "Nomen/Verben mit „um\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'um'", "en": "nouns/verbs taking 'um'" },
+      "kollokationen": [
+        "die Bewerbung um / sich bewerben um (lamaran untuk)",
+        "die Bitte um / bitten um (permintaan akan)",
+        "die Bemühung um / sich bemühen um (usaha untuk)",
+        "sich Sorgen machen um (khawatir akan)",
+        "sich kümmern um (mengurus)"
+      ],
+      "beispiele": [
+        { "de": "Ich mache mir Sorgen um meine Zukunft.", "id": "Saya khawatir akan masa depan saya.", "en": "I'm worried about my future." }
+      ],
+      "tags": ["Rektion", "Grammatik", "C1"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-fuer",
+      "de": "Nomen/Verben mit „für\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'für' (+ Akk.)", "en": "nouns/verbs taking 'für'" },
+      "kollokationen": [
+        "die Begeisterung für / sich begeistern für (antusias pada)",
+        "das Engagement für / sich engagieren für (keterlibatan demi)",
+        "die Entscheidung für / sich entscheiden für (keputusan untuk)",
+        "verantwortlich für (bertanggung jawab atas)",
+        "zuständig für (berwenang/bertugas atas)"
+      ],
+      "beispiele": [
+        { "de": "Mein Chef ist für sein Team verantwortlich.", "id": "Bos saya bertanggung jawab atas timnya.", "en": "My boss is responsible for his team." }
+      ],
+      "tags": ["Rektion", "Grammatik", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-auf",
+      "de": "Nomen/Verben mit „auf\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'auf' (+ Akk.)", "en": "nouns/verbs taking 'auf'" },
+      "kollokationen": [
+        "der Stolz auf / stolz sein auf (bangga akan)",
+        "die Vorfreude auf (antisipasi senang akan)",
+        "die Neugier auf (rasa penasaran akan)",
+        "sich freuen auf (menanti-nanti)",
+        "achten auf (memperhatikan)",
+        "verzichten auf (merelakan / tidak jadi pakai)",
+        "neidisch auf / eifersüchtig auf (iri / cemburu pada)"
+      ],
+      "beispiele": [
+        { "de": "Sie ist stolz auf ihren Erfolg.", "id": "Dia bangga akan keberhasilannya.", "en": "She is proud of her success." }
+      ],
+      "tags": ["Rektion", "Grammatik"]
+    },
+    {
+      "id": "b2.2-2026-11-04-rektion-ueber",
+      "de": "Nomen/Verben mit „über\"", "typ": "Wortfeld",
+      "bedeutung": { "id": "kata + preposisi 'über' (+ Akk.)", "en": "nouns/verbs taking 'über'" },
+      "kollokationen": [
+        "der Ärger über / sich ärgern über (kesal akan)",
+        "sich aufregen über (jengkel/ribut soal)",
+        "sich Gedanken machen über / nachdenken über (memikirkan)",
+        "das Wissen über / über etwas Bescheid wissen (tahu tentang)"
+      ],
+      "beispiele": [
+        { "de": "Ich ärgere mich über meine Kollegin.", "id": "Saya kesal pada rekan saya.", "en": "I'm annoyed at my colleague." }
+      ],
+      "tags": ["Rektion", "Grammatik"]
+    },
+    {
+      "id": "b2.2-2026-11-04-sich-hineinversetzen",
+      "de": "sich hineinversetzen in", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "menempatkan diri di posisi orang lain / berempati", "en": "to put oneself in someone's position" },
+      "beispiele": [
+        { "de": "Ich kann mich gut in deine Lage hineinversetzen.", "id": "Saya bisa memahami posisimu.", "en": "I can really put myself in your position." }
+      ],
+      "tags": ["Soziales", "Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-11-04-freundschaft-schliessen",
+      "de": "Freundschaften schließen", "typ": "Wendung",
+      "bedeutung": { "id": "menjalin pertemanan", "en": "to make friends" },
+      "synonyme": ["sich mit jemandem anfreunden", "Anschluss finden", "neue Leute kennenlernen"],
+      "beispiele": [
+        { "de": "Über den Sportverein habe ich schnell Anschluss gefunden.", "id": "Lewat klub olahraga saya cepat dapat teman.", "en": "Through the sports club I quickly found a social connection." }
+      ],
+      "tags": ["Soziales"]
+    },
+    {
+      "id": "b2.2-2026-11-04-vertrauen",
+      "de": "Vertrauen", "artikel": "das", "typ": "Nomen",
+      "bedeutung": { "id": "kepercayaan", "en": "trust" },
+      "kollokationen": ["jemandem vertrauen (memercayai seseorang)"],
+      "beispiele": [
+        { "de": "Ich vertraue meinem besten Freund.", "id": "Saya memercayai sahabat saya.", "en": "I trust my best friend." }
+      ],
+      "tags": ["Soziales", "Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-11-04-verantwortung-zustaendigkeit",
+      "de": "Verantwortung / Zuständigkeit", "typ": "Wortfeld",
+      "bedeutung": { "id": "Verantwortung = tanggung jawab (verantwortlich für) · Zuständigkeit = kewenangan/tugas (zuständig für)", "en": "responsibility / area of responsibility" },
+      "kollokationen": ["Verantwortung übernehmen (mengambil tanggung jawab)", "verantwortlich für", "zuständig für"],
+      "beispiele": [
+        { "de": "Wer ist für Kunden aus Italien zuständig?", "id": "Siapa yang menangani klien dari Italia?", "en": "Who is responsible for clients from Italy?" }
+      ],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-04-unter-druck",
+      "de": "unter Druck stehen / setzen", "typ": "Redewendung",
+      "bedeutung": { "id": "stehen = sedang tertekan · setzen = menekan orang lain", "en": "to be under pressure / to pressure someone" },
+      "beispiele": [
+        { "de": "Mein Chef setzt mich immer unter Druck.", "id": "Bos saya selalu menekan saya.", "en": "My boss always puts me under pressure." }
+      ],
+      "tags": ["Arbeit", "Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-11-04-verhaeltnis-beziehung",
+      "de": "Verhältnis / Beziehung", "typ": "Nomen",
+      "bedeutung": { "id": "hubungan: 'zu' = hubungan (netral) · 'mit' = bisa berarti hubungan asmara", "en": "relationship: 'zu' (neutral) / 'mit' (can imply romantic)" },
+      "beispiele": [
+        { "de": "Ich habe ein gutes Verhältnis zu meinem Chef.", "id": "Saya punya hubungan baik dengan bos saya.", "en": "I have a good relationship with my boss." }
+      ],
+      "tags": ["Soziales", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-04-neid-eifersucht",
+      "de": "Neid / Eifersucht", "typ": "Wortfeld",
+      "bedeutung": { "id": "der Neid = iri (neidisch auf) · die Eifersucht = cemburu (eifersüchtig auf)", "en": "envy / jealousy" },
+      "tags": ["Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-11-04-sich-trennen",
+      "de": "sich trennen von", "typ": "Verb",
+      "bedeutung": { "id": "berpisah dari (pasangan)", "en": "to split up / separate from" },
+      "synonyme": ["getrennt leben (hidup terpisah)"],
+      "beispiele": [
+        { "de": "Sie haben sich voneinander getrennt.", "id": "Mereka berpisah satu sama lain.", "en": "They split up." }
+      ],
+      "tags": ["Soziales", "Beziehung"]
+    },
+    {
+      "id": "b2.2-2026-11-04-auseinanderbrechen",
+      "de": "auseinanderbrechen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "pecah/berantakan (hubungan, benda)", "en": "to fall apart / break apart" },
+      "beispiele": [
+        { "de": "Nach dem Streit ist ihre Freundschaft auseinandergebrochen.", "id": "Setelah pertengkaran, persahabatan mereka berantakan.", "en": "After the argument their friendship fell apart." }
+      ],
+      "tags": ["Soziales"]
+    },
+    {
+      "id": "b2.2-2026-11-04-veranstaltung",
+      "de": "Veranstaltung", "artikel": "die", "plural": "Veranstaltungen", "typ": "Nomen",
+      "bedeutung": { "id": "acara", "en": "event" },
+      "synonyme": ["das Event"],
+      "kollokationen": ["die Einführungsveranstaltung (acara perkenalan di kampus)"],
+      "tags": ["Uni", "Soziales"]
+    },
+    {
+      "id": "b2.2-2026-11-04-per-los",
+      "de": "per Los bestimmen", "typ": "Wendung",
+      "bedeutung": { "id": "menentukan dengan undian / secara acak", "en": "to decide by drawing lots" },
+      "beispiele": [
+        { "de": "Der Gewinner wird per Los bestimmt.", "id": "Pemenang ditentukan lewat undian.", "en": "The winner is chosen by lot." }
+      ],
+      "tags": ["Alltag"]
+    },
+    {
+      "id": "b2.2-2026-11-04-zusage-absage",
+      "de": "Zusage / Absage bekommen", "typ": "Wortfeld",
+      "bedeutung": { "id": "die Zusage = jawaban 'ya'/diterima · die Absage = jawaban 'tidak'/ditolak", "en": "acceptance / rejection" },
+      "beispiele": [
+        { "de": "Nach dem Vorstellungsgespräch hat sie sofort eine Zusage bekommen.", "id": "Setelah wawancara, dia langsung diterima.", "en": "After the interview she got an acceptance right away." }
+      ],
+      "tags": ["Bewerbung", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-04-meinung-aeussern",
+      "de": "seine Meinung / Gefühle äußern", "typ": "Wendung",
+      "bedeutung": { "id": "menyampaikan pendapat / perasaan (= zeigen, sagen)", "en": "to express one's opinion / feelings" },
+      "beispiele": [
+        { "de": "Darf ich meine Meinung dazu äußern?", "id": "Boleh saya menyampaikan pendapat soal ini?", "en": "May I express my opinion on this?" }
+      ],
+      "tags": ["Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-11-04-selbstwertgefuehl",
+      "de": "das Selbstwertgefühl stärken", "typ": "Wendung",
+      "bedeutung": { "id": "memperkuat harga diri", "en": "to boost self-esteem" },
+      "beispiele": [
+        { "de": "Positive Rückmeldungen können das Selbstwertgefühl stärken.", "id": "Masukan positif bisa memperkuat harga diri.", "en": "Positive feedback can boost self-esteem." }
+      ],
+      "tags": ["Gefühle", "Psychologie"]
+    },
+    {
+      "id": "b2.2-2026-11-04-freundeskreis",
+      "de": "Freundeskreis", "artikel": "der", "typ": "Nomen",
+      "bedeutung": { "id": "lingkaran pertemanan", "en": "circle of friends" },
+      "tags": ["Soziales"]
+    }
+  ]
+}

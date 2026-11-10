@@ -1,0 +1,260 @@
+{
+  "schema": 1,
+  "class": "B2.2",
+  "level": "B2",
+  "meeting": "2026-10-21",
+  "topic": "Lernen & Beratung, Einrichtungen in Deutschland, Verben mit „ver-\"",
+  "sources": [
+    "B2.2 SC HFT Wise 26/21.10.2026-20261022/21.10._Wortschatz.docx",
+    "B2.2 SC HFT Wise 26/21.10.2026-20261022/Einrichtungen_Organisationen in DE.docx",
+    "B2.2 SC HFT Wise 26/21.10.2026-20261022/Wortschatz_ver_negativ_positiv_Übungen.docx"
+  ],
+  "words": [
+    {
+      "id": "b2.2-2026-10-21-auffuehren",
+      "de": "aufführen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "3 arti: (1) mementaskan (teater) (2) memperagakan/menunjukkan (3) 'sich aufführen' = berperilaku buruk", "en": "to perform / to demonstrate / (refl.) to behave badly" },
+      "synonyme": ["inszenieren", "vorführen", "demonstrieren"],
+      "beispiele": [
+        { "de": "Das Stück wird zum ersten Mal in Stuttgart aufgeführt.", "id": "Lakon itu dipentaskan pertama kali di Stuttgart.", "en": "The play is being performed in Stuttgart for the first time." },
+        { "de": "Meine Kollegin führt sich auf, als ob sie die Chefin wäre.", "id": "Rekan saya bertingkah seolah dia bosnya.", "en": "My colleague acts as if she were the boss." }
+      ],
+      "tags": ["Kultur", "Verhalten"]
+    },
+    {
+      "id": "b2.2-2026-10-21-nachvollziehen",
+      "de": "nachvollziehen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "memahami (secara emosional/logis)", "en": "to understand / relate to" },
+      "beispiele": [
+        { "de": "Ich kann gut nachvollziehen, was du fühlst.", "id": "Saya bisa memahami apa yang kamu rasakan.", "en": "I can really understand what you feel." }
+      ],
+      "tags": ["Kommunikation", "Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-10-21-bedienungsanleitung",
+      "de": "Bedienungsanleitung / Beipackzettel", "typ": "Wortfeld",
+      "bedeutung": { "id": "die Bedienungsanleitung = buku petunjuk (mesin/perabot; = Gebrauchsanweisung) · der Beipackzettel = selebaran aturan pakai obat (= Packungsbeilage)", "en": "user manual / medication leaflet" },
+      "tags": ["Alltag", "Dokumente"]
+    },
+    {
+      "id": "b2.2-2026-10-21-fehler-unterlaufen",
+      "de": "jemandem unterläuft ein Fehler", "typ": "Wendung",
+      "bedeutung": { "id": "seseorang (tanpa sengaja) membuat kesalahan — cara sopan", "en": "a mistake slips in / happens to someone (polite)" },
+      "beispiele": [
+        { "de": "Wahrscheinlich ist dir ein Fehler unterlaufen.", "id": "Mungkin kamu tak sengaja membuat kesalahan.", "en": "You probably made a mistake (it slipped in)." }
+      ],
+      "tags": ["Kommunikation", "Höflichkeit"]
+    },
+    {
+      "id": "b2.2-2026-10-21-abrufen",
+      "de": "abrufen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "memanggil/mengeluarkan (pengetahuan) saat dibutuhkan", "en": "to retrieve / recall (knowledge)" },
+      "beispiele": [
+        { "de": "Bei Prüfungen kann ich das Gelernte schwer abrufen.", "id": "Saat ujian saya sulit memanggil kembali yang sudah dipelajari.", "en": "In exams I find it hard to recall what I've learned." }
+      ],
+      "tags": ["Lernen", "Prüfung"]
+    },
+    {
+      "id": "b2.2-2026-10-21-beherrschen",
+      "de": "beherrschen", "typ": "Verb",
+      "bedeutung": { "id": "(1) menguasai (bahasa/keterampilan) (2) mengendalikan/menguasai (emosi atas seseorang)", "en": "to master / to control-dominate" },
+      "beispiele": [
+        { "de": "Sie beherrscht drei Sprachen.", "id": "Dia menguasai tiga bahasa.", "en": "She has mastered three languages." },
+        { "de": "Angst beherrscht ihn völlig.", "id": "Rasa takut menguasai dirinya sepenuhnya.", "en": "Fear completely controls him." }
+      ],
+      "tags": ["Lernen", "Gefühle"]
+    },
+    {
+      "id": "b2.2-2026-10-21-scheitern",
+      "de": "scheitern", "typ": "Verb",
+      "bedeutung": { "id": "gagal / tidak berhasil", "en": "to fail" },
+      "beispiele": [
+        { "de": "Unser Plan ist gescheitert, weil das Geld fehlte.", "id": "Rencana kami gagal karena kekurangan uang.", "en": "Our plan failed because the money was lacking." }
+      ],
+      "tags": ["Allgemein"]
+    },
+    {
+      "id": "b2.2-2026-10-21-abwechslungsreich",
+      "de": "abwechslungsreich ↔ monoton", "typ": "Adjektiv",
+      "bedeutung": { "id": "abwechslungsreich = bervariasi · monoton/langweilig = membosankan", "en": "varied ↔ monotonous/boring" },
+      "kollokationen": ["interessant (orang) ↔ langweilig"],
+      "tags": ["Adjektive", "Eigenschaften"]
+    },
+    {
+      "id": "b2.2-2026-10-21-bewaeltigen",
+      "de": "bewältigen", "typ": "Verb",
+      "bedeutung": { "id": "mengatasi / menyelesaikan (hal berat)", "en": "to cope with / overcome" },
+      "synonyme": ["überwinden"],
+      "kollokationen": ["eine Krise / Schwierigkeiten / Stress / Angst bewältigen"],
+      "beispiele": [
+        { "de": "Atemübungen helfen, Stress zu bewältigen.", "id": "Latihan napas membantu mengatasi stres.", "en": "Breathing exercises help to cope with stress." }
+      ],
+      "tags": ["Gefühle", "Alltag"]
+    },
+    {
+      "id": "b2.2-2026-10-21-erledigen",
+      "de": "erledigen", "typ": "Verb",
+      "bedeutung": { "id": "menyelesaikan/menuntaskan (urusan); 'erledigt sein' = sangat lelah", "en": "to get done / deal with; (adj.) worn out" },
+      "beispiele": [
+        { "de": "Ich habe heute viel zu erledigen.", "id": "Hari ini banyak yang harus saya urus.", "en": "I have a lot to get done today." },
+        { "de": "Nach dem Umzug waren wir alle erledigt.", "id": "Setelah pindahan kami semua kecapaian.", "en": "After the move we were all worn out." }
+      ],
+      "tags": ["Alltag"]
+    },
+    {
+      "id": "b2.2-2026-10-21-verfassen",
+      "de": "verfassen / der Verfasser", "typ": "Verb",
+      "bedeutung": { "id": "menulis/menyusun (teks); der Verfasser = penulis (= der Autor)", "en": "to compose/write a text; author" },
+      "tags": ["Schreiben"]
+    },
+    {
+      "id": "b2.2-2026-10-21-beratung",
+      "de": "sich beraten lassen / die Beratung", "typ": "Wortfeld",
+      "bedeutung": { "id": "minta konsultasi / konsultasi; der (Steuer)berater = konsultan (pajak)", "en": "to get advice / consultation; (tax) adviser" },
+      "beispiele": [
+        { "de": "Ich muss mich zum Thema Steuern beraten lassen.", "id": "Saya perlu konsultasi soal pajak.", "en": "I need to get advice on taxes." }
+      ],
+      "tags": ["Dienstleistung", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-10-21-tipp-rat",
+      "de": "Tipp / Rat / Ratschlag", "typ": "Wortfeld",
+      "bedeutung": { "id": "der Tipp = saran santai sehari-hari · der Rat / der Ratschlag = nasihat (lebih profesional/serius)", "en": "tip (casual) / advice (professional)" },
+      "beispiele": [
+        { "de": "Ich brauche einen professionellen Rat zum Thema Steuern.", "id": "Saya butuh nasihat profesional soal pajak.", "en": "I need professional advice on taxes." }
+      ],
+      "tags": ["Kommunikation", "Wortschatzunterschiede"]
+    },
+    {
+      "id": "b2.2-2026-10-21-anliegen",
+      "de": "Anliegen", "artikel": "das", "typ": "Nomen",
+      "bedeutung": { "id": "keperluan / hal yang ingin disampaikan (mis. di email formal)", "en": "concern / request / matter" },
+      "kollokationen": ["sich mit einem Anliegen an jemanden wenden", "behilflich sein (membantu)"],
+      "beispiele": [
+        { "de": "Ich wende mich heute mit folgendem Anliegen an Sie.", "id": "Hari ini saya menghubungi Anda dengan keperluan berikut.", "en": "I'm contacting you today with the following matter." }
+      ],
+      "tags": ["Kommunikation", "Formell"]
+    },
+    {
+      "id": "b2.2-2026-10-21-gruenden",
+      "de": "gründen", "typ": "Verb",
+      "bedeutung": { "id": "mendirikan (perusahaan/keluarga/kota)", "en": "to found / establish" },
+      "beispiele": [
+        { "de": "Sie hat 2020 ein Start-up gegründet.", "id": "Dia mendirikan start-up pada 2020.", "en": "She founded a start-up in 2020." }
+      ],
+      "tags": ["Beruf", "Wirtschaft"]
+    },
+    {
+      "id": "b2.2-2026-10-21-fordern",
+      "de": "fordern / zurückfordern", "typ": "Verb",
+      "bedeutung": { "id": "menuntut/meminta (= verlangen); zurückfordern = meminta kembali; die Forderung = tuntutan", "en": "to demand / to demand back" },
+      "beispiele": [
+        { "de": "Die Mitarbeiter fordern mehr Geld.", "id": "Para karyawan menuntut gaji lebih.", "en": "The employees are demanding more money." }
+      ],
+      "tags": ["Beruf", "Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-10-21-geeignet-passend",
+      "de": "geeignet für / passend zu", "typ": "Adjektiv",
+      "bedeutung": { "id": "geeignet für = cocok/sesuai untuk · passend zu = serasi/pas dengan", "en": "suitable for / matching" },
+      "beispiele": [
+        { "de": "Dieser Kurs ist für Anfänger geeignet.", "id": "Kursus ini cocok untuk pemula.", "en": "This course is suitable for beginners." }
+      ],
+      "tags": ["Adjektive"]
+    },
+    {
+      "id": "b2.2-2026-10-21-wortschatz-erweitern",
+      "de": "Wortschatz erweitern", "typ": "Wendung",
+      "bedeutung": { "id": "memperluas kosakata", "en": "to expand one's vocabulary" },
+      "tags": ["Lernen"]
+    },
+    {
+      "id": "b2.2-2026-10-21-frage-zu-an",
+      "de": "eine Frage zu / an", "typ": "Wendung",
+      "bedeutung": { "id": "eine Frage zu (+ Dat.) = pertanyaan tentang suatu topik · eine Frage an (+ Akk.) = pertanyaan kepada seseorang", "en": "a question about (topic) / a question to (person)" },
+      "beispiele": [
+        { "de": "Ich habe eine Frage zur Prüfung.", "id": "Saya ada pertanyaan tentang ujiannya.", "en": "I have a question about the exam." },
+        { "de": "Ich habe eine Frage an Sie.", "id": "Saya ada pertanyaan untuk Anda.", "en": "I have a question for you." }
+      ],
+      "tags": ["Grammatik", "Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-10-21-verfuegen-ueber",
+      "de": "verfügen über / verfügbar", "typ": "Verb",
+      "bedeutung": { "id": "verfügen über (+ Akk.) = memiliki (formal) · verfügbar = tersedia · die Verfügbarkeit = ketersediaan", "en": "to have (at one's disposal) / available / availability" },
+      "beispiele": [
+        { "de": "Ich verfüge über gute Deutschkenntnisse.", "id": "Saya memiliki kemampuan bahasa Jerman yang baik.", "en": "I have good German skills." }
+      ],
+      "tags": ["Formell", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-10-21-schwerfallen",
+      "de": "schwerfallen ↔ leichtfallen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "terasa sulit ↔ terasa mudah (bagi seseorang, + Dativ)", "en": "to be difficult ↔ easy (for someone)" },
+      "beispiele": [
+        { "de": "Mathematik fällt mir schwer, Sprachen fallen mir leicht.", "id": "Matematika terasa sulit bagi saya, bahasa terasa mudah.", "en": "Maths is hard for me, languages are easy for me." }
+      ],
+      "tags": ["Lernen", "Grammatik"]
+    },
+    {
+      "id": "b2.2-2026-10-21-einrichtungen",
+      "de": "Einrichtungen in Deutschland", "typ": "Wortfeld",
+      "bedeutung": { "id": "jenis-jenis lembaga/institusi di Jerman", "en": "types of institutions in Germany" },
+      "kollokationen": [
+        "Bildung: Kita, Grundschule, Gymnasium, Berufsschule, Hochschule, Volkshochschule (VHS)",
+        "Gesundheit: Krankenhaus, Arztpraxis, Apotheke, Pflegeheim, Gesundheitsamt",
+        "Soziales: Jugendamt, Sozialamt, Caritas, Diakonie, Tafel, Beratungsstellen",
+        "Staatlich/Behörden: Rathaus, Bürgeramt, Einwohnermeldeamt, Jobcenter, Finanzamt, Gericht, Zoll",
+        "Kultur/Freizeit: Museum, Theater, Kino, Sportverein, Bibliothek",
+        "Forschung: Max-Planck-Institut, Fraunhofer-Institut, DLR",
+        "Religion: Kirche, Moschee, Synagoge, Kloster"
+      ],
+      "tags": ["Gesellschaft", "Leben in DE", "Behörden"]
+    },
+    {
+      "id": "b2.2-2026-10-21-ver-negativ",
+      "de": "Verben mit „ver-\" (negativ)", "typ": "Wortfeld",
+      "bedeutung": { "id": "verba ber-awalan ver- bermakna negatif (kesalahan, kehilangan, kerusakan)", "en": "'ver-' verbs with negative meaning (mistakes, loss)" },
+      "kollokationen": [
+        "sich verlaufen (tersesat jalan kaki)",
+        "sich verfahren (tersesat naik mobil)",
+        "sich vertippen (salah ketik)",
+        "sich verrechnen (salah hitung)",
+        "sich verschreiben (salah tulis)",
+        "sich verlesen (salah baca)",
+        "sich versprechen (salah ucap)",
+        "verwechseln / vertauschen (tertukar)",
+        "sich verspäten (terlambat)",
+        "verpassen (ketinggalan/melewatkan)",
+        "verlieren · verschwenden (boros) · vergessen · verlernen · sich verletzen (terluka)"
+      ],
+      "beispiele": [
+        { "de": "Ich habe mich in der Stadt verlaufen.", "id": "Saya tersesat di kota.", "en": "I got lost in the city." }
+      ],
+      "tags": ["Vorsilben", "Verben", "C1"]
+    },
+    {
+      "id": "b2.2-2026-10-21-ver-positiv",
+      "de": "Verben mit „ver-\" (positiv)", "typ": "Wortfeld",
+      "bedeutung": { "id": "verba ber-awalan ver- bermakna positif (menyatukan, meningkatkan)", "en": "'ver-' verbs with positive meaning (connecting, improving)" },
+      "kollokationen": [
+        "verbinden (menghubungkan)",
+        "sich verabreden (janjian)",
+        "verbessern (memperbaiki)",
+        "verstärken (memperkuat)",
+        "vertiefen (memperdalam)",
+        "vergrößern (memperbesar)",
+        "verschönern (mempercantik)",
+        "verwöhnen (memanjakan)",
+        "sich verlieben (jatuh cinta)",
+        "vertrauen (memercayai)",
+        "versprechen (berjanji)",
+        "sich verwirklichen (mewujudkan impian)"
+      ],
+      "beispiele": [
+        { "de": "Durch tägliches Üben hat sie ihr Deutsch verbessert.", "id": "Lewat latihan harian dia memperbaiki bahasa Jermannya.", "en": "Through daily practice she improved her German." }
+      ],
+      "tags": ["Vorsilben", "Verben", "C1"]
+    }
+  ]
+}

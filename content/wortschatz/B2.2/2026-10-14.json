@@ -1,0 +1,148 @@
+{
+  "schema": 1,
+  "class": "B2.2",
+  "level": "B2",
+  "meeting": "2026-10-14",
+  "topic": "Lernen & Gedächtnis, Nomen-Verb-Verbindungen, das Verb „halten\"",
+  "sources": [
+    "B2.2 SC HFT Wise 26/14.10.2026-20261022/14.10._Wortschatz.docx",
+    "B2.2 SC HFT Wise 26/14.10.2026-20261022/Nomen_Verb-Verbindungen_Übungen.docx",
+    "B2.2 SC HFT Wise 26/14.10.2026-20261022/halten_Bedeutungen_Präfixe.docx"
+  ],
+  "words": [
+    {
+      "id": "b2.2-2026-10-14-lernen-studieren",
+      "de": "lernen / studieren", "typ": "Wortfeld",
+      "bedeutung": { "id": "lernen = belajar (umum, di mana saja) · studieren = kuliah (di universitas)", "en": "to learn (general) / to study (at university)" },
+      "beispiele": [
+        { "de": "Ich studiere Medizin in Heidelberg.", "id": "Saya kuliah kedokteran di Heidelberg.", "en": "I study medicine in Heidelberg." }
+      ],
+      "tags": ["Bildung", "Wortschatzunterschiede"]
+    },
+    {
+      "id": "b2.2-2026-10-14-fest-fluessig",
+      "de": "fest / flüssig", "typ": "Adjektiv",
+      "bedeutung": { "id": "fest = padat/keras/beku · flüssig = cair", "en": "solid / liquid" },
+      "kollokationen": ["(umg.) nicht flüssig sein = gerade kein Geld haben (lagi tak punya uang)"],
+      "beispiele": [
+        { "de": "Ich bin gerade nicht flüssig, kannst du mir 20 Euro leihen?", "id": "Saya lagi tak punya uang, bisa pinjami 20 euro?", "en": "I'm a bit short on cash right now, can you lend me 20 euros?" }
+      ],
+      "tags": ["Alltag", "Adjektive"]
+    },
+    {
+      "id": "b2.2-2026-10-14-anrufen-telefonieren",
+      "de": "anrufen / telefonieren mit", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "anrufen (+ Akk.) = menelepon seseorang · telefonieren mit (+ Dat.) = berbicara via telepon dengan", "en": "to call someone / to talk on the phone with" },
+      "beispiele": [
+        { "de": "Ich rufe dich morgen an.", "id": "Besok saya telepon kamu.", "en": "I'll call you tomorrow." },
+        { "de": "Ich telefoniere oft mit meinem Bruder.", "id": "Saya sering menelepon saudara saya.", "en": "I often talk on the phone with my brother." }
+      ],
+      "tags": ["Kommunikation", "Grammatik"]
+    },
+    {
+      "id": "b2.2-2026-10-14-erfahrung-erfahren",
+      "de": "Erfahrung / erfahren", "typ": "Wortfeld",
+      "bedeutung": { "id": "die Erfahrung = pengalaman (Erfahrung sammeln) · erfahren = (1) mendapat info baru (2) adj. berpengalaman", "en": "experience / to find out; (adj.) experienced" },
+      "beispiele": [
+        { "de": "Ich habe von meiner Kollegin erfahren, dass der Chef gekündigt hat.", "id": "Saya tahu dari rekan saya bahwa bos mengundurkan diri.", "en": "I found out from my colleague that the boss resigned." }
+      ],
+      "tags": ["Beruf", "Wortschatzunterschiede"]
+    },
+    {
+      "id": "b2.2-2026-10-14-auffallen-einfallen",
+      "de": "auffallen / einfallen", "typ": "Verb", "trennbar": true,
+      "bedeutung": { "id": "auffallen = jadi perhatian / tersadari (= bemerken) · einfallen (D) = tiba-tiba teringat", "en": "to be noticeable / to come to mind" },
+      "beispiele": [
+        { "de": "Es ist mir aufgefallen, dass du lange Haare hast.", "id": "Saya perhatikan rambutmu panjang.", "en": "I noticed that you have long hair." },
+        { "de": "Mir ist eingefallen, dass ich mein Handy vergessen habe.", "id": "Saya baru ingat bahwa HP saya ketinggalan.", "en": "It occurred to me that I forgot my phone." }
+      ],
+      "tags": ["Alltag"]
+    },
+    {
+      "id": "b2.2-2026-10-14-spinnen",
+      "de": "spinnen", "typ": "Verb",
+      "bedeutung": { "id": "(sehari-hari) gila/ngawur", "en": "(colloq.) to be crazy / talk nonsense" },
+      "beispiele": [
+        { "de": "Du spinnst wohl! Du kannst doch nicht bei Rot fahren!", "id": "Kamu gila ya! Masa nerobos lampu merah!", "en": "Are you crazy?! You can't drive through a red light!" }
+      ],
+      "tags": ["Umgangssprache"]
+    },
+    {
+      "id": "b2.2-2026-10-14-notizen-machen",
+      "de": "Notizen machen", "typ": "Wendung",
+      "bedeutung": { "id": "membuat catatan", "en": "to take notes" },
+      "synonyme": ["sich etwas aufschreiben", "sich etwas notieren"],
+      "beispiele": [
+        { "de": "In der Vorlesung mache ich mir immer Notizen.", "id": "Saat kuliah saya selalu mencatat.", "en": "I always take notes in the lecture." }
+      ],
+      "tags": ["Bildung", "Lernen"]
+    },
+    {
+      "id": "b2.2-2026-10-14-gedaechtnis-verben",
+      "de": "sich merken / sich erinnern / vergessen / auswendig lernen", "typ": "Wortfeld",
+      "bedeutung": { "id": "verba ingatan: sich (D) merken = menghafal/mengingat · sich (A) erinnern an (A) = teringat · vergessen = lupa · auswendig lernen = menghafal (di luar kepala)", "en": "to memorize / to remember / to forget / to learn by heart" },
+      "beispiele": [
+        { "de": "Wenn ich Wörter laut spreche, merke ich sie mir besser.", "id": "Kalau kata saya ucapkan keras, saya lebih mudah mengingatnya.", "en": "When I say words out loud, I remember them better." },
+        { "de": "Ich erinnere mich an meine Schulzeit.", "id": "Saya teringat masa sekolah saya.", "en": "I remember my school days." }
+      ],
+      "tags": ["Lernen", "Gedächtnis", "Grammatik"]
+    },
+    {
+      "id": "b2.2-2026-10-14-behalten",
+      "de": "behalten", "typ": "Verb",
+      "bedeutung": { "id": "3 arti: (1) menyimpan/tidak mengembalikan (2) mengingat (3) 'für sich behalten' = merahasiakan", "en": "(1) to keep (2) to retain/remember (3) to keep to oneself" },
+      "beispiele": [
+        { "de": "Das Buch kannst du behalten.", "id": "Bukunya boleh kamu simpan.", "en": "You can keep the book." },
+        { "de": "Bitte behalte das für dich!", "id": "Tolong rahasiakan ini!", "en": "Please keep this to yourself!" }
+      ],
+      "tags": ["Alltag", "Gedächtnis"]
+    },
+    {
+      "id": "b2.2-2026-10-14-nomen-verb-verbindungen",
+      "de": "Nomen-Verb-Verbindungen (NVV)", "typ": "Wortfeld",
+      "bedeutung": { "id": "gabungan nomina+verba tetap (Funktionsverbgefüge) & padanannya", "en": "fixed noun-verb phrases and their equivalents" },
+      "kollokationen": [
+        "zum Einsatz kommen = eingesetzt werden (dipakai)",
+        "sich Mühe geben = sich bemühen (berusaha keras)",
+        "Fragen stellen = fragen (bertanya)",
+        "Kritik üben an (+D) = kritisieren (mengkritik)",
+        "in Erfüllung gehen = wahr werden (jadi kenyataan)",
+        "Rücksicht nehmen auf (+A) = berücksichtigen (memperhatikan/tenggang rasa)",
+        "ein Gespräch führen = sich unterhalten (mengobrol)",
+        "in der Lage sein = können (mampu)",
+        "sich Gedanken machen über (+A) = nachdenken über (memikirkan)",
+        "im Austausch stehen mit = sich austauschen mit (bertukar pikiran)",
+        "das Interesse wecken = Interesse menimbulkan",
+        "die Kosten tragen = bezahlen (menanggung biaya)",
+        "unter Druck stehen = gestresst sein (tertekan)",
+        "den Entschluss fassen = beschließen / eine Entscheidung treffen (memutuskan)"
+      ],
+      "beispiele": [
+        { "de": "Ich habe den Entschluss gefasst, die Stelle zu wechseln.", "id": "Saya memutuskan untuk pindah kerja.", "en": "I made the decision to change jobs." }
+      ],
+      "tags": ["Nomen-Verb-Verbindung", "C1", "Stil"]
+    },
+    {
+      "id": "b2.2-2026-10-14-halten-vorsilben",
+      "de": "halten & Vorsilben", "typ": "Wortfeld",
+      "bedeutung": { "id": "verba 'halten' dan turunan berawalannya", "en": "the verb 'halten' and its prefixed forms" },
+      "kollokationen": [
+        "ein Versprechen / eine Rede halten (menepati janji / berpidato)",
+        "halten für (+A) = menganggap (seseorang/sesuatu adalah ...)",
+        "halten von (+D) = berpendapat tentang (Was hältst du von …?)",
+        "einhalten = menaati (Regeln, Termin, Deadline)",
+        "aufhalten = (1) menghentikan (2) mengganggu/menahan (3) sich aufhalten = menginap/berada",
+        "sich verhalten = berperilaku (das Verhalten)",
+        "enthalten = tercakup/termasuk (im Preis enthalten)",
+        "erhalten = menerima (formal)",
+        "aushalten = tahan/bertahan (menghadapi hal berat)",
+        "anhalten = berhenti (kendaraan) / menghentikan"
+      ],
+      "beispiele": [
+        { "de": "Was hältst du von meiner Idee?", "id": "Bagaimana pendapatmu tentang ide saya?", "en": "What do you think of my idea?" },
+        { "de": "Ich muss die Deadline einhalten.", "id": "Saya harus menepati tenggat waktu.", "en": "I have to meet the deadline." }
+      ],
+      "tags": ["Verben", "Vorsilben", "C1"]
+    }
+  ]
+}
