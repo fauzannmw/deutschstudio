@@ -48,7 +48,8 @@ body {
 .loading { text-align: center; color: var(--muted); padding: 48px 0; }
 
 /* Header */
-.top { display: flex; align-items: center; gap: 10px; margin: 6px 2px 18px; }
+.top { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 10px; margin: 6px 2px 18px; }
+.ctrls { display: flex; align-items: center; gap: 8px; margin-left: auto; }
 .brand { font-weight: 800; font-size: 20px; letter-spacing: -.02em; display: flex; align-items: center; gap: 8px; }
 .brand small { font-weight: 600; color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
 .spacer { flex: 1; }
@@ -157,6 +158,18 @@ body {
 .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%) translateY(20px); background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; opacity: 0; transition: .25s; pointer-events: none; z-index: 50; }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .backlink { background: none; border: 0; color: var(--primary); font-weight: 700; cursor: pointer; font-size: 14px; padding: 6px 0; }
+
+/* Help / Anleitung overlay */
+.overlay { position: fixed; inset: 0; background: rgba(8,10,14,.6); display: flex; align-items: flex-end; justify-content: center; z-index: 100; }
+.sheet { background: var(--surface); width: 100%; max-width: var(--maxw); max-height: 88vh; overflow-y: auto; border-radius: 18px 18px 0 0; padding: 22px 18px 26px; box-shadow: var(--shadow); }
+.sheet h2 { margin: 2px 0 14px; font-size: 20px; }
+.gitem { padding: 11px 0; border-bottom: 1px solid var(--border); }
+.gitem:last-of-type { border-bottom: 0; }
+.gitem > b { display: block; font-size: 15px; margin-bottom: 3px; }
+.gitem p { margin: 0; color: var(--muted); font-size: 14px; }
+.gitem p b { color: var(--text); }
+.sheet .btn { margin-top: 16px; }
+@media (min-width: 560px) { .overlay { align-items: center; } .sheet { border-radius: 18px; } }
 .muted { color: var(--muted); }
 .center { text-align: center; }
 a { color: var(--primary); }

@@ -143,11 +143,13 @@
     return '' +
       '<div class="top">' +
         '<span class="brand">🧠 Deutschstudio<small>B1 → C1</small></span>' +
-        '<span class="spacer"></span>' +
-        '<div class="lvlbar">' +
-          levelBtn("all", "Alle") + levelBtn("B2.1", "B2.1") + levelBtn("B2.2", "B2.2") +
+        '<div class="ctrls">' +
+          '<div class="lvlbar">' +
+            levelBtn("all", "Alle") + levelBtn("B2.1", "B2.1") + levelBtn("B2.2", "B2.2") +
+          '</div>' +
+          '<button class="iconbtn" id="langBtn" title="Bedeutungssprache">' + (settings.lang === "id" ? "ID" : "EN") + '</button>' +
+          '<button class="iconbtn" id="helpBtn" title="Anleitung">?</button>' +
         '</div>' +
-        '<button class="iconbtn" id="langBtn" title="Bahasa arti">' + (settings.lang === "id" ? "ID" : "EN") + '</button>' +
       '</div>' + (extra || "");
   }
   function levelBtn(v, label) { return '<button data-lvl="' + v + '" class="' + (S.level === v ? "on" : "") + '">' + label + "</button>"; }
@@ -157,6 +159,7 @@
       b.onclick = function () { S.level = b.getAttribute("data-lvl"); S.session = null; S.view = "dashboard"; render(); };
     });
     var lb = $("#langBtn"); if (lb) lb.onclick = function () { settings.lang = settings.lang === "id" ? "en" : "id"; save(K.set, settings); render(); };
+    var hb = $("#helpBtn"); if (hb) hb.onclick = showHelp;
   }
 
   function render() {
@@ -461,5 +464,46 @@
     clearTimeout(toast._t); toast._t = setTimeout(function () { toastEl.classList.remove("show"); }, 1800);
   }
 
+  /* ---------- help / Anleitung ---------- */
+  var GUIDE = {
+    id: {
+      title: "Cara pakai Deutschstudio",
+      items: [
+        ["🎯 Inti", "Kamu dilatih <b>mengingat sendiri</b> arti kata (bukan sekadar baca ulang). Kata yang belum lancar otomatis muncul lebih sering, yang sudah hafal makin jarang."],
+        ["▶️ Heute üben", "Tombol utama — mulai sesi harian: campuran kata baru + kata yang perlu diulang."],
+        ["🃏 Bentuk latihan", "Tiap kata muncul sebagai <b>kartu</b> (pikir dulu → <b>Aufdecken</b> = buka → nilai diri), atau sebagai <b>pilihan ganda</b>, <b>ketik</b> (Eintippen), atau <b>artikel</b> (der/die/das)."],
+        ["✅ Nilai jujur", "<b>Gewusst</b> = tahu → makin jarang muncul. <b>Unsicher</b> = ragu. <b>Nicht gewusst</b> = lupa → sering muncul lagi."],
+        ["⚑ Markieren", "Tandai kata yang belum yakin → masuk tumpukan <b>Schwierige</b> untuk dilatih khusus."],
+        ["⚙️ Kanan atas", "<b>ID/EN</b> = ganti bahasa arti. <b>Alle / B2.1 / B2.2</b> = pilih level. <b>?</b> = buka panduan ini lagi."]
+      ],
+      close: "Los geht's!"
+    },
+    en: {
+      title: "How Deutschstudio works",
+      items: [
+        ["🎯 The idea", "You practise <b>recalling</b> the meaning yourself (not just re-reading). Words you don't know yet come back more often; words you know appear less."],
+        ["▶️ Heute üben", "The main button — start the daily session: a mix of new words and words due for review."],
+        ["🃏 Exercise types", "Each word appears as a <b>flashcard</b> (think → <b>Aufdecken</b> = reveal → rate yourself), or as <b>multiple choice</b>, <b>typing</b> (Eintippen), or <b>article</b> (der/die/das)."],
+        ["✅ Rate honestly", "<b>Gewusst</b> = knew it → shown less often. <b>Unsicher</b> = unsure. <b>Nicht gewusst</b> = forgot → shown again soon."],
+        ["⚑ Markieren", "Flag a word you're unsure about → it joins the <b>Schwierige</b> (difficult) pile for focused practice."],
+        ["⚙️ Top right", "<b>ID/EN</b> = switch meaning language. <b>Alle / B2.1 / B2.2</b> = pick a level. <b>?</b> = open this guide again."]
+      ],
+      close: "Los geht's!"
+    }
+  };
+  function showHelp() {
+    var g = GUIDE[settings.lang] || GUIDE.id;
+    var ov = document.createElement("div");
+    ov.className = "overlay";
+    ov.innerHTML = '<div class="sheet"><h2>' + esc(g.title) + '</h2>' +
+      g.items.map(function (it) { return '<div class="gitem"><b>' + it[0] + '</b><p>' + it[1] + '</p></div>'; }).join("") +
+      '<button class="btn btn-primary btn-lg" id="helpClose">' + esc(g.close) + '</button></div>';
+    document.body.appendChild(ov);
+    function close() { ov.remove(); settings.seenHelp = true; save(K.set, settings); }
+    ov.querySelector("#helpClose").onclick = close;
+    ov.addEventListener("click", function (e) { if (e.target === ov) close(); });
+  }
+
   render();
+  if (!settings.seenHelp) showHelp();
 })();
