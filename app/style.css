@@ -82,6 +82,9 @@ body {
 .menubtn .mi { font-size: 22px; line-height: 1.1; }
 .menubtn .ml { font-weight: 700; font-size: 15px; }
 .menubtn .badge { margin-top: 2px; }
+.menubtn[disabled] { opacity: .45; cursor: default; }
+.menubtn[disabled]:hover { border-color: var(--border); }
+.mrow { cursor: pointer; }
 
 /* Progress bar */
 .bar { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; display: flex; }

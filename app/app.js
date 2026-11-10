@@ -232,7 +232,11 @@
     $("#diffBtn").onclick = function () { startSession({ difficult: true, title: "Schwierige Wörter" }); };
     $("#browseBtn").onclick = function () { S.view = "browse"; render(); };
     Array.prototype.forEach.call(app.querySelectorAll(".mrow"), function (r) {
-      r.onclick = function () { startSession({ meeting: r.getAttribute("data-meeting"), title: fmtDate(r.getAttribute("data-meeting")) }); };
+      r.onclick = function () {
+        var mt = r.getAttribute("data-meeting"), kl = r.getAttribute("data-klasse");
+        var m = DECK.meetings.filter(function (x) { return x.meeting === mt && x.klasse === kl; })[0] || { topic: "" };
+        showMeetingPicker(mt, kl, m.topic);
+      };
     });
   }
   function tile(v, l) { return '<div class="tile"><b>' + v + "</b><span>" + l + "</span></div>"; }
@@ -506,6 +510,7 @@
     }
   };
   function showHelp() {
+    var prev = document.querySelector(".overlay"); if (prev) prev.remove();
     var g = GUIDE[settings.lang] || GUIDE.id;
     var ov = document.createElement("div");
     ov.className = "overlay";
@@ -515,6 +520,33 @@
     document.body.appendChild(ov);
     function close() { ov.remove(); settings.seenHelp = true; save(K.set, settings); }
     ov.querySelector("#helpClose").onclick = close;
+    ov.addEventListener("click", function (e) { if (e.target === ov) close(); });
+  }
+
+  /* ---------- per-meeting mode picker ---------- */
+  function showMeetingPicker(meeting, klasse, topic) {
+    var prev = document.querySelector(".overlay"); if (prev) prev.remove();
+    var total = levelWords().filter(function (w) { return w._meeting === meeting; }).length;
+    function mb(mode, icon, label) {
+      var cnt = levelWords().filter(function (w) { return w._meeting === meeting && validForMode(w, mode); }).length;
+      return '<button class="menubtn" data-mode="' + mode + '"' + (cnt ? '' : ' disabled') + '>' +
+        '<span class="mi">' + icon + '</span><span class="ml">' + label + '</span>' +
+        '<span class="badge">' + cnt + ' Wörter</span></button>';
+    }
+    var ov = document.createElement("div");
+    ov.className = "overlay";
+    ov.innerHTML = '<div class="sheet"><h2>' + esc(klasse) + ' · ' + esc(fmtDate(meeting)) + '</h2>' +
+      '<p class="muted" style="margin:-8px 0 14px">' + esc(topic || "") + ' · ' + total + ' Wörter</p>' +
+      '<div class="menu">' + mb("review", "🃏", "Karteikarten") + mb("mc", "✅", "Multiple Choice") +
+        mb("type", "⌨️", "Eintippen") + mb("article", "der", "Artikel") + '</div>' +
+      '<button class="btn btn-ghost btn-lg" id="mpClose" style="margin-top:14px">Schließen</button></div>';
+    document.body.appendChild(ov);
+    function close() { ov.remove(); }
+    Array.prototype.forEach.call(ov.querySelectorAll("[data-mode]"), function (b) {
+      if (b.disabled) return;
+      b.onclick = function () { var m = b.getAttribute("data-mode"); close(); startSession({ meeting: meeting, mode: m, title: fmtDate(meeting) }); };
+    });
+    ov.querySelector("#mpClose").onclick = close;
     ov.addEventListener("click", function (e) { if (e.target === ov) close(); });
   }
 
