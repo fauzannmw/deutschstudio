@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "class": "B2.2",
+  "level": "B2",
+  "meeting": "2026-11-11",
+  "topic": "Synonyme, Umformulierungen & Buchungsgespräche",
+  "sources": [
+    "B2.2 SC HFT Wise 26/11.11.2026-20261111/11.11._Wortschatz.docx"
+  ],
+  "words": [
+    {
+      "id": "b2.2-2026-11-11-sich-irren",
+      "de": "sich irren", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "keliru / salah sangka", "en": "to be mistaken" },
+      "synonyme": ["sich täuschen"],
+      "beispiele": [
+        { "de": "Ich glaube, du irrst dich.", "id": "Saya rasa kamu keliru.", "en": "I think you're mistaken." },
+        { "de": "Entschuldigung, ich habe mich geirrt.", "id": "Maaf, saya salah.", "en": "Sorry, I was mistaken." }
+      ],
+      "tags": ["Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-11-11-insgesamt",
+      "de": "insgesamt", "typ": "Adverb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "secara keseluruhan / total", "en": "in total / altogether" },
+      "synonyme": ["im Großen und Ganzen (secara garis besar)"],
+      "beispiele": [
+        { "de": "Im Kurs sind insgesamt 15 Teilnehmer.", "id": "Di kursus itu total ada 15 peserta.", "en": "There are 15 participants in the course in total." }
+      ],
+      "tags": ["Alltag"]
+    },
+    {
+      "id": "b2.2-2026-11-11-karrierechancen",
+      "de": "Karrierechancen", "artikel": "die", "typ": "Nomen", "modi": ["mc", "tippen", "artikel"],
+      "bedeutung": { "id": "peluang karier", "en": "career opportunities" },
+      "synonyme": ["Aufstiegsmöglichkeiten"],
+      "beispiele": [
+        { "de": "Gute Deutschkenntnisse verbessern die Karrierechancen in Deutschland.", "id": "Kemampuan bahasa Jerman yang baik meningkatkan peluang karier di Jerman.", "en": "Good German skills improve career opportunities in Germany." }
+      ],
+      "tags": ["Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-11-alles-moegliche",
+      "de": "alles Mögliche", "typ": "Wendung", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "macam-macam / ini-itu", "en": "all sorts of things" },
+      "synonyme": ["dies und das"],
+      "beispiele": [
+        { "de": "In der Pause haben wir über alles Mögliche gesprochen.", "id": "Saat istirahat kami membicarakan macam-macam hal.", "en": "During the break we talked about all sorts of things." }
+      ],
+      "tags": ["Alltag"]
+    },
+    {
+      "id": "b2.2-2026-11-11-leben-bereichern",
+      "de": "das Leben bereichern", "typ": "Wendung", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "memperkaya hidup / membuat hidup lebih bermakna", "en": "to enrich life" },
+      "synonyme": ["das Leben interessanter machen"],
+      "beispiele": [
+        { "de": "Reisen in andere Länder kann das Leben interessanter machen.", "id": "Bepergian ke negara lain bisa membuat hidup lebih menarik.", "en": "Traveling to other countries can make life more interesting." }
+      ],
+      "tags": ["Werte", "C1"]
+    },
+    {
+      "id": "b2.2-2026-11-11-unterschaetzen",
+      "de": "unterschätzen", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "meremehkan / menilai terlalu rendah", "en": "to underestimate" },
+      "synonyme": ["etwas falsch bewerten"],
+      "beispiele": [
+        { "de": "Viele Menschen unterschätzen den Aufwand eines Studiums.", "id": "Banyak orang meremehkan besarnya usaha yang dibutuhkan untuk kuliah.", "en": "Many people underestimate the effort a degree takes." }
+      ],
+      "tags": ["C1"]
+    },
+    {
+      "id": "b2.2-2026-11-11-in-aussicht-stellen",
+      "de": "etwas in Aussicht stellen", "typ": "Redewendung", "modi": ["mc"],
+      "bedeutung": { "id": "menjanjikan sesuatu secara tidak mengikat", "en": "to hold out the prospect of something (non-binding)" },
+      "synonyme": ["unverbindlich zusagen"],
+      "beispiele": [
+        { "de": "Unser Chef hat mir eine Beförderung in Aussicht gestellt.", "id": "Bos saya menjanjikan promosi kepada saya (tanpa mengikat).", "en": "Our boss held out the prospect of a promotion to me." }
+      ],
+      "tags": ["Beruf", "C1"]
+    },
+    {
+      "id": "b2.2-2026-11-11-mit-rechnen",
+      "de": "mit etwas rechnen", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "memperhitungkan / menduga akan terjadi", "en": "to expect / reckon with something" },
+      "synonyme": ["etwas erwarten"],
+      "beispiele": [
+        { "de": "Wegen des schlechten Wetters müssen wir mit Verspätungen rechnen.", "id": "Karena cuaca buruk, kita harus memperhitungkan kemungkinan terlambat.", "en": "Because of the bad weather we have to expect delays." }
+      ],
+      "tags": ["C1"]
+    },
+    {
+      "id": "b2.2-2026-11-11-idylle",
+      "de": "Idylle", "artikel": "die", "typ": "Nomen", "modi": ["mc", "tippen", "artikel"],
+      "bedeutung": { "id": "tempat yang indah dan damai", "en": "idyll / idyllic place" },
+      "beispiele": [
+        { "de": "Das kleine Dorf am See ist eine echte Idylle.", "id": "Desa kecil di tepi danau itu benar-benar tempat yang indah dan damai.", "en": "The small village by the lake is a real idyll." }
+      ],
+      "tags": ["Reisen"]
+    },
+    {
+      "id": "b2.2-2026-11-11-adjektiv-gegensatzpaare-reisen",
+      "de": "Adjektiv-Gegensatzpaare (Reisen & Alltag)", "typ": "Wortfeld", "modi": [],
+      "bedeutung": { "id": "pasangan kata sifat berlawanan (tema perjalanan/kehidupan)", "en": "adjective opposite pairs (travel/life theme)" },
+      "kollokationen": [
+        "privat ↔ beruflich (pribadi ↔ profesional)",
+        "erholsam ↔ anstrengend (menyegarkan ↔ melelahkan)",
+        "selten ↔ oft / ständig (jarang ↔ sering/terus-menerus)",
+        "eintönig ↔ abwechslungsreich (monoton ↔ bervariasi)",
+        "allein ↔ zusammen / gemeinsam (sendiri ↔ bersama)",
+        "emotionslos ↔ emotional (tanpa emosi ↔ emosional)"
+      ],
+      "beispiele": [
+        { "de": "Mein neuer Job ist abwechslungsreich und macht mir Spaß.", "id": "Pekerjaan baru saya bervariasi dan menyenangkan.", "en": "My new job is varied and fun." }
+      ],
+      "tags": ["Adjektive", "Reisen"]
+    },
+    {
+      "id": "b2.2-2026-11-11-unternehmen",
+      "de": "etwas unternehmen", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "melakukan sesuatu (kegiatan bersama)", "en": "to do something (an activity)" },
+      "synonyme": ["etwas machen"],
+      "beispiele": [
+        { "de": "Meine Freunde und ich unternehmen viel zusammen.", "id": "Saya dan teman-teman saya banyak melakukan kegiatan bersama.", "en": "My friends and I do a lot together." }
+      ],
+      "tags": ["Alltag", "Soziales"]
+    },
+    {
+      "id": "b2.2-2026-11-11-sich-einigen-auf",
+      "de": "sich einigen auf", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "menyepakati / sepakat soal", "en": "to agree on" },
+      "hinweis": { "id": "Preposisi yang benar adalah 'auf' (sesuai contoh kalimat di catatan kelas), bukan 'für' yang tertulis di judul — kemungkinan salah ketik pada sumber.", "en": "The correct preposition is 'auf' (as used in the class notes' example sentence), not the 'für' written in the heading — likely a typo in the source." },
+      "beispiele": [
+        { "de": "Wir einigen uns auf das Event am Samstag.", "id": "Kami sepakat soal acara hari Sabtu.", "en": "We agree on the event on Saturday." }
+      ],
+      "tags": ["Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-11-11-anbieter",
+      "de": "Anbieter", "artikel": "der", "typ": "Nomen", "modi": ["mc", "tippen", "artikel"],
+      "bedeutung": { "id": "penyedia (jasa) / penyelenggara", "en": "provider / organizer" },
+      "synonyme": ["der Organisator"],
+      "kollokationen": ["der Stromanbieter (penyedia listrik)", "der Internetanbieter (penyedia internet)"],
+      "tags": ["Alltag", "Dienstleistung"]
+    },
+    {
+      "id": "b2.2-2026-11-11-verpflegungsarten",
+      "de": "Verpflegungsarten im Hotel (ÜF / HP / VP)", "typ": "Wortfeld", "modi": [],
+      "bedeutung": { "id": "jenis paket menginap + makan di hotel", "en": "hotel meal-plan types" },
+      "kollokationen": [
+        "ÜF = Übernachtung + Frühstück (menginap + sarapan)",
+        "HP = Halbpension (biasanya sarapan + makan malam)",
+        "VP = Vollpension (biasanya sarapan + makan siang + makan malam)",
+        "Übernachtung ohne Verpflegung = menginap tanpa makan"
+      ],
+      "hinweis": { "id": "Catatan: di materi kelas, definisi HP dan VP tertulis sama ('Frühstück + Abendessen') — kemungkinan salah ketik di catatan. Definisi standar di atas mengikuti istilah umum Jerman; sebaiknya dikonfirmasi ke pengajar.", "en": "Note: the class notes give the same definition for HP and VP ('breakfast + dinner') — likely a note-taking slip. The definitions above follow standard German usage; worth confirming with the teacher." },
+      "tags": ["Reisen", "Hotel"]
+    },
+    {
+      "id": "b2.2-2026-11-11-klaeren",
+      "de": "klären", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "mengklarifikasi / membereskan (suatu hal)", "en": "to clarify / sort out" },
+      "beispiele": [
+        { "de": "Es gibt noch ein paar Punkte, die wir klären müssten.", "id": "Masih ada beberapa poin yang perlu kita bereskan.", "en": "There are still a few points we should clarify." }
+      ],
+      "tags": ["Kommunikation", "Beruf"]
+    },
+    {
+      "id": "b2.2-2026-11-11-ueber-budget-liegen",
+      "de": "über dem Budget liegen", "typ": "Wendung", "modi": ["mc"],
+      "bedeutung": { "id": "melebihi anggaran", "en": "to be over budget" },
+      "beispiele": [
+        { "de": "Mit 73 Euro liegen wir über unserem Budget.", "id": "Dengan 73 euro, kita melebihi anggaran kita.", "en": "At 73 euros, we're over our budget." }
+      ],
+      "tags": ["Geld", "Reisen"]
+    },
+    {
+      "id": "b2.2-2026-11-11-rabatt-gewaehren",
+      "de": "einen Rabatt gewähren", "typ": "Wendung", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "memberikan diskon", "en": "to grant a discount" },
+      "synonyme": ["einen Rabatt geben"],
+      "beispiele": [
+        { "de": "Wir gewähren Ihnen 5 Prozent Rabatt.", "id": "Kami memberikan Anda diskon 5 persen.", "en": "We grant you a 5 percent discount." }
+      ],
+      "tags": ["Geld", "Dienstleistung"]
+    },
+    {
+      "id": "b2.2-2026-11-11-vorlaeufig-reservieren",
+      "de": "etwas vorläufig reservieren", "typ": "Wendung", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "memesan sementara (belum final)", "en": "to reserve provisionally" },
+      "tags": ["Reisen", "Dienstleistung"]
+    },
+    {
+      "id": "b2.2-2026-11-11-zusammenfassen",
+      "de": "kurz zusammenfassen", "typ": "Verb", "modi": ["mc", "tippen"],
+      "bedeutung": { "id": "merangkum secara singkat", "en": "to briefly summarize" },
+      "tags": ["Kommunikation"]
+    },
+    {
+      "id": "b2.2-2026-11-11-entgegenkommen",
+      "de": "Entgegenkommen", "artikel": "das", "typ": "Nomen", "modi": ["mc", "tippen", "artikel"],
+      "bedeutung": { "id": "kesediaan berkompromi / sikap akomodatif", "en": "accommodation / willingness to compromise" },
+      "beispiele": [
+        { "de": "Vielen Dank für Ihr Entgegenkommen.", "id": "Terima kasih atas kesediaan Anda berkompromi.", "en": "Thank you for your accommodation." }
+      ],
+      "tags": ["Kommunikation", "Höflichkeit", "C1"]
+    }
+  ]
+}
