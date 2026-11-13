@@ -33,7 +33,7 @@
   function prog(id) { return progress[id]; }
   function meaning(w) { var b = w.bedeutung || {}; return b[settings.lang] || b.id || b.en || ""; }
   function frontDe(w, hideArticle) {
-    if (!hideArticle && w.artikel && /^(der|die|das)$/.test(w.artikel)) return '<span class="art">' + esc(w.artikel) + "</span> " + esc(w.de);
+    if (!hideArticle && w.artikel && /^(der|die|das)$/.test(w.artikel)) return '<span class="font-semibold text-teal-700 dark:text-teal-300">' + esc(w.artikel) + "</span> " + esc(w.de);
     return esc(w.de);
   }
   function isSimple(w) {
@@ -141,25 +141,42 @@
     return out;
   }
 
+  // Shared Tailwind classes for components rendered in multiple views.
+  var ui = {
+    iconbtn: "h-10 min-w-10 rounded-xl border border-slate-200 px-2 text-sm font-bold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800",
+    menubtn: "flex min-w-0 flex-col items-start gap-2 rounded-2xl border border-slate-200 bg-white p-3 text-left shadow-sm enabled:hover:border-teal-500 enabled:hover:bg-teal-50 motion-safe:transition motion-safe:enabled:hover:-translate-y-0.5 disabled:opacity-50 sm:p-4 dark:border-slate-800 dark:bg-slate-900 dark:enabled:hover:bg-teal-950",
+    mi: "grid min-h-10 min-w-10 place-items-center rounded-xl bg-teal-100 px-2 text-lg font-bold text-teal-900 dark:bg-teal-950 dark:text-teal-200",
+    secondaryButton: "flex-1 rounded-xl border border-slate-300 px-4 py-3 text-sm font-bold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800",
+    widePrimaryButton: "w-full rounded-xl bg-teal-700 px-4 py-3 font-bold text-white hover:bg-teal-800 dark:bg-teal-300 dark:text-teal-950 dark:hover:bg-teal-200",
+    card: "rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6 dark:border-slate-800 dark:bg-slate-900",
+    backlink: "rounded-lg px-2 py-2 text-sm font-bold text-teal-800 hover:bg-teal-100 dark:text-teal-200 dark:hover:bg-teal-950",
+    chip: "rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs dark:border-slate-700 dark:bg-slate-800",
+    opt: "opt flex min-w-0 items-center gap-3 rounded-xl border border-slate-300 px-3 py-3 text-left enabled:hover:border-teal-600 enabled:hover:bg-teal-50 [&>span:last-child]:break-words dark:border-slate-700 dark:enabled:hover:bg-teal-950 [&.correct]:border-emerald-600 [&.correct]:bg-emerald-100 [&.correct]:text-emerald-950 [&.wrong]:border-rose-600 [&.wrong]:bg-rose-100 [&.wrong]:text-rose-950",
+    typeIn: "w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-base dark:border-slate-700 dark:bg-slate-900",
+    sheet: "max-h-[88dvh] w-full max-w-xl overflow-y-auto rounded-t-2xl bg-white p-5 shadow-xl sm:rounded-2xl dark:bg-slate-900 [&>h2]:mb-3 [&>h2]:text-xl [&>h2]:font-bold"
+  };
+
   /* ---------- rendering root ---------- */
   var app = document.getElementById("app");
   function setKey(fn) { S.key = fn; }
-  document.addEventListener("keydown", function (e) { if (S.key) S.key(e); });
+  document.addEventListener("keydown", function (e) {
+    if (S.key && !document.querySelector(".overlay")) S.key(e);
+  });
 
   function header(extra) {
     return '' +
-      '<div class="top">' +
-        '<span class="brand">🧠 Deutschstudio<small>B1 → C1</small></span>' +
-        '<div class="ctrls">' +
-          '<div class="lvlbar">' +
+      '<div class="mb-6 flex flex-wrap items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm dark:border-slate-800 dark:bg-slate-900">' +
+        '<span class="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl [&>small]:rounded-full [&>small]:bg-teal-100 [&>small]:px-2 [&>small]:py-1 [&>small]:text-xs [&>small]:font-bold [&>small]:text-teal-800 dark:[&>small]:bg-teal-950 dark:[&>small]:text-teal-200">🧠 Deutschstudio<small>B1 → C1</small></span>' +
+        '<div class="flex w-full flex-wrap items-center gap-2 sm:ml-auto sm:w-auto">' +
+          '<div class="mr-auto flex gap-1 rounded-xl bg-slate-100 p-1 dark:bg-slate-800">' +
             levelBtn("all", "Alle") + levelBtn("B2.1", "B2.1") + levelBtn("B2.2", "B2.2") +
           '</div>' +
-          '<button class="iconbtn" id="langBtn" title="Bedeutungssprache">' + (settings.lang === "id" ? "ID" : "EN") + '</button>' +
-          '<button class="iconbtn" id="helpBtn" title="Anleitung">?</button>' +
+          '<button class="' + ui.iconbtn + '" id="langBtn" title="Bedeutungssprache">' + (settings.lang === "id" ? "ID" : "EN") + '</button>' +
+          '<button class="' + ui.iconbtn + '" id="helpBtn" title="Anleitung">?</button>' +
         '</div>' +
       '</div>' + (extra || "");
   }
-  function levelBtn(v, label) { return '<button data-lvl="' + v + '" class="' + (S.level === v ? "on" : "") + '">' + label + "</button>"; }
+  function levelBtn(v, label) { return '<button data-lvl="' + v + '" aria-pressed="' + (S.level === v) + '" class="rounded-lg px-2.5 py-2 text-sm font-semibold hover:bg-white aria-pressed:bg-white aria-pressed:text-teal-800 aria-pressed:shadow-sm dark:hover:bg-slate-900 dark:aria-pressed:bg-slate-900 dark:aria-pressed:text-teal-200">' + label + "</button>"; }
 
   function wireHeader() {
     Array.prototype.forEach.call(app.querySelectorAll("[data-lvl]"), function (b) {
@@ -171,7 +188,7 @@
 
   function render() {
     setKey(null);
-    if (!DECK.words.length) { app.innerHTML = header() + '<div class="card empty">Noch keine Wörter. Zuerst <code>node build.js</code> ausführen.</div>'; wireHeader(); return; }
+    if (!DECK.words.length) { app.innerHTML = header() + '<div class="rounded-2xl bg-white p-8 text-center dark:bg-slate-900">Noch keine Wörter. Zuerst <code>node build.js</code> ausführen.</div>'; wireHeader(); return; }
     if (S.view === "session") renderSession();
     else if (S.view === "browse") renderBrowse();
     else renderDashboard();
@@ -192,42 +209,48 @@
     var meetings = DECK.meetings.filter(function (m) { return S.level === "all" || m.klasse === S.level; });
 
     var html = header();
-    html += '<div class="grid tiles">' +
+    html += '<section class="mb-4 rounded-3xl bg-gradient-to-br from-teal-950 to-teal-800 p-5 text-white shadow-sm sm:p-8">' +
+      '<h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Wortschatztraining</h1>' +
+      '<p lang="id" class="mt-1 text-sm text-teal-100">Latihan kosakata</p>' +
+      '<button data-mode="review" class="mt-5 rounded-xl bg-white px-4 py-3 text-left font-bold text-teal-950 hover:bg-teal-100">' +
+        'Karteikarten starten <span lang="id" class="block text-xs font-medium text-teal-800">Mulai kartu kosakata</span>' +
+      '</button></section>';
+    html += '<div class="grid grid-cols-3 gap-2 sm:gap-4">' +
       tile(due, "fällig heute") + tile(known + "/" + total, "gelernt") + tile((stats.streak || 0) + " 🔥", "Serie (Tage)") +
       '</div>';
 
-    html += '<div class="section-title">Üben</div>' +
-      '<div class="menu">' +
+    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Üben</div>' +
+      '<div class="grid grid-cols-2 gap-3 sm:grid-cols-4">' +
         modeBtn("review", "🃏", "Karteikarten") +
         modeBtn("mc", "✅", "Multiple Choice") +
         modeBtn("type", "⌨️", "Eintippen") +
         modeBtn("article", "der", "Artikel") +
       '</div>' +
-      '<div class="btn-row" style="margin-top:10px">' +
-        '<button class="btn btn-ghost" id="diffBtn" style="flex:1">⚑ Schwierige (' + unsure + ')</button>' +
-        '<button class="btn btn-ghost" id="browseBtn" style="flex:1">📖 Alle Wörter</button>' +
+      '<div class="mt-3 flex flex-wrap gap-2">' +
+        '<button class="' + ui.secondaryButton + '" id="diffBtn">⚑ Schwierige (' + unsure + ')</button>' +
+        '<button class="' + ui.secondaryButton + '" id="browseBtn">📖 Alle Wörter</button>' +
       '</div>';
 
-    html += '<div class="section-title">Fortschritt</div>' +
-      '<div class="card">' +
-        '<div class="bar"><i class="known" style="width:' + pKnown + '%"></i><i class="learning" style="width:' + pLearn + '%"></i></div>' +
-        '<div class="legend"><span><i style="background:var(--good)"></i>Gelernt ' + known + '</span>' +
-          '<span><i style="background:var(--warn)"></i>Am Lernen ' + learning + '</span>' +
-          '<span><i style="background:var(--surface-2)"></i>Neu ' + neu + '</span></div>' +
+    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Fortschritt</div>' +
+      '<div class="' + ui.card + '">' +
+        '<div class="flex h-2.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"><i class="bg-emerald-600 dark:bg-emerald-400" style="width:' + pKnown + '%"></i><i class="bg-amber-500" style="width:' + pLearn + '%"></i></div>' +
+        '<div class="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-600 dark:text-slate-300 [&_i]:mr-1.5 [&_i]:inline-block [&_i]:size-2.5 [&_i]:rounded-sm"><span><i class="bg-emerald-600 dark:bg-emerald-400"></i>Gelernt ' + known + '</span>' +
+          '<span><i class="bg-amber-500"></i>Am Lernen ' + learning + '</span>' +
+          '<span><i class="bg-slate-300 dark:bg-slate-700"></i>Neu ' + neu + '</span></div>' +
       '</div>';
 
-    html += '<div class="section-title">Nach Sitzung</div><div class="card" id="mlist">';
+    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Nach Sitzung</div><div class="' + ui.card + '" id="mlist">';
     meetings.forEach(function (m) {
       var mw = words.filter(function (w) { return w._meeting === m.meeting && w._klasse === m.klasse; });
       var kn = mw.filter(function (w) { return boxOf(w) >= 4; }).length;
       var pc = mw.length ? Math.round(kn / mw.length * 100) : 0;
-      html += '<div class="mrow" data-meeting="' + esc(m.meeting) + '" data-klasse="' + esc(m.klasse) + '">' +
-        '<div class="mt"><b>' + esc(m.klasse) + " · " + esc(fmtDate(m.meeting)) + '</b><span>' + esc(m.topic) + '</span></div>' +
-        '<div class="bar mini"><i class="known" style="width:' + pc + '%"></i></div>' +
-        '<div class="pct">' + pc + '%</div></div>';
+      html += '<button type="button" class="mrow flex w-full items-center gap-3 border-b border-slate-200 px-2 py-3 text-left last:border-0 hover:bg-teal-50 dark:border-slate-800 dark:hover:bg-teal-950" data-meeting="' + esc(m.meeting) + '" data-klasse="' + esc(m.klasse) + '">' +
+        '<span class="min-w-0 flex-1 text-sm [&>span]:block [&>span]:break-words [&>span]:text-xs [&>span]:text-slate-600 dark:[&>span]:text-slate-300"><b>' + esc(m.klasse) + " · " + esc(fmtDate(m.meeting)) + '</b><span>' + esc(m.topic) + '</span></span>' +
+        '<span class="flex h-2 w-12 shrink-0 overflow-hidden rounded-full bg-slate-200 sm:w-24 dark:bg-slate-700"><i class="bg-emerald-600 dark:bg-emerald-400" style="width:' + pc + '%"></i></span>' +
+        '<span class="w-9 shrink-0 text-right text-xs tabular-nums">' + pc + '%</span></button>';
     });
     html += "</div>";
-    html += '<p class="center muted" style="margin-top:20px;font-size:12px">' + DECK.words.length + ' Karten · Fortschritt im Browser gespeichert</p>';
+    html += '<p class="mt-5 text-center text-xs text-slate-600 dark:text-slate-300">' + DECK.words.length + ' Karten · Fortschritt im Browser gespeichert</p>';
 
     app.innerHTML = html;
     Array.prototype.forEach.call(app.querySelectorAll("[data-mode]"), function (b) {
@@ -243,11 +266,11 @@
       };
     });
   }
-  function tile(v, l) { return '<div class="tile"><b>' + v + "</b><span>" + l + "</span></div>"; }
+  function tile(v, l) { return '<div class="min-w-0 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm sm:p-5 dark:border-slate-800 dark:bg-slate-900 [&>b]:block [&>b]:text-xl [&>b]:tracking-tight sm:[&>b]:text-3xl [&>span]:text-xs [&>span]:text-slate-600 dark:[&>span]:text-slate-300"><b>' + v + "</b><span>" + l + "</span></div>"; }
   function modeBtn(mode, icon, label) {
     var d = modeDue(mode);
-    return '<button class="menubtn" data-mode="' + mode + '"><span class="mi">' + icon + '</span>' +
-      '<span class="ml">' + label + '</span>' + (d ? '<span class="badge due">' + d + ' fällig</span>' : '') + '</button>';
+    return '<button class="' + ui.menubtn + '" data-mode="' + mode + '"><span class="' + ui.mi + '">' + icon + '</span>' +
+      '<span class="text-sm font-bold sm:text-base">' + label + '</span>' + (d ? '<span class="rounded-full bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-900 dark:bg-amber-950 dark:text-amber-200">' + d + ' fällig</span>' : '') + '</button>';
   }
   function fmtDate(iso) { var p = String(iso).split("-"); return p.length === 3 ? p[2] + "." + p[1] + "." : iso; }
 
@@ -264,10 +287,10 @@
     var item = S2.queue[S2.i], w = item.word;
     var pct = Math.round(S2.i / S2.queue.length * 100);
     var head = header();
-    head += '<div class="sess-top">' +
-      '<button class="backlink" id="backBtn">← Beenden</button>' +
-      '<div class="prog"><div class="bar"><i class="known" style="width:' + pct + '%"></i></div></div>' +
-      '<span class="muted" style="font-size:13px">' + (S2.i + 1) + "/" + S2.queue.length + "</span></div>";
+    head += '<div class="mb-4 flex items-center gap-3">' +
+      '<button class="' + ui.backlink + '" id="backBtn">← Beenden</button>' +
+      '<div class="min-w-0 flex-1"><div class="flex h-2.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"><i class="bg-emerald-600 dark:bg-emerald-400" style="width:' + pct + '%"></i></div></div>' +
+      '<span class="text-sm text-slate-600 dark:text-slate-300">' + (S2.i + 1) + "/" + S2.queue.length + "</span></div>";
     var body;
     if (item.mode === "mcDe") body = viewMC(w, "mean");
     else if (item.mode === "mcMean") body = viewMC(w, "de");
@@ -290,46 +313,46 @@
 
   function flagHtml(w) {
     var on = prog(w.id) && prog(w.id).unsure;
-    return '<button class="flagbtn ' + (on ? "on" : "") + '" id="flagBtn">⚑ ' + (on ? "Unsicher" : "Markieren") + "</button>";
+    return '<button aria-pressed="' + Boolean(on) + '" class="rounded-xl border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-100 aria-pressed:border-amber-500 aria-pressed:bg-amber-100 aria-pressed:text-amber-950 dark:border-slate-700 dark:hover:bg-slate-800" id="flagBtn">⚑ ' + (on ? "Unsicher" : "Markieren") + "</button>";
   }
   function wireFlag(w) {
     var b = $("#flagBtn"); if (!b) return;
-    b.onclick = function () { var on = toggleUnsure(w); b.classList.toggle("on", on); b.innerHTML = "⚑ " + (on ? "Unsicher" : "Markieren"); };
+    b.onclick = function () { var on = toggleUnsure(w); b.setAttribute("aria-pressed", on); b.innerHTML = "⚑ " + (on ? "Unsicher" : "Markieren"); };
   }
 
   function extrasHtml(w) {
     var h = "";
-    if (w.synonyme && w.synonyme.length) h += '<div class="kv"><span class="lbl">≈</span>' + esc(w.synonyme.join(", ")) + "</div>";
-    if (w.gegenteil && w.gegenteil.length) h += '<div class="kv"><span class="lbl">↔</span>' + esc(w.gegenteil.join(", ")) + "</div>";
-    if (w.kollokationen && w.kollokationen.length) h += '<div class="kv"><span class="lbl">+</span>' + esc(w.kollokationen.join(" · ")) + "</div>";
-    if (w.hinweis) { var hn = w.hinweis[settings.lang] || w.hinweis.id || w.hinweis.en; if (hn) h += '<div class="kv"><span class="lbl">ℹ</span>' + esc(hn) + "</div>"; }
-    if (h) h = '<div class="extra">' + h + "</div>";
+    if (w.synonyme && w.synonyme.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">≈</span>' + esc(w.synonyme.join(", ")) + "</div>";
+    if (w.gegenteil && w.gegenteil.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">↔</span>' + esc(w.gegenteil.join(", ")) + "</div>";
+    if (w.kollokationen && w.kollokationen.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">+</span>' + esc(w.kollokationen.join(" · ")) + "</div>";
+    if (w.hinweis) { var hn = w.hinweis[settings.lang] || w.hinweis.id || w.hinweis.en; if (hn) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">ℹ</span>' + esc(hn) + "</div>"; }
+    if (h) h = '<div class="mt-3 text-sm">' + h + "</div>";
     var exs = (w.beispiele || []).slice(0, 2).map(function (e) {
       var tr = e[settings.lang] || e.id || e.en || "";
-      return '<div class="ex"><div class="de">' + esc(e.de) + '</div><div class="tr">' + esc(tr) + "</div></div>";
+      return '<div class="mt-3 rounded-xl bg-slate-100 p-3 text-sm dark:bg-slate-800"><div class="font-semibold">' + esc(e.de) + '</div><div class="mt-1 text-slate-600 dark:text-slate-300">' + esc(tr) + "</div></div>";
     }).join("");
     return h + exs;
   }
   function metaChips(w) {
-    return '<div class="chips" style="margin-top:14px"><span class="chip">' + esc(w.typ || "") + '</span><span class="chip">' + esc(w._klasse) + " · " + esc(fmtDate(w._meeting)) + "</span></div>";
+    return '<div class="flex flex-wrap gap-2"><span class="' + ui.chip + '">' + esc(w.typ || "") + '</span><span class="' + ui.chip + '">' + esc(w._klasse) + " · " + esc(fmtDate(w._meeting)) + "</span></div>";
   }
 
   /* flashcard (self-rated) */
   function viewFlash(w) {
-    var html = '<div class="card"><div class="q-ask">Was bedeutet das? (denk nach, dann aufdecken)</div>' +
-      '<div class="q-de">' + frontDe(w) + "</div>" +
-      (w.plural ? '<div class="q-sub">Pl.: ' + esc(w.plural) + "</div>" : "") +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Was bedeutet das? (denk nach, dann aufdecken)</div>' +
+      '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + frontDe(w) + "</div>" +
+      (w.plural ? '<div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Pl.: ' + esc(w.plural) + "</div>" : "") +
       '<div id="revArea"></div>' +
-      '<div style="margin-top:16px" id="revBtnArea"><button class="btn btn-primary btn-lg" id="revealBtn">Aufdecken</button></div>' +
-      '<div style="margin-top:10px">' + flagHtml(w) + "</div></div>";
+      '<div class="mt-4" id="revBtnArea"><button class="' + ui.widePrimaryButton + '" id="revealBtn">Aufdecken</button></div>' +
+      '<div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
     item._wire = function () {
       function reveal() {
-        $("#revArea").innerHTML = '<div class="reveal"><div class="mean">' + esc(meaning(w)) + "</div>" + extrasHtml(w) + metaChips(w) + "</div>";
-        $("#revBtnArea").innerHTML = '<div class="opts rate">' +
-          '<button class="opt bad" data-r="bad">Nicht gewusst</button>' +
-          '<button class="opt warn" data-r="warn">Unsicher</button>' +
-          '<button class="opt good" data-r="good">Gewusst</button></div>';
+        $("#revArea").innerHTML = '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + esc(meaning(w)) + "</div>" + extrasHtml(w) + metaChips(w) + "</div>";
+        $("#revBtnArea").innerHTML = '<div class="mt-3 grid gap-2 sm:grid-cols-3">' +
+          '<button class="rounded-xl bg-rose-100 p-3 font-bold text-rose-900 hover:bg-rose-200" data-r="bad">Nicht gewusst</button>' +
+          '<button class="rounded-xl bg-amber-100 p-3 font-bold text-amber-900 hover:bg-amber-200" data-r="warn">Unsicher</button>' +
+          '<button class="rounded-xl bg-emerald-100 p-3 font-bold text-emerald-900 hover:bg-emerald-200" data-r="good">Gewusst</button></div>';
         Array.prototype.forEach.call(app.querySelectorAll("[data-r]"), function (b) { b.onclick = function () { next(b.getAttribute("data-r"), w); }; });
         setKey(function (e) { if (e.key === "1") pick("bad"); else if (e.key === "2") pick("warn"); else if (e.key === "3") pick("good"); });
         function pick(r) { next(r, w); }
@@ -345,13 +368,13 @@
     var ds = distractors(w, kind, 3);
     var opts = shuffle([w].concat(ds));
     var ask = kind === "mean" ? "Welche Bedeutung passt?" : "Welches Wort passt?";
-    var prompt = kind === "mean" ? '<div class="q-de">' + frontDe(w) + "</div>" : '<div class="q-de" style="font-size:22px">' + esc(meaning(w)) + "</div>";
-    var html = '<div class="card"><div class="q-ask">' + ask + '</div>' + prompt +
-      '<div class="opts" id="opts">' + opts.map(function (o, idx) {
+    var prompt = kind === "mean" ? '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + frontDe(w) + "</div>" : '<div class="break-words text-xl font-bold sm:text-2xl">' + esc(meaning(w)) + "</div>";
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">' + ask + '</div>' + prompt +
+      '<div class="mt-4 grid gap-2" id="opts">' + opts.map(function (o, idx) {
         var label = kind === "mean" ? meaning(o) : (o.artikel && /^(der|die|das)$/.test(o.artikel) ? o.artikel + " " + o.de : o.de);
-        return '<button class="opt" data-id="' + esc(o.id) + '"><span class="num">' + (idx + 1) + '</span><span>' + esc(label) + "</span></button>";
+        return '<button class="' + ui.opt + '" data-id="' + esc(o.id) + '"><span class="grid size-7 shrink-0 place-items-center rounded-lg bg-slate-100 text-xs font-bold text-slate-800">' + (idx + 1) + '</span><span>' + esc(label) + "</span></button>";
       }).join("") + "</div>" +
-      '<div style="margin-top:12px">' + flagHtml(w) + "</div></div>";
+      '<div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
     item._wire = function () {
       var answered = false;
@@ -364,7 +387,7 @@
           else if (b === btn) b.classList.add("wrong");
         });
         setKey(function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); next(ok ? "good" : "bad", w); } });
-        setTimeout(function () { if (S.view === "session" && S.session && S.session.queue[S.session.i].word.id === w.id) next(ok ? "good" : "bad", w); }, ok ? 650 : 1400);
+        setTimeout(function () { if (S.session === S2 && S2.queue[S2.i] === item) next(ok ? "good" : "bad", w); }, ok ? 650 : 1400);
       }
       Array.prototype.forEach.call(app.querySelectorAll(".opt"), function (b) { b.onclick = function () { choose(b); }; });
       setKey(function (e) { var n = parseInt(e.key, 10); if (n >= 1 && n <= opts.length) { var btns = app.querySelectorAll(".opt"); if (btns[n - 1]) choose(btns[n - 1]); } });
@@ -374,12 +397,12 @@
 
   /* type the German word */
   function viewType(w) {
-    var html = '<div class="card"><div class="q-ask">Tippe das deutsche Wort:</div>' +
-      '<div class="q-de" style="font-size:22px">' + esc(meaning(w)) + "</div>" +
-      '<div style="margin-top:14px"><input class="type-in" id="typeIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="auf Deutsch …"></div>' +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Tippe das deutsche Wort:</div>' +
+      '<div class="break-words text-xl font-bold sm:text-2xl">' + esc(meaning(w)) + "</div>" +
+      '<div class="mt-4"><input class="' + ui.typeIn + '" id="typeIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="auf Deutsch …"></div>' +
       '<div id="typeFb"></div>' +
-      '<div style="margin-top:12px" id="typeBtns"><button class="btn btn-primary btn-lg" id="checkBtn">Prüfen</button></div>' +
-      '<div style="margin-top:10px">' + flagHtml(w) + "</div></div>";
+      '<div class="mt-3" id="typeBtns"><button class="' + ui.widePrimaryButton + '" id="checkBtn">Prüfen</button></div>' +
+      '<div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
     item._wire = function () {
       var inp = $("#typeIn"); inp.focus();
@@ -391,9 +414,9 @@
         var target = norm(w.de);
         var ok = val === target || val === target.replace(/^sich\s+/, "") || ("sich " + val) === target;
         done = true; inp.disabled = true;
-        $("#typeFb").innerHTML = '<div class="feedback ' + (ok ? "ok" : "no") + '">' + (ok ? "✓ Richtig!" : "✗ Richtig: " + esc(w.de)) + "</div>" +
-          '<div class="reveal" style="margin-top:10px"><div class="mean">' + frontDe(w) + "</div>" + extrasHtml(w) + "</div>";
-        $("#typeBtns").innerHTML = '<button class="btn btn-primary btn-lg" id="contBtn">Weiter →</button>';
+        $("#typeFb").innerHTML = '<div role="status" class="mt-3 font-bold ' + (ok ? "text-emerald-700 dark:text-emerald-300" : "text-rose-700 dark:text-rose-300") + '">' + (ok ? "✓ Richtig!" : "✗ Richtig: " + esc(w.de)) + "</div>" +
+          '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + frontDe(w) + "</div>" + extrasHtml(w) + "</div>";
+        $("#typeBtns").innerHTML = '<button class="' + ui.widePrimaryButton + '" id="contBtn">Weiter →</button>';
         $("#contBtn").onclick = function () { next(ok ? "good" : "bad", w); };
         setKey(function (e) { if (e.key === "Enter") next(ok ? "good" : "bad", w); });
         $("#contBtn").focus();
@@ -407,11 +430,11 @@
 
   /* article der/die/das */
   function viewArticle(w) {
-    var html = '<div class="card"><div class="q-ask">Welcher Artikel?</div>' +
-      '<div class="q-de">' + esc(w.de) + "</div>" +
-      (w.plural ? '<div class="q-sub">Pl.: ' + esc(w.plural) + "</div>" : "") +
-      '<div class="opts art3" id="arts">' + ["der", "die", "das"].map(function (a) { return '<button class="opt" data-a="' + a + '">' + a + "</button>"; }).join("") + "</div>" +
-      '<div id="artFb"></div><div style="margin-top:12px">' + flagHtml(w) + "</div></div>";
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Welcher Artikel?</div>' +
+      '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + esc(w.de) + "</div>" +
+      (w.plural ? '<div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Pl.: ' + esc(w.plural) + "</div>" : "") +
+      '<div class="mt-4 grid grid-cols-3 gap-2 font-bold [&>button]:justify-center" id="arts">' + ["der", "die", "das"].map(function (a) { return '<button class="' + ui.opt + '" data-a="' + a + '">' + a + "</button>"; }).join("") + "</div>" +
+      '<div id="artFb"></div><div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
     item._wire = function () {
       var answered = false;
@@ -423,8 +446,8 @@
           if (b.getAttribute("data-a") === w.artikel) b.classList.add("correct");
           else if (b === btn) b.classList.add("wrong");
         });
-        $("#artFb").innerHTML = '<div class="reveal"><div class="mean">' + esc(w.artikel) + " " + esc(w.de) + "</div>" + extrasHtml(w) + "</div>";
-        setTimeout(function () { if (S.view === "session" && S.session && S.session.queue[S.session.i].word.id === w.id) next(ok ? "good" : "bad", w); }, ok ? 650 : 1400);
+        $("#artFb").innerHTML = '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + esc(w.artikel) + " " + esc(w.de) + "</div>" + extrasHtml(w) + "</div>";
+        setTimeout(function () { if (S.session === S2 && S2.queue[S2.i] === item) next(ok ? "good" : "bad", w); }, ok ? 650 : 1400);
         setKey(function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); next(ok ? "good" : "bad", w); } });
       }
       Array.prototype.forEach.call(app.querySelectorAll("[data-a]"), function (b) { b.onclick = function () { choose(b.getAttribute("data-a"), b); }; });
@@ -435,12 +458,12 @@
 
   function renderDone() {
     var S2 = S.session, tot = S2.right + S2.wrong;
-    var html = header() + '<div class="card done-wrap"><div class="big">🎉</div>' +
-      "<h2>Sitzung fertig!</h2>" +
-      '<p class="muted">' + S2.right + " von " + tot + " richtig · Serie: " + (stats.streak || 0) + ' 🔥</p>' +
-      '<div class="btn-row" style="justify-content:center;margin-top:10px">' +
-        '<button class="btn btn-primary" id="againBtn">Weiter üben</button>' +
-        '<button class="btn btn-ghost" id="homeBtn">Zur Übersicht</button></div></div>';
+    var html = header() + '<div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900"><div class="mb-2 text-4xl">🎉</div>' +
+      '<h2 class="mb-2 text-2xl font-extrabold">Sitzung fertig!</h2>' +
+      '<p class="text-sm text-slate-600 dark:text-slate-300">' + S2.right + " von " + tot + " richtig · Serie: " + (stats.streak || 0) + ' 🔥</p>' +
+      '<div class="mt-3 flex flex-wrap gap-2">' +
+        '<button class="rounded-xl bg-teal-700 px-4 py-3 font-bold text-white hover:bg-teal-800 dark:bg-teal-300 dark:text-teal-950 dark:hover:bg-teal-200" id="againBtn">Weiter üben</button>' +
+        '<button class="' + ui.secondaryButton + '" id="homeBtn">Zur Übersicht</button></div></div>';
     app.innerHTML = html; wireHeader();
     $("#againBtn").onclick = function () { startSession({}); };
     $("#homeBtn").onclick = function () { S.session = null; S.view = "dashboard"; render(); };
@@ -451,10 +474,10 @@
     var words = levelWords();
     var meetings = DECK.meetings.filter(function (m) { return S.level === "all" || m.klasse === S.level; });
     var html = header();
-    html += '<div class="sess-top"><button class="backlink" id="backBtn">← Übersicht</button><div class="prog"></div></div>';
-    html += '<input class="type-in" id="q" placeholder="Suchen …" value="' + esc(S.browseQuery) + '" style="font-size:16px;margin-bottom:10px">';
-    html += '<div class="chips" id="mchips"><span class="chip ' + (S.browseMeeting === "all" ? "on" : "") + '" data-m="all">Alle</span>' +
-      meetings.map(function (m) { return '<span class="chip ' + (S.browseMeeting === m.meeting ? "on" : "") + '" data-m="' + esc(m.meeting) + '">' + esc(m.klasse + " " + fmtDate(m.meeting)) + "</span>"; }).join("") + "</div>";
+    html += '<div class="mb-4 flex items-center gap-3"><button class="' + ui.backlink + '" id="backBtn">← Übersicht</button><div class="min-w-0 flex-1"></div></div>';
+    html += '<input class="' + ui.typeIn + '" type="search" aria-label="Wörter suchen" id="q" placeholder="Suchen …" value="' + esc(S.browseQuery) + '">';
+    html += '<div class="mt-3 flex flex-wrap gap-2" id="mchips"><button class="rounded-full border border-slate-300 px-3 py-2 text-xs font-bold hover:bg-slate-100 aria-pressed:border-teal-600 aria-pressed:bg-teal-100 aria-pressed:text-teal-950 dark:border-slate-700 dark:hover:bg-slate-800" aria-pressed="' + (S.browseMeeting === "all") + '" data-m="all">Alle</button>' +
+      meetings.map(function (m) { return '<button class="rounded-full border border-slate-300 px-3 py-2 text-xs font-bold hover:bg-slate-100 aria-pressed:border-teal-600 aria-pressed:bg-teal-100 aria-pressed:text-teal-950 dark:border-slate-700 dark:hover:bg-slate-800" aria-pressed="' + (S.browseMeeting === m.meeting) + '" data-m="' + esc(m.meeting) + '">' + esc(m.klasse + " " + fmtDate(m.meeting)) + "</button>"; }).join("") + "</div>";
 
     var q = S.browseQuery.toLowerCase();
     var list = words.filter(function (w) {
@@ -462,14 +485,15 @@
       if (!q) return true;
       return (w.de + " " + meaning(w)).toLowerCase().indexOf(q) >= 0;
     });
-    html += '<div class="section-title">' + list.length + ' Wörter</div><div class="card wlist">';
-    if (!list.length) html += '<div class="empty">Nichts gefunden.</div>';
+    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">' + list.length + ' Wörter</div><div class="divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white px-4 shadow-sm dark:divide-slate-800 dark:border-slate-800 dark:bg-slate-900">';
+    if (!list.length) html += '<div class="py-10 text-center text-sm text-slate-600 dark:text-slate-300">Nichts gefunden.</div>';
     list.forEach(function (w) {
       var b = boxOf(w); var p = prog(w.id);
-      var cls = "dot b" + b + (p && p.unsure ? " flag" : "");
-      html += '<div class="witem"><span class="' + cls + '"></span>' +
-        '<span class="wde">' + frontDe(w) + "</span>" +
-        '<span class="wmean">' + esc(meaning(w)) + "</span></div>";
+      var colors = ["bg-slate-300", "bg-slate-400", "bg-amber-500", "bg-yellow-500", "bg-emerald-600", "bg-emerald-600"];
+      var cls = "size-2.5 self-center rounded-full " + colors[b] + (p && p.unsure ? " ring-2 ring-amber-500 ring-offset-2 dark:ring-offset-slate-900" : "");
+      html += '<div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-3 gap-y-1 py-3 sm:grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)]"><span class="' + cls + '"></span>' +
+        '<span class="break-words font-bold">' + frontDe(w) + "</span>" +
+        '<span class="col-start-2 break-words text-sm text-slate-600 sm:col-start-3 dark:text-slate-300">' + esc(meaning(w)) + "</span></div>";
     });
     html += "</div>";
     app.innerHTML = html; wireHeader();
@@ -480,8 +504,9 @@
 
   /* ---------- toast ---------- */
   var toastEl;
+  var overlayClasses = "overlay fixed inset-0 z-50 flex items-end justify-center bg-slate-950/70 sm:items-center sm:p-4";
   function toast(msg) {
-    if (!toastEl) { toastEl = document.createElement("div"); toastEl.className = "toast"; document.body.appendChild(toastEl); }
+    if (!toastEl) { toastEl = document.createElement("div"); toastEl.className = "pointer-events-none fixed inset-x-4 bottom-5 z-40 mx-auto w-fit rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white opacity-0 shadow-lg motion-safe:transition-opacity [&.show]:opacity-100 dark:bg-slate-100 dark:text-slate-900"; toastEl.setAttribute("role", "status"); document.body.appendChild(toastEl); }
     toastEl.textContent = msg; toastEl.classList.add("show");
     clearTimeout(toast._t); toast._t = setTimeout(function () { toastEl.classList.remove("show"); }, 1800);
   }
@@ -517,10 +542,10 @@
     var prev = document.querySelector(".overlay"); if (prev) prev.remove();
     var g = GUIDE[settings.lang] || GUIDE.id;
     var ov = document.createElement("div");
-    ov.className = "overlay";
-    ov.innerHTML = '<div class="sheet"><h2>' + esc(g.title) + '</h2>' +
-      g.items.map(function (it) { return '<div class="gitem"><b>' + it[0] + '</b><p>' + it[1] + '</p></div>'; }).join("") +
-      '<button class="btn btn-primary btn-lg" id="helpClose">' + esc(g.close) + '</button></div>';
+    ov.className = overlayClasses;
+    ov.innerHTML = '<div class="' + ui.sheet + '"><h2>' + esc(g.title) + '</h2>' +
+      g.items.map(function (it) { return '<div class="border-b border-slate-200 py-3 last:border-0 dark:border-slate-800 [&>b]:mb-1 [&>b]:block [&>p]:text-sm [&>p]:text-slate-600 dark:[&>p]:text-slate-300"><b>' + it[0] + '</b><p>' + it[1] + '</p></div>'; }).join("") +
+      '<button class="mt-4 ' + ui.widePrimaryButton + '" id="helpClose">' + esc(g.close) + '</button></div>';
     document.body.appendChild(ov);
     function close() { ov.remove(); settings.seenHelp = true; save(K.set, settings); }
     ov.querySelector("#helpClose").onclick = close;
@@ -533,17 +558,17 @@
     var total = levelWords().filter(function (w) { return w._meeting === meeting; }).length;
     function mb(mode, icon, label) {
       var cnt = levelWords().filter(function (w) { return w._meeting === meeting && validForMode(w, mode); }).length;
-      return '<button class="menubtn" data-mode="' + mode + '"' + (cnt ? '' : ' disabled') + '>' +
-        '<span class="mi">' + icon + '</span><span class="ml">' + label + '</span>' +
-        '<span class="badge">' + cnt + ' Wörter</span></button>';
+      return '<button class="' + ui.menubtn + '" data-mode="' + mode + '"' + (cnt ? '' : ' disabled') + '>' +
+        '<span class="' + ui.mi + '">' + icon + '</span><span class="text-sm font-bold sm:text-base">' + label + '</span>' +
+        '<span class="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold dark:bg-slate-800">' + cnt + ' Wörter</span></button>';
     }
     var ov = document.createElement("div");
-    ov.className = "overlay";
-    ov.innerHTML = '<div class="sheet"><h2>' + esc(klasse) + ' · ' + esc(fmtDate(meeting)) + '</h2>' +
-      '<p class="muted" style="margin:-8px 0 14px">' + esc(topic || "") + ' · ' + total + ' Wörter</p>' +
-      '<div class="menu">' + mb("review", "🃏", "Karteikarten") + mb("mc", "✅", "Multiple Choice") +
+    ov.className = overlayClasses;
+    ov.innerHTML = '<div class="' + ui.sheet + '"><h2>' + esc(klasse) + ' · ' + esc(fmtDate(meeting)) + '</h2>' +
+      '<p class="mb-4 text-sm text-slate-600 dark:text-slate-300">' + esc(topic || "") + ' · ' + total + ' Wörter</p>' +
+      '<div class="grid grid-cols-2 gap-3">' + mb("review", "🃏", "Karteikarten") + mb("mc", "✅", "Multiple Choice") +
         mb("type", "⌨️", "Eintippen") + mb("article", "der", "Artikel") + '</div>' +
-      '<button class="btn btn-ghost btn-lg" id="mpClose" style="margin-top:14px">Schließen</button></div>';
+      '<button class="mt-4 w-full rounded-xl border border-slate-300 px-4 py-3 font-bold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800" id="mpClose">Schließen</button></div>';
     document.body.appendChild(ov);
     function close() { ov.remove(); }
     Array.prototype.forEach.call(ov.querySelectorAll("[data-mode]"), function (b) {

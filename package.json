@@ -2,8 +2,12 @@
   "name": "deutschstudio",
   "version": "0.1.0",
   "private": true,
-  "description": "Personal German B1 to C1 vocabulary trainer (vanilla, zero dependencies).",
+  "description": "Personal German B1 to C1 vocabulary trainer.",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "build:css": "tailwindcss --content ./app/index.html,./app/app.js -i ./tailwind.input.css -o ./app/tailwind.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.18"
   }
 }

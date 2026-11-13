@@ -1,7 +1,7 @@
 # Deutschstudio
 
 Persönlicher Vokabeltrainer von **B1 Richtung C1**, gebaut aus Fauzans eigenen Unterrichtsmaterialien.
-Vanilla HTML/CSS/JS, **keine Abhängigkeiten**, Fortschritt im Browser (`localStorage`).
+Vanilla HTML/JavaScript mit Tailwind CSS, Fortschritt im Browser (`localStorage`).
 
 ## Lokal benutzen
 - Doppelklick auf `app/index.html` in einem normalen Browser (Chrome/Edge), **oder**
@@ -22,7 +22,11 @@ Vanilla HTML/CSS/JS, **keine Abhängigkeiten**, Fortschritt im Browser (`localSt
 ## Online stellen (Vercel + GitHub)
 - Repo zu GitHub pushen, in Vercel importieren.
 - Vercel-Einstellungen stehen schon in `vercel.json`
-  (Build: `node build.js`, Output: `app`). Kein `node_modules`, kein Backend.
+  (Build: `node build.js`, Output: `app`). Das Stylesheet `app/tailwind.css` liegt bereits im Repository.
+
+## Stylesheet aktualisieren
+- Einmal `npm install` ausführen.
+- Nach Änderungen an Tailwind-Klassen `npm run build:css` ausführen und `app/tailwind.css` mit einchecken.
 
 ## Trainingsmodi (MVP)
 Karteikarten + Spaced Repetition (Leitner), Multiple Choice (beide Richtungen),
@@ -32,6 +36,6 @@ Eintippen, Artikel (der/die/das). Wörter als **„unsicher"** markieren → eig
 ```
 content/wortschatz/<Level>/*.json   Inhalt (eine Datei pro Sitzung)
 build.js                            bündelt Inhalt -> app/data.js
-app/                                die Website (index.html, style.css, app.js, data.js)
+app/                                die Website (index.html, app.js, data.js, tailwind.css)
 docs/                               Architektur (arc42) + ADRs
 ```
