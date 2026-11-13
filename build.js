@@ -65,6 +65,12 @@ for (const { rel, data } of files) {
       if (w.modi.indexOf("artikel") >= 0 && !/^(der|die|das)$/.test(w.artikel || "")) {
         errors.push(rel + " / " + w.id + ': modi "artikel", aber Feld artikel ist nicht der/die/das');
       }
+      if (w.typ === "Wortfeld" && w.modi.length > 0) {
+        errors.push(rel + " / " + w.id + ': typ "Wortfeld" muss modi: [] haben (nur Karteikarten)');
+      }
+    }
+    if (["Nomen", "Verb", "Adjektiv", "Adverb", "Redewendung", "Wendung", "Wortfeld"].indexOf(w.typ) < 0) {
+      errors.push(rel + " / " + w.id + ': ungueltiger typ-Wert "' + w.typ + '"');
     }
     words.push(Object.assign({}, w, {
       _klasse: meta.klasse, _level: meta.level, _meeting: meta.meeting, _topic: meta.topic,

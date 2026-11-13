@@ -1,5 +1,12 @@
 # Content schema — Wortschatz (strict)
 
+> **Handing this content-creation task to another agent?** Give it
+> [`content-agent-brief.md`](content-agent-brief.md) — a self-contained
+> task brief (works even if that agent has no repo access). The formal,
+> machine-readable contract is [`wortschatz.schema.json`](wortschatz.schema.json)
+> (JSON Schema draft-07). This document is the narrative/human-readable version
+> of the same rules.
+
 One JSON file per meeting: `content/wortschatz/<Level>/<YYYY-MM-DD>.json`.
 `build.js` bundles **and validates** these files. An invalid file **fails the build** (and thus the Vercel deploy), so every card must follow this schema exactly.
 

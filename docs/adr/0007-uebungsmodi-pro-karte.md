@@ -11,7 +11,7 @@ Each card declares a **`modi`** array in its JSON — the quiz modes it supports
 
 - The app reads `modi` to decide eligibility (no more heuristic inference).
 - `build.js` **validates strictly** and fails the build on a missing/invalid `modi` (or `artikel` mode without a der/die/das article), so bad content cannot deploy.
-- The full template lives in [`docs/content-schema.md`](../content-schema.md).
+- The full template lives in [`docs/content-schema.md`](../content-schema.md), the formal contract in [`docs/wortschatz.schema.json`](../wortschatz.schema.json), and the self-contained hand-off brief for another authoring agent in [`docs/content-agent-brief.md`](../content-agent-brief.md).
 
 ## Consequences
 - **+** No more nonsensical quizzes; each card appears only where it makes sense.
