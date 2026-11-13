@@ -42,7 +42,7 @@
   function icon(name, cls) {
     return '<svg class="' + (cls || "size-5") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + icons[name] + '</svg>';
   }
-  var heroArt = '<svg viewBox="0 0 420 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><pattern id="hero-lines" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M0 22V0h22" fill="none" stroke="#fff9e3" stroke-opacity=".12"/></pattern></defs><path d="M70 0h350v300H70z" fill="url(#hero-lines)"/><circle cx="246" cy="151" r="127" fill="none" stroke="#777665"/><circle cx="246" cy="151" r="105" fill="none" stroke="#777665" stroke-dasharray="2 7"/><g transform="rotate(13 239 142)"><rect x="163" y="67" width="161" height="126" rx="24" fill="#a4b299"/><path d="m297 188 25 18-4-32" fill="#a4b299"/></g><g transform="rotate(-11 222 144)"><rect x="118" y="86" width="169" height="126" rx="23" fill="#f3af75"/><path d="m149 204-2 27 32-21" fill="#f3af75"/><text x="151" y="171" font-family="Georgia,serif" font-weight="700" font-size="80" fill="#28251e">Aa</text><circle cx="258" cy="110" r="3" fill="#28251e"/></g><path d="M341 65v25m-12-13h25M97 190v17m-8-8h17" stroke="#f9c593" stroke-width="2" stroke-linecap="round"/><circle cx="347" cy="216" r="5" fill="#f3af75"/><circle cx="130" cy="54" r="4" fill="#a4b299"/><path d="m318 242 13 13m-13 0 13-13" stroke="#a4b299" stroke-width="2"/></svg>';
+  var heroArt = '<svg class="hero-art" viewBox="0 0 420 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><pattern id="hero-lines" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M0 22V0h22" fill="none" stroke="#fff9e3" stroke-opacity=".12"/></pattern></defs><path d="M70 0h350v300H70z" fill="url(#hero-lines)"/><circle cx="246" cy="151" r="127" fill="none" stroke="#777665"/><circle cx="246" cy="151" r="105" fill="none" stroke="#777665" stroke-dasharray="2 7"/><g transform="rotate(13 239 142)"><rect x="163" y="67" width="161" height="126" rx="24" fill="#a4b299"/><path d="m297 188 25 18-4-32" fill="#a4b299"/></g><g transform="rotate(-11 222 144)"><rect x="118" y="86" width="169" height="126" rx="23" fill="#f3af75"/><path d="m149 204-2 27 32-21" fill="#f3af75"/><text x="151" y="171" font-family="Georgia,serif" font-weight="700" font-size="80" fill="#28251e">Aa</text><circle cx="258" cy="110" r="3" fill="#28251e"/></g><path d="M341 65v25m-12-13h25M97 190v17m-8-8h17" stroke="#f9c593" stroke-width="2" stroke-linecap="round"/><circle cx="347" cy="216" r="5" fill="#f3af75"/><circle cx="130" cy="54" r="4" fill="#a4b299"/><path d="m318 242 13 13m-13 0 13-13" stroke="#a4b299" stroke-width="2"/></svg>';
 
   /* ---------- helpers ---------- */
   function $(sel, root) { return (root || document).querySelector(sel); }
@@ -56,7 +56,7 @@
   function prog(id) { return progress[id]; }
   function meaning(w) { var b = w.bedeutung || {}; return b[settings.lang] || b.id || b.en || ""; }
   function frontDe(w, hideArticle) {
-    if (!hideArticle && w.artikel && /^(der|die|das)$/.test(w.artikel)) return '<span class="font-semibold text-teal-700 dark:text-teal-300">' + esc(w.artikel) + "</span> " + esc(w.de);
+    if (!hideArticle && w.artikel && /^(der|die|das)$/.test(w.artikel)) return '<span class="font-semibold text-[#34523f]">' + esc(w.artikel) + "</span> " + esc(w.de);
     return esc(w.de);
   }
   function isSimple(w) {
@@ -186,118 +186,17 @@
     if (S.key && !document.querySelector(".overlay")) S.key(e);
   });
 
-  function legacyHeader(extra) {
-    return '' +
-      '<div class="mb-6 flex flex-wrap items-center gap-3 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm dark:border-slate-800 dark:bg-slate-900">' +
-        '<span class="flex items-center gap-2 text-lg font-extrabold tracking-tight sm:text-xl [&>small]:rounded-full [&>small]:bg-teal-100 [&>small]:px-2 [&>small]:py-1 [&>small]:text-xs [&>small]:font-bold [&>small]:text-teal-800 dark:[&>small]:bg-teal-950 dark:[&>small]:text-teal-200">🧠 Deutschstudio<small>B1 → C1</small></span>' +
-        '<div class="flex w-full flex-wrap items-center gap-2 sm:ml-auto sm:w-auto">' +
-          '<div class="mr-auto flex gap-1 rounded-xl bg-slate-100 p-1 dark:bg-slate-800">' +
-            levelBtn("all", "Alle") + levelBtn("B2.1", "B2.1") + levelBtn("B2.2", "B2.2") +
-          '</div>' +
-          '<button class="' + ui.iconbtn + '" id="langBtn" title="Bedeutungssprache">' + (settings.lang === "id" ? "ID" : "EN") + '</button>' +
-          '<button class="' + ui.iconbtn + '" id="helpBtn" title="Anleitung">?</button>' +
-        '</div>' +
-      '</div>' + (extra || "");
-  }
-  function legacyLevelBtn(v, label) { return '<button data-lvl="' + v + '" aria-pressed="' + (S.level === v) + '" class="rounded-lg px-2.5 py-2 text-sm font-semibold hover:bg-white aria-pressed:bg-white aria-pressed:text-teal-800 aria-pressed:shadow-sm dark:hover:bg-slate-900 dark:aria-pressed:bg-slate-900 dark:aria-pressed:text-teal-200">' + label + "</button>"; }
-
-  function legacyWireHeader() {
-    Array.prototype.forEach.call(app.querySelectorAll("[data-lvl]"), function (b) {
-      b.onclick = function () { S.level = b.getAttribute("data-lvl"); S.session = null; S.view = "dashboard"; render(); };
-    });
-    var lb = $("#langBtn"); if (lb) lb.onclick = function () { settings.lang = settings.lang === "id" ? "en" : "id"; save(K.set, settings); render(); };
-    var hb = $("#helpBtn"); if (hb) hb.onclick = showHelp;
-  }
-
   function render() {
     setKey(null);
     window.scrollTo(0, 0);
-    if (!DECK.words.length) { app.innerHTML = header() + '<div class="rounded-2xl bg-white p-8 text-center dark:bg-slate-900">Noch keine Wörter. Zuerst <code>node build.js</code> ausführen.</div>'; wireHeader(); return; }
+    if (!DECK.words.length) { app.innerHTML = frame('<div class="' + ui.card + ' text-center text-[#62625b]">Noch keine Wörter. Zuerst <code>node build.js</code> ausführen.</div>'); wireHeader(); return; }
     if (S.view === "session") renderSession();
     else if (S.view === "browse") renderBrowse();
     else renderDashboard();
     wireHeader();
   }
 
-  /* ---------- dashboard ---------- */
-  function legacyRenderDashboard() {
-    var words = levelWords();
-    var neu = 0, learning = 0, known = 0;
-    words.forEach(function (w) { var b = boxOf(w); if (b === 0) neu++; else if (b >= 4) known++; else learning++; });
-    var total = words.length;
-    var due = dueCount();
-    var unsure = words.filter(function (w) { var p = prog(w.id); return p && p.unsure; }).length;
-    var pKnown = total ? (known / total * 100) : 0;
-    var pLearn = total ? (learning / total * 100) : 0;
-
-    var meetings = DECK.meetings.filter(function (m) { return S.level === "all" || m.klasse === S.level; });
-
-    var html = header();
-    html += '<section class="mb-4 rounded-3xl bg-gradient-to-br from-teal-950 to-teal-800 p-5 text-white shadow-sm sm:p-8">' +
-      '<h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Wortschatztraining</h1>' +
-      '<p lang="id" class="mt-1 text-sm text-teal-100">Latihan kosakata</p>' +
-      '<button data-mode="review" class="mt-5 rounded-xl bg-white px-4 py-3 text-left font-bold text-teal-950 hover:bg-teal-100">' +
-        'Karteikarten starten <span lang="id" class="block text-xs font-medium text-teal-800">Mulai kartu kosakata</span>' +
-      '</button></section>';
-    html += '<div class="grid grid-cols-3 gap-2 sm:gap-4">' +
-      tile(due, "fällig heute") + tile(known + "/" + total, "gelernt") + tile((stats.streak || 0) + " 🔥", "Serie (Tage)") +
-      '</div>';
-
-    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Üben</div>' +
-      '<div class="grid grid-cols-2 gap-3 sm:grid-cols-4">' +
-        modeBtn("review", "🃏", "Karteikarten") +
-        modeBtn("mc", "✅", "Multiple Choice") +
-        modeBtn("type", "⌨️", "Eintippen") +
-        modeBtn("article", "der", "Artikel") +
-      '</div>' +
-      '<div class="mt-3 flex flex-wrap gap-2">' +
-        '<button class="' + ui.secondaryButton + '" id="diffBtn">⚑ Schwierige (' + unsure + ')</button>' +
-        '<button class="' + ui.secondaryButton + '" id="browseBtn">📖 Alle Wörter</button>' +
-      '</div>';
-
-    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Fortschritt</div>' +
-      '<div class="' + ui.card + '">' +
-        '<div class="flex h-2.5 overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"><i class="bg-emerald-600 dark:bg-emerald-400" style="width:' + pKnown + '%"></i><i class="bg-amber-500" style="width:' + pLearn + '%"></i></div>' +
-        '<div class="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-600 dark:text-slate-300 [&_i]:mr-1.5 [&_i]:inline-block [&_i]:size-2.5 [&_i]:rounded-sm"><span><i class="bg-emerald-600 dark:bg-emerald-400"></i>Gelernt ' + known + '</span>' +
-          '<span><i class="bg-amber-500"></i>Am Lernen ' + learning + '</span>' +
-          '<span><i class="bg-slate-300 dark:bg-slate-700"></i>Neu ' + neu + '</span></div>' +
-      '</div>';
-
-    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">Nach Sitzung</div><div class="' + ui.card + '" id="mlist">';
-    meetings.forEach(function (m) {
-      var mw = words.filter(function (w) { return w._meeting === m.meeting && w._klasse === m.klasse; });
-      var kn = mw.filter(function (w) { return boxOf(w) >= 4; }).length;
-      var pc = mw.length ? Math.round(kn / mw.length * 100) : 0;
-      html += '<button type="button" class="mrow flex w-full items-center gap-3 border-b border-slate-200 px-2 py-3 text-left last:border-0 hover:bg-teal-50 dark:border-slate-800 dark:hover:bg-teal-950" data-meeting="' + esc(m.meeting) + '" data-klasse="' + esc(m.klasse) + '">' +
-        '<span class="min-w-0 flex-1 text-sm [&>span]:block [&>span]:break-words [&>span]:text-xs [&>span]:text-slate-600 dark:[&>span]:text-slate-300"><b>' + esc(m.klasse) + " · " + esc(fmtDate(m.meeting)) + '</b><span>' + esc(m.topic) + '</span></span>' +
-        '<span class="flex h-2 w-12 shrink-0 overflow-hidden rounded-full bg-slate-200 sm:w-24 dark:bg-slate-700"><i class="bg-emerald-600 dark:bg-emerald-400" style="width:' + pc + '%"></i></span>' +
-        '<span class="w-9 shrink-0 text-right text-xs tabular-nums">' + pc + '%</span></button>';
-    });
-    html += "</div>";
-    html += '<p class="mt-5 text-center text-xs text-slate-600 dark:text-slate-300">' + DECK.words.length + ' Karten · Fortschritt im Browser gespeichert</p>';
-
-    app.innerHTML = html;
-    Array.prototype.forEach.call(app.querySelectorAll("[data-mode]"), function (b) {
-      b.onclick = function () { startSession({ mode: b.getAttribute("data-mode") }); };
-    });
-    $("#diffBtn").onclick = function () { startSession({ difficult: true, title: "Schwierige Wörter" }); };
-    $("#browseBtn").onclick = function () { S.view = "browse"; render(); };
-    Array.prototype.forEach.call(app.querySelectorAll(".mrow"), function (r) {
-      r.onclick = function () {
-        var mt = r.getAttribute("data-meeting"), kl = r.getAttribute("data-klasse");
-        var m = DECK.meetings.filter(function (x) { return x.meeting === mt && x.klasse === kl; })[0] || { topic: "" };
-        showMeetingPicker(mt, kl, m.topic);
-      };
-    });
-  }
-  function tile(v, l) { return '<div class="min-w-0 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm sm:p-5 dark:border-slate-800 dark:bg-slate-900 [&>b]:block [&>b]:text-xl [&>b]:tracking-tight sm:[&>b]:text-3xl [&>span]:text-xs [&>span]:text-slate-600 dark:[&>span]:text-slate-300"><b>' + v + "</b><span>" + l + "</span></div>"; }
-  function modeBtn(mode, icon, label) {
-    var d = modeDue(mode);
-    return '<button class="' + ui.menubtn + '" data-mode="' + mode + '"><span class="' + ui.mi + '">' + icon + '</span>' +
-      '<span class="text-sm font-bold sm:text-base">' + label + '</span>' + (d ? '<span class="rounded-full bg-amber-100 px-2 py-1 text-xs font-semibold text-amber-900 dark:bg-amber-950 dark:text-amber-200">' + d + ' fällig</span>' : '') + '</button>';
-  }
-  /* ---------- warm application shell ---------- */
-  function header() { return ""; }
+  /* ---------- application shell ---------- */
   function levelBtn(v, label) {
     return '<button data-lvl="' + v + '" aria-pressed="' + (S.level === v) + '" class="rounded-md px-2.5 py-1.5 text-xs font-bold text-[#62625b] hover:bg-white aria-pressed:bg-white aria-pressed:text-[#21221e] aria-pressed:shadow-sm">' + label + '</button>';
   }
@@ -355,7 +254,7 @@
     html += '<section id="progress" class="scroll-mt-24"><div class="mb-3 mt-9 text-xs font-bold uppercase tracking-[.15em] text-[#8a887e]">Fortschritt</div><div class="' + ui.card + '"><div class="mb-4 flex items-end justify-between gap-4"><div><b class="text-lg">Dein Wortschatz</b><p class="mt-1 text-sm text-[#77776e]">' + total + ' Karten in der aktuellen Auswahl</p></div><b class="text-2xl text-[#34523f]">' + Math.round(total ? known / total * 100 : 0) + '%</b></div><div class="flex h-2.5 overflow-hidden rounded-full bg-[#e9e5db]"><i class="bg-[#698771]" style="width:' + pKnown + '%"></i><i class="bg-[#d99a63]" style="width:' + pLearn + '%"></i></div><div class="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-[#62625b] [&_i]:mr-1.5 [&_i]:inline-block [&_i]:size-2.5 [&_i]:rounded-sm"><span><i class="bg-[#698771]"></i>Gelernt ' + known + '</span><span><i class="bg-[#d99a63]"></i>Am Lernen ' + learning + '</span><span><i class="bg-[#d6d2c6]"></i>Neu ' + neu + '</span></div></div></section>';
     html += '<div class="mb-3 mt-9 text-xs font-bold uppercase tracking-[.15em] text-[#8a887e]">Nach Sitzung</div><div class="' + ui.card + ' !p-2 sm:!p-3" id="mlist">';
     meetings.forEach(function (m) { var mw = words.filter(function (w) { return w._meeting === m.meeting && w._klasse === m.klasse; }); var kn = mw.filter(function (w) { return boxOf(w) >= 4; }).length; var pc = mw.length ? Math.round(kn / mw.length * 100) : 0; html += '<button type="button" class="mrow flex w-full items-center gap-3 rounded-lg border-b border-[#ece8de] px-3 py-3 text-left last:border-0 hover:bg-[#f3f1ea]" data-meeting="' + esc(m.meeting) + '" data-klasse="' + esc(m.klasse) + '"><span class="grid size-9 shrink-0 place-items-center rounded-lg bg-[#e4edf2] text-[#3e5868]">' + icon("calendar", "size-4") + '</span><span class="min-w-0 flex-1 text-sm [&>span]:block [&>span]:break-words [&>span]:text-xs [&>span]:text-[#77776e]"><b>' + esc(m.klasse) + ' · ' + esc(fmtDate(m.meeting)) + '</b><span>' + esc(m.topic) + '</span></span><span class="flex h-2 w-12 shrink-0 overflow-hidden rounded-full bg-[#e9e5db] sm:w-24"><i class="bg-[#698771]" style="width:' + pc + '%"></i></span><span class="w-9 shrink-0 text-right text-xs tabular-nums">' + pc + '%</span></button>'; });
-    html += '</div><p class="mt-5 text-center text-xs text-[#77776e]">' + DECK.words.length + ' Karten · Fortschritt im Browser gespeichert</p>';
+    html += '</div>';
     app.innerHTML = frame(html, "Übersicht");
     Array.prototype.forEach.call(app.querySelectorAll("[data-mode]"), function (b) { b.onclick = function () { startSession({ mode: b.getAttribute("data-mode") }); }; });
     $("#diffBtn").onclick = function () { startSession({ difficult: true, title: "Schwierige Wörter" }); }; $("#browseBtn").onclick = function () { S.view = "browse"; render(); };
@@ -376,8 +275,7 @@
     if (!S2 || S2.i >= S2.queue.length) return renderDone();
     var item = S2.queue[S2.i], w = item.word;
     var pct = Math.round(S2.i / S2.queue.length * 100);
-    var head = header();
-    head += '<div class="mb-4 flex items-center gap-3">' +
+    var head = '<div class="mb-4 flex items-center gap-3">' +
       '<button class="' + ui.backlink + '" id="backBtn">← Beenden</button>' +
       '<div class="min-w-0 flex-1"><div class="flex h-2.5 overflow-hidden rounded-full bg-[#e9e5db]"><i class="bg-[#698771]" style="width:' + pct + '%"></i></div></div>' +
       '<span class="text-sm text-[#77776e]">' + (S2.i + 1) + "/" + S2.queue.length + "</span></div>";
@@ -403,7 +301,7 @@
 
   function flagHtml(w) {
     var on = prog(w.id) && prog(w.id).unsure;
-    return '<button aria-pressed="' + Boolean(on) + '" class="rounded-xl border border-slate-300 px-3 py-2 text-sm font-semibold hover:bg-slate-100 aria-pressed:border-amber-500 aria-pressed:bg-amber-100 aria-pressed:text-amber-950 dark:border-slate-700 dark:hover:bg-slate-800" id="flagBtn">⚑ ' + (on ? "Unsicher" : "Markieren") + "</button>";
+    return '<button aria-pressed="' + Boolean(on) + '" class="rounded-xl border border-[#d9d5c9] px-3 py-2 text-sm font-semibold hover:bg-[#f0eee5] aria-pressed:border-[#d99a63] aria-pressed:bg-[#f7e8d9] aria-pressed:text-[#783c19]" id="flagBtn">⚑ ' + (on ? "Unsicher" : "Markieren") + "</button>";
   }
   function wireFlag(w) {
     var b = $("#flagBtn"); if (!b) return;
@@ -412,14 +310,14 @@
 
   function extrasHtml(w) {
     var h = "";
-    if (w.synonyme && w.synonyme.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">≈</span>' + esc(w.synonyme.join(", ")) + "</div>";
-    if (w.gegenteil && w.gegenteil.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">↔</span>' + esc(w.gegenteil.join(", ")) + "</div>";
-    if (w.kollokationen && w.kollokationen.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">+</span>' + esc(w.kollokationen.join(" · ")) + "</div>";
-    if (w.hinweis) { var hn = w.hinweis[settings.lang] || w.hinweis.id || w.hinweis.en; if (hn) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-teal-700 dark:text-teal-300">ℹ</span>' + esc(hn) + "</div>"; }
+    if (w.synonyme && w.synonyme.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-[#34523f]">≈</span>' + esc(w.synonyme.join(", ")) + "</div>";
+    if (w.gegenteil && w.gegenteil.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-[#34523f]">↔</span>' + esc(w.gegenteil.join(", ")) + "</div>";
+    if (w.kollokationen && w.kollokationen.length) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-[#34523f]">+</span>' + esc(w.kollokationen.join(" · ")) + "</div>";
+    if (w.hinweis) { var hn = w.hinweis[settings.lang] || w.hinweis.id || w.hinweis.en; if (hn) h += '<div class="my-1 break-words"><span class="mr-2 font-semibold text-[#34523f]">ℹ</span>' + esc(hn) + "</div>"; }
     if (h) h = '<div class="mt-3 text-sm">' + h + "</div>";
     var exs = (w.beispiele || []).slice(0, 2).map(function (e) {
       var tr = e[settings.lang] || e.id || e.en || "";
-      return '<div class="mt-3 rounded-xl bg-slate-100 p-3 text-sm dark:bg-slate-800"><div class="font-semibold">' + esc(e.de) + '</div><div class="mt-1 text-slate-600 dark:text-slate-300">' + esc(tr) + "</div></div>";
+      return '<div class="mt-3 rounded-xl bg-[#f3f1ea] p-3 text-sm"><div class="font-semibold">' + esc(e.de) + '</div><div class="mt-1 text-[#62625b]">' + esc(tr) + "</div></div>";
     }).join("");
     return h + exs;
   }
@@ -429,20 +327,20 @@
 
   /* flashcard (self-rated) */
   function viewFlash(w) {
-    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Was bedeutet das? (denk nach, dann aufdecken)</div>' +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-[#62625b]">Was bedeutet das? (denk nach, dann aufdecken)</div>' +
       '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + frontDe(w) + "</div>" +
-      (w.plural ? '<div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Pl.: ' + esc(w.plural) + "</div>" : "") +
+      (w.plural ? '<div class="mt-1 text-sm text-[#62625b]">Pl.: ' + esc(w.plural) + "</div>" : "") +
       '<div id="revArea"></div>' +
       '<div class="mt-4" id="revBtnArea"><button class="' + ui.widePrimaryButton + '" id="revealBtn">Aufdecken</button></div>' +
       '<div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
     item._wire = function () {
       function reveal() {
-        $("#revArea").innerHTML = '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + esc(meaning(w)) + "</div>" + extrasHtml(w) + metaChips(w) + "</div>";
+        $("#revArea").innerHTML = '<div class="mt-4 border-t border-dashed border-[#dcd8ce] pt-4"><div class="break-words text-xl font-bold">' + esc(meaning(w)) + "</div>" + extrasHtml(w) + metaChips(w) + "</div>";
         $("#revBtnArea").innerHTML = '<div class="mt-3 grid gap-2 sm:grid-cols-3">' +
-          '<button class="rounded-xl bg-rose-100 p-3 font-bold text-rose-900 hover:bg-rose-200" data-r="bad">Nicht gewusst</button>' +
-          '<button class="rounded-xl bg-amber-100 p-3 font-bold text-amber-900 hover:bg-amber-200" data-r="warn">Unsicher</button>' +
-          '<button class="rounded-xl bg-emerald-100 p-3 font-bold text-emerald-900 hover:bg-emerald-200" data-r="good">Gewusst</button></div>';
+          '<button class="rounded-xl bg-[#fbe7e1] p-3 font-bold text-[#5d2418] hover:bg-[#f7d8ce]" data-r="bad">Nicht gewusst</button>' +
+          '<button class="rounded-xl bg-[#f7e8d9] p-3 font-bold text-[#783c19] hover:bg-[#f3e0c9]" data-r="warn">Unsicher</button>' +
+          '<button class="rounded-xl bg-[#e5ece2] p-3 font-bold text-[#263f30] hover:bg-[#d8e3d3]" data-r="good">Gewusst</button></div>';
         Array.prototype.forEach.call(app.querySelectorAll("[data-r]"), function (b) { b.onclick = function () { next(b.getAttribute("data-r"), w); }; });
         setKey(function (e) { if (e.key === "1") pick("bad"); else if (e.key === "2") pick("warn"); else if (e.key === "3") pick("good"); });
         function pick(r) { next(r, w); }
@@ -459,10 +357,10 @@
     var opts = shuffle([w].concat(ds));
     var ask = kind === "mean" ? "Welche Bedeutung passt?" : "Welches Wort passt?";
     var prompt = kind === "mean" ? '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + frontDe(w) + "</div>" : '<div class="break-words text-xl font-bold sm:text-2xl">' + esc(meaning(w)) + "</div>";
-    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">' + ask + '</div>' + prompt +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-[#62625b]">' + ask + '</div>' + prompt +
       '<div class="mt-4 grid gap-2" id="opts">' + opts.map(function (o, idx) {
         var label = kind === "mean" ? meaning(o) : (o.artikel && /^(der|die|das)$/.test(o.artikel) ? o.artikel + " " + o.de : o.de);
-        return '<button class="' + ui.opt + '" data-id="' + esc(o.id) + '"><span class="grid size-7 shrink-0 place-items-center rounded-lg bg-slate-100 text-xs font-bold text-slate-800">' + (idx + 1) + '</span><span>' + esc(label) + "</span></button>";
+        return '<button class="' + ui.opt + '" data-id="' + esc(o.id) + '"><span class="grid size-7 shrink-0 place-items-center rounded-lg bg-[#f1efe8] text-xs font-bold text-[#34352f]">' + (idx + 1) + '</span><span>' + esc(label) + "</span></button>";
       }).join("") + "</div>" +
       '<div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
@@ -487,7 +385,7 @@
 
   /* type the German word */
   function viewType(w) {
-    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Tippe das deutsche Wort:</div>' +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-[#62625b]">Tippe das deutsche Wort:</div>' +
       '<div class="break-words text-xl font-bold sm:text-2xl">' + esc(meaning(w)) + "</div>" +
       '<div class="mt-4"><input class="' + ui.typeIn + '" id="typeIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="auf Deutsch …"></div>' +
       '<div id="typeFb"></div>' +
@@ -504,8 +402,8 @@
         var target = norm(w.de);
         var ok = val === target || val === target.replace(/^sich\s+/, "") || ("sich " + val) === target;
         done = true; inp.disabled = true;
-        $("#typeFb").innerHTML = '<div role="status" class="mt-3 font-bold ' + (ok ? "text-emerald-700 dark:text-emerald-300" : "text-rose-700 dark:text-rose-300") + '">' + (ok ? "✓ Richtig!" : "✗ Richtig: " + esc(w.de)) + "</div>" +
-          '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + frontDe(w) + "</div>" + extrasHtml(w) + "</div>";
+        $("#typeFb").innerHTML = '<div role="status" class="mt-3 font-bold ' + (ok ? "text-[#263f30]" : "text-[#5d2418]") + '">' + (ok ? "✓ Richtig!" : "✗ Richtig: " + esc(w.de)) + "</div>" +
+          '<div class="mt-4 border-t border-dashed border-[#dcd8ce] pt-4"><div class="break-words text-xl font-bold">' + frontDe(w) + "</div>" + extrasHtml(w) + "</div>";
         $("#typeBtns").innerHTML = '<button class="' + ui.widePrimaryButton + '" id="contBtn">Weiter →</button>';
         $("#contBtn").onclick = function () { next(ok ? "good" : "bad", w); };
         setKey(function (e) { if (e.key === "Enter") next(ok ? "good" : "bad", w); });
@@ -520,9 +418,9 @@
 
   /* article der/die/das */
   function viewArticle(w) {
-    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-slate-600 dark:text-slate-300">Welcher Artikel?</div>' +
+    var html = '<div class="' + ui.card + '"><div class="mb-3 text-sm text-[#62625b]">Welcher Artikel?</div>' +
       '<div class="break-words text-2xl font-extrabold leading-tight tracking-tight sm:text-4xl">' + esc(w.de) + "</div>" +
-      (w.plural ? '<div class="mt-1 text-sm text-slate-600 dark:text-slate-300">Pl.: ' + esc(w.plural) + "</div>" : "") +
+      (w.plural ? '<div class="mt-1 text-sm text-[#62625b]">Pl.: ' + esc(w.plural) + "</div>" : "") +
       '<div class="mt-4 grid grid-cols-3 gap-2 font-bold [&>button]:justify-center" id="arts">' + ["der", "die", "das"].map(function (a) { return '<button class="' + ui.opt + '" data-a="' + a + '">' + a + "</button>"; }).join("") + "</div>" +
       '<div id="artFb"></div><div class="mt-3">' + flagHtml(w) + "</div></div>";
     var S2 = S.session, item = S2.queue[S2.i];
@@ -536,7 +434,7 @@
           if (b.getAttribute("data-a") === w.artikel) b.classList.add("correct");
           else if (b === btn) b.classList.add("wrong");
         });
-        $("#artFb").innerHTML = '<div class="mt-4 border-t border-dashed border-slate-300 pt-4 dark:border-slate-700"><div class="break-words text-xl font-bold">' + esc(w.artikel) + " " + esc(w.de) + "</div>" + extrasHtml(w) + "</div>";
+        $("#artFb").innerHTML = '<div class="mt-4 border-t border-dashed border-[#dcd8ce] pt-4"><div class="break-words text-xl font-bold">' + esc(w.artikel) + " " + esc(w.de) + "</div>" + extrasHtml(w) + "</div>";
         setTimeout(function () { if (S.session === S2 && S2.queue[S2.i] === item) next(ok ? "good" : "bad", w); }, ok ? 650 : 1400);
         setKey(function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); next(ok ? "good" : "bad", w); } });
       }
@@ -546,53 +444,7 @@
     return html;
   }
 
-  function legacyRenderDone() {
-    var S2 = S.session, tot = S2.right + S2.wrong;
-    var html = header() + '<div class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900"><div class="mb-2 text-4xl">🎉</div>' +
-      '<h2 class="mb-2 text-2xl font-extrabold">Sitzung fertig!</h2>' +
-      '<p class="text-sm text-slate-600 dark:text-slate-300">' + S2.right + " von " + tot + " richtig · Serie: " + (stats.streak || 0) + ' 🔥</p>' +
-      '<div class="mt-3 flex flex-wrap gap-2">' +
-        '<button class="rounded-xl bg-teal-700 px-4 py-3 font-bold text-white hover:bg-teal-800 dark:bg-teal-300 dark:text-teal-950 dark:hover:bg-teal-200" id="againBtn">Weiter üben</button>' +
-        '<button class="' + ui.secondaryButton + '" id="homeBtn">Zur Übersicht</button></div></div>';
-    app.innerHTML = html; wireHeader();
-    $("#againBtn").onclick = function () { startSession({}); };
-    $("#homeBtn").onclick = function () { S.session = null; S.view = "dashboard"; render(); };
-  }
-
-  /* ---------- browse ---------- */
-  function legacyRenderBrowse() {
-    var words = levelWords();
-    var meetings = DECK.meetings.filter(function (m) { return S.level === "all" || m.klasse === S.level; });
-    var html = header();
-    html += '<div class="mb-4 flex items-center gap-3"><button class="' + ui.backlink + '" id="backBtn">← Übersicht</button><div class="min-w-0 flex-1"></div></div>';
-    html += '<input class="' + ui.typeIn + '" type="search" aria-label="Wörter suchen" id="q" placeholder="Suchen …" value="' + esc(S.browseQuery) + '">';
-    html += '<div class="mt-3 flex flex-wrap gap-2" id="mchips"><button class="rounded-full border border-slate-300 px-3 py-2 text-xs font-bold hover:bg-slate-100 aria-pressed:border-teal-600 aria-pressed:bg-teal-100 aria-pressed:text-teal-950 dark:border-slate-700 dark:hover:bg-slate-800" aria-pressed="' + (S.browseMeeting === "all") + '" data-m="all">Alle</button>' +
-      meetings.map(function (m) { return '<button class="rounded-full border border-slate-300 px-3 py-2 text-xs font-bold hover:bg-slate-100 aria-pressed:border-teal-600 aria-pressed:bg-teal-100 aria-pressed:text-teal-950 dark:border-slate-700 dark:hover:bg-slate-800" aria-pressed="' + (S.browseMeeting === m.meeting) + '" data-m="' + esc(m.meeting) + '">' + esc(m.klasse + " " + fmtDate(m.meeting)) + "</button>"; }).join("") + "</div>";
-
-    var q = S.browseQuery.toLowerCase();
-    var list = words.filter(function (w) {
-      if (S.browseMeeting !== "all" && w._meeting !== S.browseMeeting) return false;
-      if (!q) return true;
-      return (w.de + " " + meaning(w)).toLowerCase().indexOf(q) >= 0;
-    });
-    html += '<div class="mb-3 mt-7 text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-300">' + list.length + ' Wörter</div><div class="divide-y divide-slate-200 rounded-2xl border border-slate-200 bg-white px-4 shadow-sm dark:divide-slate-800 dark:border-slate-800 dark:bg-slate-900">';
-    if (!list.length) html += '<div class="py-10 text-center text-sm text-slate-600 dark:text-slate-300">Nichts gefunden.</div>';
-    list.forEach(function (w) {
-      var b = boxOf(w); var p = prog(w.id);
-      var colors = ["bg-slate-300", "bg-slate-400", "bg-amber-500", "bg-yellow-500", "bg-emerald-600", "bg-emerald-600"];
-      var cls = "size-2.5 self-center rounded-full " + colors[b] + (p && p.unsure ? " ring-2 ring-amber-500 ring-offset-2 dark:ring-offset-slate-900" : "");
-      html += '<div class="grid grid-cols-[auto_minmax(0,1fr)] items-baseline gap-x-3 gap-y-1 py-3 sm:grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)]"><span class="' + cls + '"></span>' +
-        '<span class="break-words font-bold">' + frontDe(w) + "</span>" +
-        '<span class="col-start-2 break-words text-sm text-slate-600 sm:col-start-3 dark:text-slate-300">' + esc(meaning(w)) + "</span></div>";
-    });
-    html += "</div>";
-    app.innerHTML = html; wireHeader();
-    $("#backBtn").onclick = function () { S.view = "dashboard"; render(); };
-    var qi = $("#q"); qi.oninput = function () { S.browseQuery = qi.value; var pos = qi.selectionStart; renderBrowse(); var nq = $("#q"); nq.focus(); try { nq.setSelectionRange(pos, pos); } catch (e) {} };
-    Array.prototype.forEach.call(app.querySelectorAll("[data-m]"), function (c) { c.onclick = function () { S.browseMeeting = c.getAttribute("data-m"); renderBrowse(); }; });
-  }
-
-  /* Warm result and vocabulary views override the legacy visual layer. */
+  /* ---------- result & browse views ---------- */
   function renderDone() {
     var S2 = S.session, totalAnswers = S2.right + S2.wrong;
     var html = '<div class="mx-auto max-w-2xl rounded-[19px] border border-[#e6e3da] bg-[#fffefa] p-7 text-center sm:p-10"><span class="mx-auto grid size-14 place-items-center rounded-full bg-[#e5ece2] text-[#34523f]">' + icon("check", "size-7") + '</span><h2 class="mt-4 text-2xl font-extrabold">Sitzung fertig!</h2><p class="mt-2 text-sm text-[#62625b]">' + S2.right + ' von ' + totalAnswers + ' richtig · Serie: ' + (stats.streak || 0) + ' Tage</p><div class="mt-6 flex flex-wrap justify-center gap-2"><button class="rounded-lg bg-[#242620] px-5 py-3 text-sm font-bold text-white hover:brightness-110" id="againBtn">Weiter üben</button><button class="' + ui.secondaryButton + ' !flex-none" id="homeBtn">Zur Übersicht</button></div></div>';
@@ -621,9 +473,9 @@
 
   /* ---------- toast ---------- */
   var toastEl;
-  var overlayClasses = "overlay fixed inset-0 z-50 flex items-end justify-center bg-slate-950/70 sm:items-center sm:p-4";
+  var overlayClasses = "overlay fixed inset-0 z-50 flex items-end justify-center bg-[#21221e]/70 sm:items-center sm:p-4";
   function toast(msg) {
-    if (!toastEl) { toastEl = document.createElement("div"); toastEl.className = "pointer-events-none fixed inset-x-4 bottom-5 z-40 mx-auto w-fit rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white opacity-0 shadow-lg motion-safe:transition-opacity [&.show]:opacity-100 dark:bg-slate-100 dark:text-slate-900"; toastEl.setAttribute("role", "status"); document.body.appendChild(toastEl); }
+    if (!toastEl) { toastEl = document.createElement("div"); toastEl.className = "pointer-events-none fixed inset-x-4 bottom-5 z-40 mx-auto w-fit rounded-xl bg-[#242620] px-4 py-3 text-sm font-semibold text-white opacity-0 shadow-lg motion-safe:transition-opacity [&.show]:opacity-100"; toastEl.setAttribute("role", "status"); document.body.appendChild(toastEl); }
     toastEl.textContent = msg; toastEl.classList.add("show");
     clearTimeout(toast._t); toast._t = setTimeout(function () { toastEl.classList.remove("show"); }, 1800);
   }
@@ -661,7 +513,7 @@
     var ov = document.createElement("div");
     ov.className = overlayClasses;
     ov.innerHTML = '<div class="' + ui.sheet + '"><h2>' + esc(g.title) + '</h2>' +
-      g.items.map(function (it) { return '<div class="border-b border-slate-200 py-3 last:border-0 dark:border-slate-800 [&>b]:mb-1 [&>b]:block [&>p]:text-sm [&>p]:text-slate-600 dark:[&>p]:text-slate-300"><b>' + it[0] + '</b><p>' + it[1] + '</p></div>'; }).join("") +
+      g.items.map(function (it) { return '<div class="border-b border-[#ece8de] py-3 last:border-0 [&>b]:mb-1 [&>b]:block [&>p]:text-sm [&>p]:text-[#62625b]"><b>' + it[0] + '</b><p>' + it[1] + '</p></div>'; }).join("") +
       '<button class="mt-4 ' + ui.widePrimaryButton + '" id="helpClose">' + esc(g.close) + '</button></div>';
     document.body.appendChild(ov);
     function close() { ov.remove(); settings.seenHelp = true; save(K.set, settings); }
@@ -677,15 +529,15 @@
       var cnt = levelWords().filter(function (w) { return w._meeting === meeting && validForMode(w, mode); }).length;
       return '<button class="' + ui.menubtn + '" data-mode="' + mode + '"' + (cnt ? '' : ' disabled') + '>' +
         '<span class="' + ui.mi + '">' + icon + '</span><span class="min-w-0 flex-1 text-sm font-bold sm:text-base">' + label + '</span>' +
-        '<span class="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold dark:bg-slate-800">' + cnt + ' Wörter</span></button>';
+        '<span class="rounded-full bg-[#f1efe8] px-2 py-1 text-xs font-semibold">' + cnt + ' Wörter</span></button>';
     }
     var ov = document.createElement("div");
     ov.className = overlayClasses;
     ov.innerHTML = '<div class="' + ui.sheet + '"><h2>' + esc(klasse) + ' · ' + esc(fmtDate(meeting)) + '</h2>' +
-      '<p class="mb-4 text-sm text-slate-600 dark:text-slate-300">' + esc(topic || "") + ' · ' + total + ' Wörter</p>' +
+      '<p class="mb-4 text-sm text-[#62625b]">' + esc(topic || "") + ' · ' + total + ' Wörter</p>' +
       '<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">' + mb("review", "🃏", "Karteikarten") + mb("mc", "✅", "Multiple Choice") +
         mb("type", "⌨️", "Eintippen") + mb("article", "der", "Artikel") + '</div>' +
-      '<button class="mt-4 w-full rounded-xl border border-slate-300 px-4 py-3 font-bold hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800" id="mpClose">Schließen</button></div>';
+      '<button class="mt-4 w-full rounded-xl border border-[#d9d5c9] px-4 py-3 font-bold hover:bg-[#f0eee5]" id="mpClose">Schließen</button></div>';
     document.body.appendChild(ov);
     function close() { ov.remove(); }
     Array.prototype.forEach.call(ov.querySelectorAll("[data-mode]"), function (b) {
